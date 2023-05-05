@@ -35,7 +35,7 @@
 			font-size: 150%
 		}
 		.FirstContent{
-			background-image: url("https://github.com/gg123bb/gg123bb.github.io/blob/main/images/emailtitle.png?raw=true");
+			background-image: url("https://github.com/gg123bb/gg123bb.github.io/blob/main/images/emailtitle.png");
 			width: 600px;
 			height: 400px;
 			background-repeat: no-repeat;
