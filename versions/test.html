@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"	/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>E-MAIL</title>
 <style type="text/css">
@@ -32,7 +33,7 @@
 		width: 600px;
 		height: 30px;
 	}
-	.New-E-Mail {
+	.New-E-MAIL {
 		text-align: center;
 		background-color: #7c31f5;
 		border-bottom-right-radius: 7px;
@@ -40,10 +41,10 @@
 		font-family: Arial Black, Franklin Gothic Medium, Impact;
 		font-size: 150%;
 		position: relative;
-		z-index: 2;
+		z-index: 2; /* Bring New-E-MAIL to the front */
 	}
 	.New-E-MAIL-background {
-		background-color: #69fab1;
+		background-color: black;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -69,10 +70,13 @@
 	.E-MailContent {
 		margin-top: 10px;
 		width: 600px;
-		height: 400px;
+		max-width: 600px;
 		text-align: center;
 		font-size: 140%;
-		font-family: Arial Black, Franklin Gothic Medium;
+		font-family: Arial Black, Franklin Gothic Medium; 
+	}
+	.Contenttextsize {
+		font-size: 145%;
 	}
 	.Impressum {
 		text-align: center;
@@ -80,40 +84,46 @@
 		color: white;
 		background-color: black;
 	}
+	.Impressumh1 {
+		font-size: 140%;
+		text-align: center;
+		background-color: black;
+	}
 </style>
 </head>
 <body>
-<center class="emailcentersetter">
-	<table class="main" width="100%">
-		<tr>
-			<td height="8" style="background-color: #171a1b"></td>
-		</tr>
-		<tr>
-			<td>
-				<div class="New-E-MAIL-Parent">
-					<div class="New-E-Mail">Neue E-MAIL</div>
-					<div class="New-E-MAIL-background"></div>
-				</div>
-				<div class="FirstContent">Überschrift / <br> Content</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div class="E-MailContent">
-					<h1 class="Contenttextsize">Hallo</h1>
-					<p>content</p>
-					<p>content</p>
-					<p>content</p>
-					<hr />
-					<p>Abschluss</p>
-				</div>
-				<div class="Impressum">
-					<h1 class="Impressumh1">Impressum</h1>
-					<p>Diese E-Mail | Webseite gehört mir, Kopieren verboten</p>
-				</div>
-			</td>
-		</tr>
-	</table>
-</center>
+	<center class="emailcentersetter">
+		<table class="main" width="100%">
+			<tr>
+				<td height="8" style="background-color: #171a1b">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="New-E-MAIL-Parent">
+						<div class="New-E-MAIL">
+							Neue E-MAIL
+						</div>
+						<div class="New-E-MAIL-background">
+						</div>
+					</div>
+					<div class="FirstContent">
+						"Überschrift / <br> Content"
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="E-MailContent">
+						<h1 class="Contenttextsize">Hallo</h1>
+						Content<p>content<p>content<p>content<hr>Abschluss
+					</div>
+					<div class="Impressum">
+						<h1 class="Impressumh1">Impressum</h1><p>Diese E-Mail | Webseite Gehört Mir, Kopieren Verboten
+					</div>
+				</td>
+			</tr>
+		</table>
+	</center>
 </body>
 </html>

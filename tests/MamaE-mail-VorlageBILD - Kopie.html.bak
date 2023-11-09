@@ -1,0 +1,76 @@
+<!--Version: 1.5; This code was created by (Discord Name)-controller000-; Licenses are with me -; Copying prohibited! Please be fair!-->
+<html lang="de">
+<head>
+<title>-Controller Web-Mail-Poster-</title>
+<style>
+#body{background-color: #9c9c9c}
+#Email01{
+	height: 50px;
+	width: 600px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-color: black;
+	color: white;
+	font-family: Bowlby One SC, Arial Black,Franklin Gothic, Arial Black Italic;
+}
+#htmlerror {display: none;}
+#directinfo{
+	height: 200px;
+	width: 600px;
+	background-color:
+	#c8d8e0; font-family:
+	Bowlby One SC, Arial Black,Franklin Gothic, Arial Black Italic;
+}
+#bigfont01title{font-family: Franklin Gothic, Bowlby One SC, Arial Black, Arial Black Italic;}
+#email-content{
+	height: 200px;
+	width: 600px;
+	background-color: #c8d8e0;
+	font-family: Bowlby One SC, Arial Black,Franklin Gothic, Arial Black Italic;
+}
+#Impressum01{
+	height: 110px;
+	width: 600px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-color: black;
+	color: white; font-family: Impact, Bowlby One SC, Arial Black,Franklin Gothic, Arial Black Italic;
+}
+#ImpressLink{
+	height: 110px;
+	width: 600px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-color: black;
+	color: white;
+	font-family: Impact, Bowlby One SC, Arial Black,Franklin Gothic, Arial Black Italic;
+}
+#Discord {color: white;}
+#Discord a:hover {color: #ebd834; background-color: #26a4ed;}
+</style>
+</head>
+<body style="background-color: #9c9c9c;">
+<center><div id="Email01"><br><u><i><b>E-mail</u>:</b></i></div></center>
+<p id="htmlerror"><br><br>
+Neue E-Mail von Controller! -Diese E-Mail ist in Deutscher sprache Geschrieben! This email is written in German!<!--Für die text vorschau (auch um zu vermeiden als vorschau "--fail--" stehen zu haben! --><br>
+----------------fail!--------------------------------
+<br><br> <!--wenn kein html im e-mail programm an ist wird der text als erstes angezeigt!-->
+Hey Du bist nicht im HTML Modus, Bitte aktiviere es!<br>
+Hey you are not in HTML mode, please activate it!<br>
+Links for HTML activate:<br>
+Google: https://support.google.com/mail/answer/15049?hl=de<br>
+Posteo: https://posteo.de/hilfe/wie-kann-ich-den-texteditor-auf-html-umstellen#:~:text=Wenn%20Sie%20den%20Editor%2DTyp,%E2%80%9CHTML%2DNachrichten%20verfassen%E2%80%9D.<br>
+Discord-Support: https://discord.gg/N6wv4kwKDs<br>
+<br><br>
+Ab hier beginnt die Eigentliche E-Mail:<br>
+The actual email begins here:<br>
+-----------------------------------------------------<br>
+<br><br></p>
+<center><!--e-mail content:-->
+<div id="directinfo">Neue E-Mail!<h1 id="bigfont01title"><b>Überschrieft!</h1></b><hr><br>dein Text!</div>
+<div id="email-content">Text2!<br>AbschlussText!</div>
+<p id="htmlerror"><br></p>
+<div id="Impressum01">Impressum:<br>Bitte aktiviere <a href="https://g.co/kgs/7UeoSC" id="ImpressLink"><u>Html</u></a><br>um diese E-mail richtig<br>lesen zu können!<br>Links: <a id="Discord" href="https://discord.gg/uSkvdAAafm" alt="Leider kein link!"><u>Discord</u></a></div>
+</center>
+</body>
+</html>

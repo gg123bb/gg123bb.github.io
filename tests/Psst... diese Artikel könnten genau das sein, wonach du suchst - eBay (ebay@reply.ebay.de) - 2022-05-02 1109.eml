@@ -1,0 +1,2180 @@
+Delivered-To: kikerhorizont@gmail.com
+Received: by 2002:a5b:80a:0:0:0:0:0 with SMTP id x10csp2783359ybp;
+        Mon, 2 May 2022 02:09:59 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyLJLu///vWBwWQVPMGqRd2Tr6Fe+mZFFnbRdGSlHL3CA6e+gz3tJTfHMlwVSMKr7+mUJ+T
+X-Received: by 2002:a05:622a:294:b0:2f3:a844:9bfd with SMTP id z20-20020a05622a029400b002f3a8449bfdmr1332399qtw.440.1651482599201;
+        Mon, 02 May 2022 02:09:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1651482599; cv=none;
+        d=google.com; s=arc-20160816;
+        b=I1RVGuagNFULs8y2K7RLb0aFewl/RNhlVmFg3LjBH/lDwJ2i3OLkn6vW3fJn542UCZ
+         eI426sw8R0KJ0odEIk4Ee0QyYXyzRODKpbX9mX/omtT7EUo0aOsmHMzqswxF0yftipIF
+         uFWSMhUiJIOQ6seNRMzQZXM0+u4HFzr0GNvJHH+nIMFNPxmhjrr41zQuKqefggjEx4iM
+         SMa/sKO09oTWRVZdV+e49ZdjEOCHBhzCwtB6ouCRsGyw2KFqg6BSVQBb0Jd0cRgTjY42
+         aNr6jkiSeSOAHCPK8R8rz44ipX8J6lOfdKc17Zzme+XOEIU6WDCjAcqTCrH1piu3BMpT
+         TaUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:mime-version:from:date
+         :content-transfer-encoding:dkim-signature:dkim-signature;
+        bh=WhthHuK1/nekONpq908EB4L3UxccXDt9WFWVAM169LE=;
+        b=bLnRPvGMQ271ZOUj4/cubMdQXgnmrK73g3/d1UZDKkNR+Sq46YCirBYEMWCLYEqlBC
+         1lzCYM/sa70ww65Je6U0J0dee/PCoPb5372tthuu0U5W3K83Z9CdL0yVftzPkZisTBJF
+         x7Ts3IopPDHP24FE5BLYemphFhxJReIyjoRzWXubkeZWO6+pX1bqemhNNcYieTaVlOG1
+         W39eSc9iSe5m3j1KmUcLI3FruNeSV4bE5DZtGi/mvqRJ/Do5FQ/vEF20XDZJXjkj9ou4
+         XignNE5bBTztDsDPyaVHyVKmC6aqEAcsZx1t4jlSzMeSk6oyWa7yhkEc8nn7W1/cEX9k
+         4akw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@reply.ebay.de header.s=s1 header.b=iXpGSgOo;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=oE8AkJEt;
+       spf=pass (google.com: domain of bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de designates 167.89.100.188 as permitted sender) smtp.mailfrom="bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=reply.ebay.de
+Return-Path: <bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de>
+Received: from xtrwsqbc.outbound-mail.sendgrid.net (xtrwsqbc.outbound-mail.sendgrid.net. [167.89.100.188])
+        by mx.google.com with ESMTPS id bp10-20020a05620a458a00b0069f38f14eb8si6431431qkb.84.2022.05.02.02.09.58
+        for <kikerhorizont@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 02 May 2022 02:09:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de designates 167.89.100.188 as permitted sender) client-ip=167.89.100.188;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@reply.ebay.de header.s=s1 header.b=iXpGSgOo;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=oE8AkJEt;
+       spf=pass (google.com: domain of bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de designates 167.89.100.188 as permitted sender) smtp.mailfrom="bounces+1434781-317d-kikerhorizont=gmail.com@m.reply.ebay.de";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=reply.ebay.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=reply.ebay.de;
+	h=content-transfer-encoding:content-type:from:mime-version:subject:
+	x-feedback-id:to;
+	s=s1; bh=WhthHuK1/nekONpq908EB4L3UxccXDt9WFWVAM169LE=;
+	b=iXpGSgOowUCOuxIlHJ1Ujn2ZukuygwsjEO2Jo6NE/oOFLDyZXEFmOvJWwv5uJtIArxWT
+	rYg9GxfdIvEb0ZorsvgvhdABmHtj9Tm5KYHz03TxGRgpVABoILKoXL1EGqVlJVsvDsl/hu
+	ccqeBSXrI/0JNk3BBuk2O72P4lkZ+D77EPH1hB7E+VfFwmCCqFZ/ylQ5MwtguYBdWrPHMU
+	9W4IZPaKstzsGmgkEweuH6wFjPDYvJsWvb8+dl2z61DZQ3XcFQWzJro7CjfNLLvygGoQTw
+	5Aos3gq//md98c4zLL7XI3JrmcojHUVviXBxe1pBcDf0uAAUTWoQGHDWwpWf1xfA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-transfer-encoding:content-type:from:mime-version:subject:
+	x-feedback-id:to;
+	s=smtpapi; bh=WhthHuK1/nekONpq908EB4L3UxccXDt9WFWVAM169LE=;
+	b=oE8AkJEtvho/hlWadYUCwFG/mp87bMj7XOvB3KKiG0jxcrCKn4QUkEvk9lx9OK4rA6Pc
+	xg3hsFT5nhpXheDEIRjKK90uxBR0gNcxaYWO0y+UHdGCmqimvKyVsX8nqGeE0vd8dlnqwu
+	uqxDfYIKOR3bvQyJ1lDgZnsuqVILhqXVs=
+Received: by filterdrecv-6bcc5688b7-djsz9 with SMTP id filterdrecv-6bcc5688b7-djsz9-1-626F9FE6-69
+        2022-05-02 09:09:58.693604361 +0000 UTC m=+2200338.378669339
+Received: from MTQzNDc4MQ (unknown)
+	by geopod-ismtpd-2-1 (SG) with HTTP
+	id AFYwciC-Syu5VON6BH7Rcw
+	Mon, 02 May 2022 09:09:58.585 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Mon, 02 May 2022 09:09:58 +0000 (UTC)
+From: eBay <ebay@reply.ebay.de>
+Mime-Version: 1.0
+Message-ID: <AFYwciC-Syu5VON6BH7Rcw@geopod-ismtpd-2-1>
+Subject: Psst... diese Artikel =?UTF-8?B?a8O2bm50ZW4=?= genau das sein, wonach
+ du suchst
+X-Feedback-ID: 1434781:SG
+X-SG-EID: 
+ =?us-ascii?Q?TK=2FCimi7TnQj1aKHPD9FmJwXI+EDMkDQ5ugLXWMbjB6AaGUFbz7EQhXSpQapCO?=
+ =?us-ascii?Q?53ZMiqsApkQ4HlpgVKwPS0FWgWL3wEW0rWACQK=2F?=
+ =?us-ascii?Q?mQ2NSQ6Pzux0C0TdPog1ewHQaTu1KGIFiUE7frt?=
+ =?us-ascii?Q?NAMVWi8krzDOncA4fUYQj=2F4mvBbyDqozy4HPsJL?=
+ =?us-ascii?Q?qb8rXU8U3VLSv7EsqGcSJV=2FMbjyHvr8WJwaMapM?=
+ =?us-ascii?Q?ryPcSYwiN6A+Iwz0LOPHB9ADxHHSC4NTFPFwMq?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FIb0tTaEwITdRTV75CIOZ?=
+ =?us-ascii?Q?LthtIvgGvjPVcc1qc5zxdO6IOyrsr5CofRYVC=2FZ?=
+ =?us-ascii?Q?Bgw4buErcdqI4yaF78Y5BySUmW8cO3eTI4Mv5vl?=
+ =?us-ascii?Q?6D1mW0v25O=2Fm8HarjCE3dG6xpy4OFJ4HPeWP2IC?=
+ =?us-ascii?Q?xgQM+t8Tzm6Q2YQMyGmL3VztTCdmFtI1kwwIEzM?=
+ =?us-ascii?Q?5WnYNvKKR5pFSaFa8=3D?=
+To: kikerh_71 <kikerhorizont@gmail.com>
+X-Entity-ID: mGfCdZjEXq59B/x/2ufwBw==
+
+<!DOCTYPE html>
+<!--d3c9d518-7ca2-40bf-bbdf-5b7c2cb09535_v87-->
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+ <style type=3D"text/css">
+@media handheld, only screen and (-webkit-min-device-pixel-ratio:3.0) and (=
+max-width:1080px), screen and (max-width:480px){@media {div.generic{min-wid=
+th:100vw!important;}}}
+</style>
+<style type=3D"text/css">
+[class~=3D"x_fallbackfont"]{font-family:Arial,sans-serif!important;}
+</style>
+<style type=3D"text/css">
+:root{color-scheme:light dark only;supported-color-schemes:light dark only;=
+}
+</style>
+<style type=3D"text/css">
+body{margin:0;padding:0;}
+table,td{border-collapse:collapse;border-spacing:0;mso-table-lspace:0pt;mso=
+-table-rspace:0pt;}
+.ExternalClass *{line-height:100%;margin:0px;padding:0px;}
+img{display:block!important;}
+a{text-decoration:none;}
+a,td{-webkit-text-size-adjust:none;}
+th{font-weight:normal;padding:0px;margin:0px;}
+button{font-weight:normal;padding:0px;margin:0px;}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!impo=
+rtant;font-size:inherit!important;font-family:inherit!important;font-weight=
+:inherit!important;line-height:inherit!important;}
+@font-face{
+font-family:"Market Sans";
+src:url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Regu=
+lar-WebS.eot');
+src:url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Regu=
+lar-WebS.eot?#iefix') format('embedded-opentype'), url('https://ir.ebaystat=
+ic.com/cr/v/c1/market-sans/v1.0/MarketSans-Regular-WebS.woff2') format('wof=
+f2'), url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Re=
+gular-WebS.woff') format('woff'), url('https://ir.ebaystatic.com/cr/v/c1/ma=
+rket-sans/v1.0/MarketSans-Regular-WebS.ttf') format('truetype'), url('https=
+://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Regular-WebS.svg#M=
+arketSans-Regular-WebS') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+@font-face {
+font-family:"Market Sans";
+src:url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Semi=
+Bold-WebS.eot');
+src:url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-Semi=
+Bold-WebS.eot?#iefix') format('embedded-opentype'), url('https://ir.ebaysta=
+tic.com/cr/v/c1/market-sans/v1.0/MarketSans-SemiBold-WebS.woff2') format('w=
+off2'), url('https://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-=
+SemiBold-WebS.woff') format('woff'), url('https://ir.ebaystatic.com/cr/v/c1=
+/market-sans/v1.0/MarketSans-SemiBold-WebS.ttf') format('truetype'), url('h=
+ttps://ir.ebaystatic.com/cr/v/c1/market-sans/v1.0/MarketSans-SemiBold-WebS.=
+svg#MarketSans-SemiBold-WebS') format('svg');
+font-weight:bold;
+font-style:normal;
+}
+[style*=3D'Market Sans']{font-family:'Market Sans',Helvetica,Arial,sans-ser=
+if!important;}
+div.WordSection1 > div > table.MsoNormalTable > tbody > tr > td > div > tab=
+le.MsoNormalTable{width:600px!important;}
+div.WordSection1 table.MsoNormalTable{width:initial!important;}
+.noWrap{white-space:nowrap!important;}
+.d-noWrap{white-space:nowrap;}
+.show_on_mobile,.de_footer{display:none!important;height:0px;max-height:0px=
+;mso-hide:all;}
+@media handheld, only screen and (-webkit-min-device-pixel-ratio:3.0) and (=
+max-width:1080px), screen and (max-width:480px){
+  img{display:block!important;}
+  div.generic{min-width:calc(100vw - 30px)!important;}
+  .backgroundnone{background-image:none!important;background-color:#ffffff!=
+important;background:#ffffff!important;}
+  .hide{display:none!important;font-size:0!important;max-height:0!important=
+;line-height:0!important;}
+  .de_footer{display:block!important;width:100%!important;max-height:none!i=
+mportant;height:auto!important;overflow:visible!important;float:none!import=
+ant;}
+  .show_on_mobile{display:block!important;width:auto!important;max-height:n=
+one!important;height:auto!important;overflow:visible!important;float:none!i=
+mportant;}
+  .de_footer table,.de_footer td{max-height: none!important;height: auto!im=
+portant;overflow: visible!important;float: none!important;}
+  .de_footer table{display:table!important;width:100%!important;}
+  .de_footer td{display:block!important;}
+  .break{display:block!important;width:100%!important;height:1px!important;=
+line-height:1px!important;min-height:1px!important;max-height:1px!important=
+;}
+  .linebreak{display:block!important;width:100%!important;}
+  .floatleft{float:left!important;}
+  .floatright{float:right!important;}
+  .floatoff{float:none!important;}
+  .heightauto{height:auto!important;}
+  .fullheight{height:100%!important;}
+  .widthauto{width:auto!important;}
+  .fullwidth{width:100%!important;}
+  .halfwidth{width:50%!important;}
+  .imgfullwidth{width:100%!important;height:auto!important;}
+  .imgfullheight{width:auto!important;height:100%!important;}
+  .perc10{width:10%!important;}
+  .perc20{width:20%!important;}
+  .perc30{width:30%!important;}
+  .alc{text-align:center!important;}
+  .all{text-align:left!important;}
+  .alr{text-align:right!important;}
+  .m-noWrap{white-space:nowrap!important;}
+  .d-noWrap{white-space:normal!important;}
+  .tablewidth300{width:300px!important;}
+  .tablewidth280{width:280px!important;}
+  .fs12{font-size:12px!important;line-height:1.3!important;}
+  .fs14{font-size:14px!important;line-height:1.3!important;}
+  .fs16{font-size:16px!important;line-height:1.3!important;}
+  .fs20{font-size:20px!important;line-height:1.3!important;}
+  .fs22{font-size:22px!important;line-height:1.3!important;}
+  .fs24{font-size:24px!important;line-height:1.3!important;}
+  .fs30{font-size:30px!important;line-height:1.3!important;}
+  .fs48{font-size:48px!important;line-height:1.3!important;}
+  .lhHl{line-height:1.3!important;}
+  .lhSl{line-height:1.5!important;}
+  .w50{width:50px!important;}
+  .w60{width:60px!important;}
+  .w97{width:97px!important;}
+  .w100{width:100px!important;}
+  .w110{width:110px!important;}
+  .w150{width:150px!important;}
+  .w178{width:178px!important;}
+  .w180{width:180px!important;}
+  .w200{width:200px!important;}
+  .w250{width:250px!important;}
+  .w260{width:260px!important;}
+  .w268{width:268px!important;}
+  .w280{width:280px!important;}
+  .w300{width:300px!important;}
+  .h50{height:50px!important;}
+  .h100{height:100px!important;}
+  .h150{height:150px!important;}
+  .h160{height:160px!important;}
+  .mt16{margin-top:16px!important;}
+  .mt24{margin-top:24px!important;}
+  .mt32{margin-top:32px!important;}
+  .mb16{margin-bottom:16px!important;}
+  .mb24{margin-bottom:24px!important;}
+  .mb32{margin-bottom:32px!important;}
+  .p0{padding:0px!important;}
+  .p4{padding:4px!important;}
+  .p5{padding:5px!important;}
+  .p8{padding:8px!important;}
+  .p10{padding:10px!important;}
+  .p15{padding:15px!important;}
+  .p16{padding:16px!important;}
+  .p20{padding:20px!important;}
+  .p24{padding:24px!important;}
+  .p25{padding:25px!important;}
+  .p30{padding:30px!important;}
+  .p32{padding:32px!important;}
+  .p35{padding:35px!important;}
+  .pt0{padding-top:0px!important;}
+  .pt4{padding-top:4px!important;}
+  .pt5{padding-top:5px!important;}
+  .pt8{padding-top:8px!important;}
+  .pt10{padding-top:10px!important;}
+  .pt15{padding-top:15px!important;}
+  .pt16{padding-top:16px!important;}
+  .pt20{padding-top:20px!important;}
+  .pt24{padding-top:24px!important;}
+  .pt25{padding-top:25px!important;}
+  .pt30{padding-top:30px!important;}
+  .pt32{padding-top:32px!important;}
+  .pt35{padding-top:35px!important;}
+  .pt40{padding-top:40px!important;}
+  .pr0{padding-right:0px!important;}
+  .pr4{padding-right:4px!important;}
+  .pr5{padding-right:5px!important;}
+  .pr8{padding-right:8px!important;}
+  .pr10{padding-right:10px!important;}
+  .pr15{padding-right:15px!important;}
+  .pr16{padding-right:16px!important;}
+  .pr20{padding-right:20px!important;}
+  .pr24{padding-right:24px!important;}
+  .pr25{padding-right:25px!important;}
+  .pr30{padding-right:30px!important;}
+  .pr32{padding-right:32px!important;}
+  .pr35{padding-right:35px!important;}
+  .pb0{padding-bottom:0px!important;}
+  .pb4{padding-bottom:4px!important;}
+  .pb5{padding-bottom:5px!important;}
+  .pb8{padding-bottom:8px!important;}
+  .pb10{padding-bottom:10px!important;}
+  .pb15{padding-bottom:15px!important;}
+  .pb16{padding-bottom:16px!important;}
+  .pb20{padding-bottom:20px!important;}
+  .pb24{padding-bottom:24px!important;}
+  .pb25{padding-bottom:25px!important;}
+  .pb30{padding-bottom:30px!important;}
+  .pb32{padding-bottom:32px!important;}
+  .pb35{padding-bottom:35px!important;}
+  .pb40{padding-bottom:40px!important;}
+  .pl0{padding-left:0px!important;}
+  .pl4{padding-left:4px!important;}
+  .pl5{padding-left:5px!important;}
+  .pl8{padding-left:8px!important;}
+  .pl10{padding-left:10px!important;}
+  .pl15{padding-left:15px!important;}
+  .pl16{padding-left:16px!important;}
+  .pl20{padding-left:20px!important;}
+  .pl24{padding-left:24px!important;}
+  .pl25{padding-left:25px!important;}
+  .pl30{padding-left:30px!important;}
+  .pl32{padding-left:32px!important;}
+  .pl35{padding-left:35px!important;}
+  .borderleft{border-left:1px solid #C7C7C7!important;}
+  .borderright{border-right:1px solid #C7C7C7!important;}
+  .bl0{border-left:0px solid transparent!important;}
+  .br0{border-right:0px solid transparent!important;}
+  .bt0{border-top:0px solid transparent!important;}
+  .bb0{border-bottom:0px solid transparent!important;}
+  .bb10{border-bottom:10px!important;border-style:solid!important;}
+  .bb16{border-bottom:16px!important;border-style:solid!important;}
+  .bb24{border-bottom:24px!important;border-style:solid!important;}
+  .bb32{border-bottom:32px!important;border-style:solid!important;}
+  .noradius{border-radius:initial!important;}
+  .radius8{border-radius:8px!important;}
+  .radius20{border-radius:20px!important;}
+  .topradius8{border-top-left-radius:8px!important;border-top-right-radius:=
+8px!important;}
+  .bottomradius8{border-bottom-left-radius:8px!important;border-bottom-righ=
+t-radius:8px!important;}
+  img.imgval{min-height:0px!important;max-height:calc(0px + 160% - 1.59px)!=
+important;}
+  .opacity{opacity:0!important;}
+  .valignbottom{vertical-align:bottom!important;}
+  .valignmiddle{vertical-align:middle!important;}
+  .valigntop{vertical-align:top!important;}
+  .th{display:table-header-group!important;}
+  .mobile-spacer {width: 95%;}
+}=20
+</style>
+<style type=3D"text/css">
+a:-webkit-any-link:focus{outline-offset:0px!important;}
+a:focus,.focus:focus{outline:3px solid #000000!important;padding:0px!import=
+ant;}
+.focusFb:focus{outline:3px solid #00FF00!important;}
+.focusTw:focus,.focusPin:focus,.focusInst:focus,.focusYt:focus{outline:3px =
+solid #000000!important;padding:0px!important;}
+img.focus{display:inline-block!important;}
+.button tr td p a:focus{transition:none;}
+.focus__content:focus{outline:none;}
+@media handheld, only screen and (-webkit-min-device-pixel-ratio:3.0) and (=
+max-width:1080px), screen and (max-width:480px){a.focus,img.focus{display:i=
+nline-block!important;}}
+</style>
+<style type=3D"text/css">
+.button,.button tr td p a{transition:0.4s;animation-duration:1.3s;animation=
+-timing-function:ease-in-out;animation-iteration-count:1;}
+.button tr td p a{transition:0.4s;}
+</style>
+=09
+<style type=3D"text/css">
+.button1:hover {background-color: #FFFFFF!important;box-shadow: inset 0 0 0=
+ 25px #FFFFFF;border-color: #000000!important;}
+.button1:hover tr td p a {color: #000000!important;}
+.button2:hover {background-color: #FFFFFF!important;box-shadow: inset 0 0 0=
+ 25px #FFFFFF;border-color: #767676!important;}
+.button2:hover tr td p a {color: #767676!important;}
+.button3:hover {background-color: #767676!important;box-shadow: inset 0 0 0=
+ 25px #767676;border-color: #FFFFFF!important;}
+.button3:hover tr td p a {color: #FFFFFF!important;}
+.button4:hover {background-color: #FFFFFF!important;box-shadow: inset 0 0 0=
+ 25px #FFFFFF;border-color: #41413F!important;}
+.button4:hover tr td p a {color: #41413F!important;}
+
+.focus1:focus {outline: 3px solid #FFFFFF!important;padding: 0px!important;=
+}
+</style>
+
+<style type=3D"text/css">
+@media (prefers-color-scheme: dark) {
+body,.wrapperMod{background-color:#333333;}
+a:focus,.focus:focus{outline:3px solid #FFFFFF!important;padding:0px!import=
+ant;}
+.focusFb:focus,.focusTw:focus,.focusPin:focus,.focusInst:focus,.focusYt:foc=
+us{outline:3px solid #FFFFFF!important;padding:0px!important;}
+img{color:#FFFFFF!important;}
+.headerMod,.preheaderMod,.preheaderMod+table[class~=3D"x_imgfullwidth"],.pl=
+aceholderMod,.footerNavModAU,.footerNavModDE,.footerDividerMod,.footerSocia=
+lMod,.footerTermsMod,.footerMod,.gmailFixMod{background-color:#171717;}
+.headerMod a,.footerMod div,.footerMod p,.footerNavModAU a,.footerNavModDE =
+a{color:#FFFFFF!important;}
+.footerMod a{color:#5CABFF!important;}
+.whiteText{color:#FFFFFF!important;}
+.dark-image{display:block!important;width:auto!important;overflow:visible!i=
+mportant;float:none!important;max-height:inherit!important;max-width:inheri=
+t!important;line-height:auto!important;margin-top:0px!important;visibility:=
+inherit!important;}
+.light-image,img.light-image{display:none!important;}
+}
+</style>=20
+
+<style type=3D"text/css">
+.article-link img.article-icon,.header-logo img.light-logo {display: inline=
+-block !important;padding-left: 5px !important;}
+.article-link img.article-icon-dark,.header-logo img.dark-logo {display: no=
+ne !important;}
+
+.preheaderMod p {display: none !important;visibility: hidden !important;}
+.blackFocus:focus  {outline: 3px solid #000000!important;padding: 0px!impor=
+tant;}
+</style>
+
+<style type=3D"text/css">
+@media (prefers-color-scheme: dark) {
+    .lightLogo,.article-link img.article-icon {display: none !important;}
+    .darkWrapper,.darkLogo {display: inline-block !important;}
+    .article-link img.article-icon-dark {display: inline-block !important;p=
+adding-left: 5px !important;}
+   =20
+    .preheaderMod p {color: #111820!important;display: none;visibility: hid=
+den;}
+    body,.wrapperMod,.preheaderMod+table[class~=3D"x_imgfullwidth"] {backgr=
+ound-color: #171717;}
+    img {color: #ffffff !important;}
+    body,.headerMod {background: #171717;}
+   =20
+    .blackFocus:focus  {outline: 3px solid #767676!important;padding: 0px!i=
+mportant;}
+}</style>
+
+  </head>
+  <body yahoo=3D"fix">
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+=20
+ <style type=3D"text/css">
+.headerMod { background: #2B0EAF !important; }
+@media(prefers-color-scheme:dark) {
+.headerMod { background: #2B0EAF !important; }
+}
+</style>
+<table lang=3D"de-DE" role=3D"article" aria-roledescription=3D"email" aria-=
+label=3D"eBay Newsletter" align=3D"center" width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" class=3D"wrapperMod">
+<tr>
+<td align=3D"center">
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"inWrapperMod fullwidth"
+role=3D"presentation">
+<tr>
+<td align=3D"center">
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"preheaderMod fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"15" style=3D"font-size:1px;line-height:1px;">
+<p style=3D"margin:0;font-size:1px;line-height:1px;color:#ffffff;visibility=
+:hidden;" aria-hidden=3D"true">
+Aktualisiere deine Einkaufsliste und spare.
+</p>
+</td>
+</tr>
+</table>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#2B0EAF" class=3D" headerMod fullwidth" role=3D"pres=
+entation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:16px 16px 8px 16px;" ali=
+gn=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tr>
+<th width=3D"80" style=3D"font-size:1px;line-height:1px;vertical-align:bott=
+om;" valign=3D"bottom" align=3D"left" class=3D"floatleft fullwidth">
+<table width=3D"80" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" role=3D"presentation">
+<tbody>
+<tr>
+<td height=3D"40" style=3D"font-size:1px;line-height:1px;vertical-align:bot=
+tom;" valign=3D"bottom" class=3D"heightauto">
+<a href=3D"https://www.ebay.de/ulk/start/shop?mkevt=3D1&mkpid=3D2&emsid=3D0=
+&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE8=
+1003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=
+=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub=
+%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" =
+target=3D"_blank" style=3D"text-decoration:none;display:inline-block;" clas=
+s=3D"focus focus1">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://secureir.ebaystatic.com/cr/mscdn/1a9f57ae2fed5d13f1a314=
+3f80eb9c91/ebayLogo.png" width=3D"80" height=3D"32" alt=3D"eBay" border=3D"=
+0" style=3D"display:inline-block;font-family:Helvetica,Arial,sans-serif,'Ma=
+rket Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bold;t=
+ext-decoration:none;" class=3D" logo lightLogo">
+<div class=3D"darkWrapper" style=3D"mso-hide: all; display: none">
+<img src=3D"https://secureir.ebaystatic.com/cr/mscdn/1a9f57ae2fed5d13f1a314=
+3f80eb9c91/ebayLogo.png" width=3D"80" height=3D"32" alt=3D"eBay" border=3D"=
+0" style=3D"display:none;font-family:Helvetica,Arial,sans-serif,'Market San=
+s';font-size:14px;line-height:17px;color:#000000;font-weight:bold;text-deco=
+ration:none;" class=3D"focus logo darkLogo">
+</div>
+</span>
+</a>
+<img src=3D"https://www.ebayadservices.com/marketingtracking/v1/impression?=
+mkevt=3D4&mkpid=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9=
+350f7e26e1c8faea64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220=
+502011500&ch=3Dosgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-00000000020=
+7AB38&sojTags=3Demid%3Dbu%2Cosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cc=
+h%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" alt=3D"" aria-hidden=3D"true" role=
+=3D"presentation" style=3D"border:0; height:1px; display:block; line-height=
+:1px;float:left;" width=3D"1" height=3D"1" border=3D"0" />
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;vertical-align:bottom;" valign=
+=3D"bottom" align=3D"right" class=3D"hide">
+<table width=3D"488" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"right">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" rol=
+e=3D"presentation">
+<tr>
+<td height=3D"18" style=3D"font-size:1px;line-height:1px;vertical-align:bot=
+tom;padding-bottom:1px;" valign=3D"bottom" align=3D"right">
+</td>
+</tr>
+<tr>
+<td height=3D"18" style=3D"font-size:1px;line-height:1px;" align=3D"right">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:18px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:12px;color:#FFFFFF;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;" align=3D"right">
+<a href=3D"https://www.ebay.de/b/Fashion/bn_7000259673?mkevt=3D1&mkpid=3D2&=
+emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea6493=
+6%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgoo=
+d&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub=
+%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3D=
+mkcid" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:none;" clas=
+s=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Fashion
+</span>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://www.ebay.de/b/Haus-Garten/bn_7000259857?mkevt=3D1&mkpid=
+=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8fae=
+a64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3D=
+osgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=
+=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2C=
+chnl%3Dmkcid" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:none=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Haus & Garten
+</span>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://www.ebay.de/b/Elektronik-Technik/bn_7000259853?mkevt=3D1=
+&mkpid=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e=
+1c8faea64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500=
+&ch=3Dosgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&soj=
+Tags=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkI=
+d%2Cchnl%3Dmkcid" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:=
+none;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Elektronik
+</span>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://www.ebay.de/b/Motors/bn_7001214406?mkevt=3D1&mkpid=3D2&e=
+msid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936=
+%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood=
+&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%=
+3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dm=
+kcid" target=3D"_blank" style=3D"color:#FFFFFF;text-decoration:none;" class=
+=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Motors
+</span>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://www.ebay.de/deals?mkevt=3D1&mkpid=3D2&emsid=3D0&mkcid=3D=
+8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_T_AL=
+L&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9DB3A9=
+-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub%2Csegname%=
+3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" target=3D"_=
+blank" style=3D"color:#FFFFFF;text-decoration:none;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+WOW! Angebote
+</span>
+</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table><!--| MSTemplateId: d3c9d518-7ca2-40bf-bbdf-5b7c2cb09535, MSTEMPLAT=
+Ever:87, RUN_DATE:20220502011500, TrackingCode:TE81003_T_ALL, INSTANCE_ID:1=
+651479300 |-->
+<div itemscope itemtype=3D"http://schema.org/Organization">
+<meta itemprop=3D"name" content=3D"eBay">
+<meta itemprop=3D"logo" content=3D"https://secureir.ebaystatic.com/cr/mscdn=
+/ad8354cb9e7e309d7f6f14ba92838069/48x48.png">
+</div>
+<div itemscope itemtype=3D"http://schema.org/DiscountOffer">
+<meta itemprop=3D"description" content=3D"Die Top-Artikel des Tages">
+</div>
+<div itemscope itemtype=3D"http://schema.org/PromotionCard">
+<meta itemprop=3D"image" content=3D"https://svcs.ebay.com/imageser/v1/image=
+/render?contract-id=3D025a458f-3aa8-4005-934d-3ff7fef39210&tag=3D9c301800-5=
+ee8-41e0-98fc-19a2972b06c6&campaign-id=3D90001&run-date=3D20220502011500&im=
+gWidth=3D538&imgHeight=3D138&TemplateId=3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09=
+535&TemplateVersion=3D87&placement-type=3Drender&user-id=3D45290928076&trea=
+tment=3DC&movn=3DALL&site-id=3D77&TrackingCode=3DTE81003_T_ALL&imgGmail1=3D=
+https://i.ebayimg.com/images/g/Z60AAOSwpiRiYTRA/s-l400/p.jpg&imgGmail2=3Dht=
+tps://i.ebayimg.com/images/g/thEAAOSw2zViT-0d/s-l400/p.jpg&imgGmail3=3Dhttp=
+s://i.ebayimg.com/images/g/ADAAAOSwqMtia4QD/s-l400/p.jpg&imgGmail4=3Dhttps:=
+//i.ebayimg.com/images/g/SzYAAOSwqodiKh5x/s-l400/p.jpg&placement-type-name=
+=3DgmailPromoBanner">
+</div>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF" class=3D"columnModuleUniversal_01 fullwidth=
+" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tr>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_0 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_0_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_T1L%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11000%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.top.left&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv1%2F=
+location%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_T1L%26user-id%3D4=
+5290928076%26placement-type%3Dsegment%26co%3D11000%26run-date%3D20220502011=
+500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%3DTE=
+81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.top.left&=
+osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB3A9-64=
+16DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D900001&sojTa=
+gs=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch%3=
+Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId" styl=
+e=3D"text-decoration:none;display:inline-block;" class=3D"focus imgfullwidt=
+h">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_T1L&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_1 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_1_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_T1R%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11000%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.top.right&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv1%2=
+Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_T1R%26user-id%3D=
+45290928076%26placement-type%3Dsegment%26co%3D11000%26run-date%3D2022050201=
+1500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%3DT=
+E81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.top.righ=
+t&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB3A9-=
+6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D900001&soj=
+Tags=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch=
+%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId" st=
+yle=3D"text-decoration:none;display:inline-block;" class=3D"focus imgfullwi=
+dth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_T1R&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<style type=3D"text/css">
+@media (prefers-color-scheme:dark) {
+.columnModuleUniversal_01{background-color:#171717!important}
+.columnModuleUniversal_01_item_0{background-color:#171717!important}
+.columnModuleUniversal_01_item_1{background-color:#171717!important}
+}
+.columnModuleUniversal_01_item_0_image a.focus,.columnModuleUniversal_01_it=
+em_0_image img.focus{display:block!important;}
+.columnModuleUniversal_01_item_1_image a.focus,.columnModuleUniversal_01_it=
+em_1_image img.focus{display:block!important;}
+</style>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF" class=3D"myTitleModuleClass04 titleMod full=
+width " role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tbody>
+<tr>
+<th style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center" class=3D"floatleft fullwidth">
+<table width=3D"434" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl16=
+ pr16">
+<table width=3D"402" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td height=3D"32" style=3D"font-size:1px;line-height:1px;padding:16px 16px =
+16px 0px;" align=3D"left">
+<h2 style=3D"mso-line-height-rule:exactly;margin:0;line-height:32px;font-fa=
+mily:Helvetica,Arial,sans-serif,'Market Sans';font-size:24px;color:#111820;=
+font-weight:bold;text-decoration:none;" align=3D"left" class=3D"fs20">
+<a href=3D"https://www.ebay.de/deals?mkevt=3D1&mkpid=3D2&emsid=3D0&mkcid=3D=
+8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_T_AL=
+L&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9DB3A9=
+-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtId=3D700001&so=
+jTags=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3Dtrk=
+Id%2CmesgId%3DmesgId%2CplmtId%3DplmtId%2Cchnl%3Dmkcid" style=3D"color:#1118=
+20;" target=3D"_blank">
+<span class=3D"focus__content" tabindex=3D"-1">
+Die Angebote des Tages
+</span>
+</a>
+</h2>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center" class=3D"floatleft fullwidth">
+<table width=3D"163" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"131" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:28px 0px 0px 0px;" align=
+=3D"center" class=3D"pt0 pr16 pl16 pb16">
+<div style=3D"font-size:1px;line-height:1px;" align=3D"right" class=3D"all"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"display:in=
+line-table;" class=3D"button" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:middle;" align=3D=
+"center" valign=3D"middle">
+<p style=3D"mso-line-height:exactly;margin:0;line-height:16px;font-family:H=
+elvetica,Arial,sans-serif,'Market Sans';font-size:14px;font-weight:bold;col=
+or:#111820;text-align:right;vertical-align:middle;" align=3D"right">
+<a href=3D"https://www.ebay.de/deals?mkevt=3D1&mkpid=3D2&emsid=3D0&mkcid=3D=
+8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_T_AL=
+L&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9DB3A9=
+-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtId=3D700001&so=
+jTags=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3Dtrk=
+Id%2CmesgId%3DmesgId%2CplmtId%3DplmtId%2Cchnl%3Dmkcid" style=3D"color:#1118=
+20;text-decoration:none;" class=3D"focus" target=3D"_blank">
+<span class=3D"focus__content" tabindex=3D"-1">
+Alle&nbsp;ansehen&nbsp;&nbsp;<span style=3D"font-weight:normal;" aria-hidde=
+n=3D"true">=E2=9E=94</span>
+</span>
+</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<style type=3D"text/css">
+@media(prefers-color-scheme:dark) {
+.myTitleModuleClass04.titleMod{background-color:#171717!important;}
+.myTitleModuleClass04 h1, .myTitleModuleClass04 h1 a, .myTitleModuleClass04=
+ h2, .myTitleModuleClass04 h2 a{color:#DCDCDC!important;}
+.myTitleModuleClass04 .button tbody tr td p, .myTitleModuleClass04 .button =
+tbody tr td p a{color:#DCDCDC!important;}
+}
+</style><table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" align=3D"center" bgcolor=3D"#FFFFFF" class=3D"deals_builder_03 fullwidth=
+" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 16px 16px;verti=
+cal-align:top;" valign=3D"top" align=3D"center" class=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<th style=3D"font-size:1px;line-height:1px;padding:0px 8px 0px 0px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"pr0 pl0 fullwidth flo=
+atleft">
+<table width=3D"276" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 0px 0px;vertica=
+l-align:top;" valign=3D"top"
+align=3D"center" class=3D"col01 halfwidth pr0 pb16 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pr8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/275157307930?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D275157307930&recoPos=3D1&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/Z60AAOSwpiRiYTRA/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von Xiaomi Redmi Note 11 4+64GB..."=
+ title=3D"Bild von Xiaomi Redmi Note 11 4+64GB..." border=3D"0" style=3D"bo=
+rder-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans-serif=
+,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bo=
+ld;text-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_0_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/275157307930?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D275157307930&recoPos=3D1&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Xiaomi Redmi Note 11 4+64GB...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_0_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;209,00
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op"
+align=3D"center" class=3D"col01 halfwidth pr0 pb16 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/185377236725?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D185377236725&recoPos=3D2&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/thEAAOSw2zViT-0d/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von Samsung GQ43Q60A 43 Zoll QLED..=
+." title=3D"Bild von Samsung GQ43Q60A 43 Zoll QLED..." border=3D"0" style=
+=3D"border-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans=
+-serif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-wei=
+ght:bold;text-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_1_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/185377236725?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D185377236725&recoPos=3D2&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Samsung GQ43Q60A 43 Zoll QLED...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_1_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;469,00
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"21" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0p=
+x 0px;" align=3D"left" class=3D"deals_builder_03_item_1_eek">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;" align=3D"left">
+EEK G
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 8px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"pr0 pl0 fullwidth flo=
+atleft">
+<table width=3D"276" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 0px 0px;vertica=
+l-align:top;" valign=3D"top"
+align=3D"center" class=3D"col01 halfwidth pr0 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pr8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/313567874361?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D313567874361&recoPos=3D3&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/ADAAAOSwqMtia4QD/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von Xiaomi Mi Smart TV P1 55 Zoll..=
+." title=3D"Bild von Xiaomi Mi Smart TV P1 55 Zoll..." border=3D"0" style=
+=3D"border-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans=
+-serif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-wei=
+ght:bold;text-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_2_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/313567874361?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D313567874361&recoPos=3D3&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Xiaomi Mi Smart TV P1 55 Zoll...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_2_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;449,00
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"21" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0p=
+x 0px;" align=3D"left" class=3D"deals_builder_03_item_2_eek">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;" align=3D"left">
+EEK G
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op"
+align=3D"center" class=3D"col01 halfwidth pr0 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/334410005561?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D334410005561&recoPos=3D4&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/SzYAAOSwqodiKh5x/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von Apple iPhone 13 Mini - 256GB -.=
+.." title=3D"Bild von Apple iPhone 13 Mini - 256GB -..." border=3D"0" style=
+=3D"border-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans=
+-serif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-wei=
+ght:bold;text-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_3_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/334410005561?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3006&plmtI=
+d=3D700001&recoId=3D334410005561&recoPos=3D4&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+Apple iPhone 13 Mini - 256GB -...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_3_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;719,90
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<style type=3D"text/css">
+@media (prefers-color-scheme:dark) {
+.deals_builder_03{background-color:#171717!important}
+.deals_builder_03_item_0_title p,.deals_builder_03_item_0_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_0_price p{color:#DCDCDC!important}
+.deals_builder_03_item_0_savings p,.deals_builder_03_item_0_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_1_title p,.deals_builder_03_item_1_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_1_price p{color:#DCDCDC!important}
+.deals_builder_03_item_1_savings p,.deals_builder_03_item_1_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_1_eek p{color:#9C9C9C!important}
+.deals_builder_03_item_2_title p,.deals_builder_03_item_2_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_2_price p{color:#DCDCDC!important}
+.deals_builder_03_item_2_savings p,.deals_builder_03_item_2_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_2_eek p{color:#9C9C9C!important}
+.deals_builder_03_item_3_title p,.deals_builder_03_item_3_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_3_price p{color:#DCDCDC!important}
+.deals_builder_03_item_3_savings p,.deals_builder_03_item_3_savings span{co=
+lor:#DCDCDC!important}
+}
+</style>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF" class=3D"columnModuleUniversal_01 fullwidth=
+" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tr>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_0 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_0_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_M1L%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11100%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.middle.left&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv1=
+%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_M1L%26user-id%=
+3D45290928076%26placement-type%3Dsegment%26co%3D11100%26run-date%3D20220502=
+011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%3=
+DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.middle=
+.left&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB=
+3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D900002=
+&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%=
+2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId=
+" style=3D"text-decoration:none;display:inline-block;" class=3D"focus imgfu=
+llwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_M1L&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_1 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_1_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_M1R%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11100%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.middle.right&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv=
+1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_M1R%26user-id=
+%3D45290928076%26placement-type%3Dsegment%26co%3D11100%26run-date%3D2022050=
+2011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%=
+3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.middl=
+e.right&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9=
+DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D9000=
+02&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Dur=
+l%2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3Dplmt=
+Id" style=3D"text-decoration:none;display:inline-block;" class=3D"focus img=
+fullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_M1R&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<style type=3D"text/css">
+@media (prefers-color-scheme:dark) {
+.columnModuleUniversal_01{background-color:#171717!important}
+.columnModuleUniversal_01_item_0{background-color:#171717!important}
+.columnModuleUniversal_01_item_1{background-color:#171717!important}
+}
+.columnModuleUniversal_01_item_0_image a.focus,.columnModuleUniversal_01_it=
+em_0_image img.focus{display:block!important;}
+.columnModuleUniversal_01_item_1_image a.focus,.columnModuleUniversal_01_it=
+em_1_image img.focus{display:block!important;}
+</style>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF" class=3D"myTitleModuleClass04 titleMod full=
+width " role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tbody>
+<tr>
+<th style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center" class=3D"floatleft fullwidth">
+<table width=3D"434" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl16=
+ pr16">
+<table width=3D"402" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td height=3D"32" style=3D"font-size:1px;line-height:1px;padding:16px 16px =
+4px 0px;" align=3D"left">
+<h2 style=3D"mso-line-height-rule:exactly;margin:0;line-height:32px;font-fa=
+mily:Helvetica,Arial,sans-serif,'Market Sans';font-size:24px;color:#111820;=
+font-weight:bold;text-decoration:none;" align=3D"left" class=3D"fs20">
+<a href=3D"https://www.ebay.de/e/aktionen-sales/philips-april2022?mkevt=3D1=
+&mkpid=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e=
+1c8faea64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500=
+&ch=3Dosgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mes=
+gId=3D3008&plmtId=3D700002&sojTags=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%=
+3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId%2Cchnl%=
+3Dmkcid" style=3D"color:#111820;" target=3D"_blank">
+<span class=3D"focus__content" tabindex=3D"-1">
+Bei Philips bis zu -40% gg=C3=BC. UVP
+</span>
+</a>
+</h2>
+</td>
+</tr>
+<tr>
+<td height=3D"21" style=3D"font-size:1px;line-height:1px;padding:0px 0px 16=
+px 0px;" align=3D"left" class=3D"pb8">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:-apple-system,BlinkMacSystemFont,-webkit-system-font,Roboto,Arial,sans-=
+serif;font-size:14px;color:#767676;font-weight:normal;text-decoration:none;=
+" align=3D"left" class=3D"fallbackfont description">
+<span >Die Top-Marke jetzt bis 5.5. im Angebot</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op" align=3D"center" class=3D"floatleft fullwidth">
+<table width=3D"163" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"131" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:28px 0px 0px 0px;" align=
+=3D"center" class=3D"pt0 pr16 pl16 pb16">
+<div style=3D"font-size:1px;line-height:1px;" align=3D"right" class=3D"all"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"display:in=
+line-table;" class=3D"button" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:middle;" align=3D=
+"center" valign=3D"middle">
+<p style=3D"mso-line-height:exactly;margin:0;line-height:16px;font-family:H=
+elvetica,Arial,sans-serif,'Market Sans';font-size:14px;font-weight:bold;col=
+or:#111820;text-align:right;vertical-align:middle;" align=3D"right">
+<a href=3D"https://www.ebay.de/e/aktionen-sales/philips-april2022?mkevt=3D1=
+&mkpid=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e=
+1c8faea64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500=
+&ch=3Dosgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mes=
+gId=3D3008&plmtId=3D700002&sojTags=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%=
+3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId%2Cchnl%=
+3Dmkcid" style=3D"color:#111820;text-decoration:none;" class=3D"focus" targ=
+et=3D"_blank">
+<span class=3D"focus__content" tabindex=3D"-1">
+Alle&nbsp;ansehen&nbsp;&nbsp;<span style=3D"font-weight:normal;" aria-hidde=
+n=3D"true">=E2=9E=94</span>
+</span>
+</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<style type=3D"text/css">
+@media(prefers-color-scheme:dark) {
+.myTitleModuleClass04.titleMod{background-color:#171717!important;}
+.myTitleModuleClass04 h1, .myTitleModuleClass04 h1 a, .myTitleModuleClass04=
+ h2, .myTitleModuleClass04 h2 a{color:#DCDCDC!important;}
+.myTitleModuleClass04 .description, .myTitleModuleClass04 .description a{co=
+lor:#DCDCDC!important;}
+.myTitleModuleClass04 .button tbody tr td p, .myTitleModuleClass04 .button =
+tbody tr td p a{color:#DCDCDC!important;}
+}
+</style><table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" align=3D"center" bgcolor=3D"#FFFFFF" class=3D"deals_builder_03 fullwidth=
+" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 16px 16px;verti=
+cal-align:top;" valign=3D"top" align=3D"center" class=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<th style=3D"font-size:1px;line-height:1px;padding:0px 8px 0px 0px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"pr0 pl0 fullwidth flo=
+atleft">
+<table width=3D"276" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 0px 0px;vertica=
+l-align:top;" valign=3D"top"
+align=3D"center" class=3D"col01 halfwidth pr0 pb16 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pr8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/402960192391?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D402960192391&recoPos=3D1&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/bpAAAOSwXz9hyx6b/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von PHILIPS Avance Collection..." t=
+itle=3D"Bild von PHILIPS Avance Collection..." border=3D"0" style=3D"border=
+-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans-serif,'Ma=
+rket Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bold;t=
+ext-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_0_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/402960192391?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D402960192391&recoPos=3D1&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+PHILIPS Avance Collection...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_0_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;108,00
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op"
+align=3D"center" class=3D"col01 halfwidth pr0 pb16 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/402959975281?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D402959975281&recoPos=3D2&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/8n8AAOSwKdBiZn8o/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von PHILIPS Avance Collection..." t=
+itle=3D"Bild von PHILIPS Avance Collection..." border=3D"0" style=3D"border=
+-radius:8px;display:inline-block;font-family:Helvetica,Arial,sans-serif,'Ma=
+rket Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bold;t=
+ext-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_1_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/402959975281?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D402959975281&recoPos=3D2&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+PHILIPS Avance Collection...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_1_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;218,99
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 8px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"pr0 pl0 fullwidth flo=
+atleft">
+<table width=3D"276" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 0px 0px;vertica=
+l-align:top;" valign=3D"top"
+align=3D"center" class=3D"col01 halfwidth pr0 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pr8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/403228091127?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D403228091127&recoPos=3D3&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/kiUAAOSw5~dhyyFl/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von PHILIPS Daily Collection..." ti=
+tle=3D"Bild von PHILIPS Daily Collection..." border=3D"0" style=3D"border-r=
+adius:8px;display:inline-block;font-family:Helvetica,Arial,sans-serif,'Mark=
+et Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bold;tex=
+t-decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_2_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/403228091127?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D403228091127&recoPos=3D3&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+PHILIPS Daily Collection...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_2_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;79,99
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"font-size:1px;line-height:1px;vertical-align:top;" valign=3D"t=
+op"
+align=3D"center" class=3D"col01 halfwidth pr0 bl0 br0 bt0 mb32">
+<table width=3D"130" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left"
+class=3D"fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center" class=3D"pl8"=
+>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"fullwidth" role=3D"presentation">
+<tr>
+<td height=3D"130" style=3D"font-size:1px;line-height:1px;padding:0px 0px 0=
+px 0px;" align=3D"center" class=3D"alc heightauto" >
+<a href=3D"https://www.ebay.de/itm/403030569857?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D403030569857&recoPos=3D4&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"text-decoration:none;display:inline-block;" class=3D"focus=
+ imgfullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/images/g/Gr8AAOSwrIxiU-51/s-l400/p.jpg" w=
+idth=3D"130" height=3D"130" alt=3D"Bild von PHILIPS Viva Collection..." tit=
+le=3D"Bild von PHILIPS Viva Collection..." border=3D"0" style=3D"border-rad=
+ius:8px;display:inline-block;font-family:Helvetica,Arial,sans-serif,'Market=
+ Sans';font-size:14px;line-height:17px;color:#000000;font-weight:bold;text-=
+decoration:none;" class=3D"imgfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td height=3D"42" style=3D"font-size:1px;line-height:1px;padding:12px 0px 0=
+px 0px;" align=3D"center" class=3D"deals_builder_03_item_3_title">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:21px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;color:#767676;f=
+ont-weight:normal;text-decoration:none;-webkit-font-smoothing:antialiased;-=
+moz-osx-font-smoothing:grayscale;word-break:break-all;" align=3D"left">
+<a href=3D"https://www.ebay.de/itm/403030569857?mkevt=3D1&mkpid=3D2&emsid=
+=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257=
+ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trk=
+Id=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D3008&plmtI=
+d=3D700002&recoId=3D403030569857&recoPos=3D4&sojTags=3Dosub%3Dosub%2Csegnam=
+e%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtI=
+d%3DplmtId%2CrecoId%3DrecoId%2CrecoPos%3DrecoPos%2Cchnl%3Dmkcid" target=3D"=
+_blank" style=3D"color:#767676;text-decoration:none;display:block!important=
+;" class=3D"focus">
+<span class=3D"focus__content" tabindex=3D"-1">
+PHILIPS Viva Collection...
+</span>
+</a>
+</p>
+</td>
+</tr>
+<tr>
+<td height=3D"24" style=3D"font-size:1px;line-height:1px;padding:8px 0px 0p=
+x 0px;" align=3D"center" class=3D"deals_builder_03_item_3_price">
+<p style=3D"mso-line-height-rule:exactly;margin:0;line-height:24px;font-fam=
+ily:Helvetica,Arial,sans-serif,'Market Sans';font-size:16px;color:#111820;f=
+ont-weight:bold;text-decoration:none;-webkit-font-smoothing:antialiased;-mo=
+z-osx-font-smoothing:grayscale;" align=3D"left">
+EUR&nbsp;59,99
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<style type=3D"text/css">
+@media (prefers-color-scheme:dark) {
+.deals_builder_03{background-color:#171717!important}
+.deals_builder_03_item_0_title p,.deals_builder_03_item_0_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_0_price p{color:#DCDCDC!important}
+.deals_builder_03_item_0_savings p,.deals_builder_03_item_0_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_1_title p,.deals_builder_03_item_1_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_1_price p{color:#DCDCDC!important}
+.deals_builder_03_item_1_savings p,.deals_builder_03_item_1_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_2_title p,.deals_builder_03_item_2_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_2_price p{color:#DCDCDC!important}
+.deals_builder_03_item_2_savings p,.deals_builder_03_item_2_savings span{co=
+lor:#DCDCDC!important}
+.deals_builder_03_item_3_title p,.deals_builder_03_item_3_title a{color:#DC=
+DCDC!important}
+.deals_builder_03_item_3_price p{color:#DCDCDC!important}
+.deals_builder_03_item_3_savings p,.deals_builder_03_item_3_savings span{co=
+lor:#DCDCDC!important}
+}
+</style>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF" class=3D"columnModuleUniversal_01 fullwidth=
+" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;vertical=
+-align:top;" valign=3D"top" align=3D"center" class=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" role=3D"presentation">
+<tr>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_0 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_0_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_B1L%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11200%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.bottom.left&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv1=
+%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_B1L%26user-id%=
+3D45290928076%26placement-type%3Dsegment%26co%3D11200%26run-date%3D20220502=
+011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%3=
+DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.bottom=
+.left&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB=
+3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D900003=
+&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%=
+2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3DplmtId=
+" style=3D"text-decoration:none;display:inline-block;" class=3D"focus imgfu=
+llwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_B1L&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th style=3D"font-size:1px;line-height:1px;border-color:#ffffff!important;v=
+ertical-align:top;" valign=3D"top" align=3D"center" bgcolor=3D"#FFFFFF" cla=
+ss=3D"floatleft fullwidth columnModuleUniversal_01_item_1 ">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth" role=3D"presentation" style=3D"">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 0px 0px;" align=
+=3D"center" class=3D"heightauto columnModuleUniversal_01_item_1_image ">
+<a href=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE=
+81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimage=
+ser%2Fv1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_B1R%26=
+user-id%3D45290928076%26placement-type%3Dsegment%26co%3D11200%26run-date%3D=
+20220502011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26Tracki=
+ngCode%3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanne=
+r.bottom.right&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsvcs.ebay.com%2Fimageser%2Fv=
+1%2Flocation%3Fsite-id%3D77%26placementlocid%3DDE_02_espresso_B1R%26user-id=
+%3D45290928076%26placement-type%3Dsegment%26co%3D11200%26run-date%3D2022050=
+2011500%26TemplateId%3Dd3c9d518-7ca2-40bf-bbdf-5b7c2cb09535%26TrackingCode%=
+3DTE81003_T_ALL%26TemplateVersion%3D87%26placement-type-name%3Dbanner.botto=
+m.right&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9=
+DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&mesgId=3D9999&plmtId=3D9000=
+03&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Dur=
+l%2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId%2CmesgId%3DmesgId%2CplmtId%3Dplmt=
+Id" style=3D"text-decoration:none;display:inline-block;" class=3D"focus img=
+fullwidth">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://svcs.ebay.com/imageser/v1/image/segment?site-id=3D77&pl=
+acementlocid=3DDE_02_espresso_B1R&user-id=3D45290928076&imgWidth=3D1&imgHei=
+ght=3D1" width=3D"300" alt=3D"" border=3D"0" style=3D"display:inline-block;=
+font-family:Helvetica,Arial,sans-serif,'Market Sans';font-size:14px;line-he=
+ight:17px;color:#000000;font-weight:bold;text-decoration:none;" class=3D"im=
+gfullwidth focus"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<style type=3D"text/css">
+@media (prefers-color-scheme:dark) {
+.columnModuleUniversal_01{background-color:#171717!important}
+.columnModuleUniversal_01_item_0{background-color:#171717!important}
+.columnModuleUniversal_01_item_1{background-color:#171717!important}
+}
+.columnModuleUniversal_01_item_0_image a.focus,.columnModuleUniversal_01_it=
+em_0_image img.focus{display:block!important;}
+.columnModuleUniversal_01_item_1_image a.focus,.columnModuleUniversal_01_it=
+em_1_image img.focus{display:block!important;}
+</style>
+ <table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" class=3D"footerSocialMod fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:16px 16px 0px 16px;"
+align=3D"center">
+<table width=3D"568" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth"
+role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 0px 16px 0px;" align=
+=3D"left">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" role=
+=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 10px 0px 0px;">
+<a href=3D"https://www.ebayadservices.com/marketingtracking/v1/redirect?mpr=
+e=3Dhttps%3A%2F%2Fwww.facebook.com%2Febay.de&mkevt=3D1&mkpid=3D2&emsid=3D0&=
+mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81=
+003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D=
+0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub%2C=
+segname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" tar=
+get=3D"_blank" style=3D"text-decoration:none;display:inline-block;"
+class=3D"focus focusFb">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/00/s/NDhYNDg=3D/z/gUMAAOSwx-1bh-Bm/$_57.J=
+PG" width=3D"24"
+height=3D"24" alt=3D"Facebook" title=3D"Facebook" border=3D"0"
+style=3D"display:inline-block!important;font-family:Helvetica,Arial,sans-se=
+rif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-weight=
+:bold;text-decoration:none;"/>
+</span>
+</a>
+</td>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 10px 0px 0px;">
+<a href=3D"https://www.ebayadservices.com/marketingtracking/v1/redirect?mpr=
+e=3Dhttps%3A%2F%2Ftwitter.com%2Febayde&mkevt=3D1&mkpid=3D2&emsid=3D0&mkcid=
+=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_T=
+_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9DB=
+3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub%2Csegna=
+me%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" target=
+=3D"_blank" style=3D"text-decoration:none;display:inline-block;"
+class=3D"focus focusTw">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/00/s/NDhYNDg=3D/z/ebkAAOSwoyVbh-B0/$_57.J=
+PG" width=3D"24"
+height=3D"24" alt=3D"Twitter" title=3D"Twitter" border=3D"0"
+style=3D"display:inline-block!important;font-family:Helvetica,Arial,sans-se=
+rif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-weight=
+:bold;text-decoration:none;"/>
+</span>
+</a>
+</td>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 10px 0px 0px;">
+<a href=3D"https://www.ebayadservices.com/marketingtracking/v1/redirect?mpr=
+e=3Dhttps%3A%2F%2Fwww.instagram.com%2Febay_de&mkevt=3D1&mkpid=3D2&emsid=3D0=
+&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE8=
+1003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=
+=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub=
+%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" =
+target=3D"_blank" style=3D"text-decoration:none;display:inline-block;"
+class=3D"focus focusIns">
+<span class=3D"focus__content" tabindex=3D"-1">
+<img src=3D"https://i.ebayimg.com/00/s/NDhYNDg=3D/z/PGkAAOSwiZVbh-CC/$_57.J=
+PG" width=3D"24"
+height=3D"24" alt=3D"Instagram" title=3D"Instagram" border=3D"0"
+style=3D"display:inline-block!important;font-family:Helvetica,Arial,sans-se=
+rif,'Market Sans';font-size:14px;line-height:17px;color:#000000;font-weight=
+:bold;text-decoration:none;"/>
+</span>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"footerMod fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding:0px 16px 30px 16px;"
+align=3D"center">
+<table width=3D"568" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" class=3D"fullwidth"
+role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;" align=3D"center">
+<div style=3D"line-height:15px;font-family:Helvetica,Arial,sans-serif,'Mark=
+et Sans';font-size:12px;color:#767676;font-weight:normal;text-decoration:no=
+ne;" align=3D"left">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule:exactly;line-height:15px;font-family:Helv=
+etica,Arial,sans-serif,'Market Sans';font-size:12px;color:#767676;font-weig=
+ht:normal;text-decoration:none;text-align:left;padding: 0px 0px 15px 0px;">
+*gg&uuml;. UVP<br><br><strong style=3D"font-weight:bold;">eBay hat diese Mi=
+tteilung an Game Meister (kikerh_71) gesendet.</strong><br> Ihr Vor- und Na=
+chname in dieser Mitteilung sind ein Hinweis darauf, dass die Nachricht tat=
+s&auml;chlich von eBay stammt.<br><a href=3D"https://www.ebay.de/help/accou=
+nt/protecting-account/geflschte-emails-erkennen?id=3D4195&mkevt=3D1&mkpid=
+=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8fae=
+a64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3D=
+osgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=
+=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2C=
+chnl%3Dmkcid" target=3D"_blank" style=3D"text-decoration:underline;color:#7=
+67676;">Mehr zum Thema</a>.<br><br><strong>Kontaktinformationen</strong><br=
+> Beantworten Sie diese E-Mail bitte NICHT per &#8219;Reply&#8219; (Antwort=
+-Button in Ihrem E-Mail-Programm). Wenn Sie eine Frage haben, hilft Ihnen u=
+nser <a href=3D"https://www.ebay.de/help/home?mkevt=3D1&mkpid=3D2&emsid=3D0=
+&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE8=
+1003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=
+=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub=
+%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" =
+target=3D"_blank" style=3D"text-decoration:underline;color:#767676;">Kunden=
+service</a> gerne. Alle aktuellen Informationen finden Sie in den <a href=
+=3D"https://rover.ebay.com/rover/2/0/8?bu=3D45290928076&segname=3DTE81003_T=
+_ALL&crd=3D20220502011500&mpre=3Dhttps%3A%2F%2Fcommunity.ebay.de%2Ft5%2FeBa=
+y-Mitteilungen%2Fbg-p%2FeBay-Mitteilungen&ch=3Dosgood&url=3Dhttps%3A%2F%2Fc=
+ommunity.ebay.de%2Ft5%2FeBay-Mitteilungen%2Fbg-p%2FeBay-Mitteilungen&osub=
+=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB3A9-6416DE=
+2BBDB-018043E4C74D-000000000207AB38&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegname=
+%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3DtrkId"=
+ target=3D"_blank" style=3D"white-space: nowrap;text-decoration:underline;c=
+olor:#767676;">eBay-News</a>.<br><br><strong>Abbestellen</strong><br> Wenn =
+Sie den Newsletter in Zukunft nicht mehr erhalten m&ouml;chten, klicken Sie=
+ bitte <a href=3D"https://marketing.ebay.de/unsubscribe/home?token=3DAQAIAA=
+AAkFPIeqEEYEM2O02lUM_0eU9qZEZyn7cUXvqRRqo7qj_7CeLusVchMuDg83rgwigjbQ_nfSHyJ=
+FmhKB8ECPEpec8em-JXD7LaFNJlikhXS4vFBHNx8aHJdoI92VNZAirXKl5V7ZC_Wjrd03n9cmpT=
+04eEa0JRdPP5I6L1cJPofgA_DUz5ns1xJei9JkTO31VaLQ" target=3D"_blank" style=3D"=
+text-decoration:underline;color:#767676;">hier</a>, oder passen Sie einfach=
+ Ihre <a href=3D"https://commspreferences.ebay.de/commsprefs?mkevt=3D1&mkpi=
+d=3D2&emsid=3D0&mkcid=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8fa=
+ea64936%257ETE81003_T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=
+=3Dosgood&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTag=
+s=3Dosub%3Dosub%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2=
+Cchnl%3Dmkcid" target=3D"_blank" style=3D"text-decoration:underline;color:#=
+767676;">Benachrichtigungseinstellungen</a> in <a href=3D"https://rover.eba=
+y.com/rover/2/0/8?bu=3D45290928076&segname=3DTE81003_T_ALL&crd=3D2022050201=
+1500&mpre=3Dhttps%3A%2F%2Fsignin.ebay.de%2Fws%2FeBayISAPI.dll%3FSignIn%26Us=
+ingSSL%3D1%26siteid%3D77%26co_partnerId%3D2%26pageType%3D2060353%26ru%3Dhtt=
+ps%3A%2F%2Fwww.ebay.de%2Fmyb%2FSummary%3FMyEbayBeta%26MyEbay%3D%26gbh%3D1%2=
+6guest%3D1&ch=3Dosgood&url=3Dhttps%3A%2F%2Fsignin.ebay.de%2Fws%2FeBayISAPI.=
+dll%3FSignIn%26UsingSSL%3D1%26siteid%3D77%26co_partnerId%3D2%26pageType%3D2=
+060353%26ru%3Dhttps%3A%2F%2Fwww.ebay.de%2Fmyb%2FSummary%3FMyEbayBeta%26MyEb=
+ay%3D%26gbh%3D1%26guest%3D1&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE810=
+03_T_ALL&trkId=3D0A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=
+=3Demid%3Dbu%2Cut%3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch%3Dc=
+h%2Cosub%3Dosub%2CtrkId%3DtrkId" target=3D"_blank" style=3D"text-decoration=
+:underline;color:#767676;">Mein eBay</a> an. <br><br> Wir werten Ihre Reakt=
+ion auf diesen Newsletter pseudonymisiert auf der Basis Ihres Mitgliedsname=
+ns aus. So k&ouml;nnen wir Ihnen in Zukunft st&auml;rker auf Ihre Interesse=
+n zugeschnittene Newsletter zusenden. Wenn Sie dies nicht w&uuml;nschen, be=
+stellen Sie den Newsletter bitte wie oben beschrieben ab. <br><br> Haben Si=
+e Fragen zum Umgang mit Ihren Daten? Informieren Sie sich &uuml;ber unsere =
+<a href=3D"https://www.ebay.de/help/policies/member-behaviour-policies/user=
+-privacy-notice-privacy-policy?id=3D4260&mkevt=3D1&mkpid=3D2&emsid=3D0&mkci=
+d=3D8&bu=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_=
+T_ALL&segname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9D=
+B3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub%2Csegn=
+ame%3Dsegname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" target=
+=3D"_blank" style=3D"text-decoration:underline;color:#767676;">Datenschutzg=
+runds&auml;tze</a> und unsere <a href=3D"https://rover.ebay.com/rover/2/0/8=
+?bu=3D45290928076&segname=3DTE81003_T_ALL&crd=3D20220502011500&mpre=3Dhttps=
+%3A%2F%2Fpages.ebay.de%2Fhelp%2Fpolicies%2Fuser-agreement.html&ch=3Dosgood&=
+url=3Dhttps%3A%2F%2Fpages.ebay.de%2Fhelp%2Fpolicies%2Fuser-agreement.html&o=
+sub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0A9DB3A9-641=
+6DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Demid%3Dbu%2Cut%3Dut%2Csegn=
+ame%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch%3Dch%2Cosub%3Dosub%2CtrkId%3Dtrk=
+Id" target=3D"_blank" style=3D"text-decoration:underline;color:#767676;">Al=
+lgemeinen Gesch&auml;ftsbedingungen</a>. <br><br> Diese Nachricht wurde Ihn=
+en von der eBay GmbH &uuml;bermittelt. Diese kann sich zur Erf&uuml;llung i=
+hrer Dienstleistungen anderer eBay-Unternehmen bedienen. Falls Sie Ihren Wo=
+hn- oder Gesch&auml;ftssitz au&szlig;erhalb der EU haben, finden Sie die Ko=
+ntaktdaten Ihres Vertragspartners in den <a href=3D"https://rover.ebay.com/=
+rover/2/0/8?bu=3D45290928076&segname=3DTE81003_T_ALL&crd=3D20220502011500&m=
+pre=3Dhttps%3A%2F%2Fpages.ebay.de%2Fhelp%2Fpolicies%2Fuser-agreement.html&c=
+h=3Dosgood&url=3Dhttps%3A%2F%2Fpages.ebay.de%2Fhelp%2Fpolicies%2Fuser-agree=
+ment.html&osub=3Defa3c49ddb9350f7e26e1c8faea64936%7ETE81003_T_ALL&trkId=3D0=
+A9DB3A9-6416DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Demid%3Dbu%2Cut%=
+3Dut%2Csegname%3Dsegname%2Ccrd%3Dcrd%2Curl%3Durl%2Cch%3Dch%2Cosub%3Dosub%2C=
+trkId%3DtrkId" target=3D"_blank" style=3D"text-decoration:underline;color:#=
+767676;">Allgemeinen Gesch&auml;ftsbedingungen</a>. <br><br> &copy; 1995-20=
+22 eBay Inc., eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow, Deut=
+schland.<br><br><a href=3D"https://www.ebay.de/help/policies/member-behavio=
+r-policies/impressum?id=3D4714&mkevt=3D1&mkpid=3D2&emsid=3D0&mkcid=3D8&bu=
+=3D45290928076&osub=3Defa3c49ddb9350f7e26e1c8faea64936%257ETE81003_T_ALL&se=
+gname=3DTE81003_T_ALL&crd=3D20220502011500&ch=3Dosgood&trkId=3D0A9DB3A9-641=
+6DE2BBDB-018043E4C74D-000000000207AB38&sojTags=3Dosub%3Dosub%2Csegname%3Dse=
+gname%2Ccrd%3Dcrd%2Cch%3Dch%2CtrkId%3DtrkId%2Cchnl%3Dmkcid" target=3D"_blan=
+k" style=3D"text-decoration:underline;color:#767676;">Impressum</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"gmailFixMo=
+d hide" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;min-width:600px;width:600px;" ar=
+ia-hidden=3D"true">
+<img src=3D"https://secureir.ebaystatic.com/cr/mscdn/325472601571f31e1bf006=
+74c368d335/spacer.gif" width=3D"600" height=3D"1" border=3D"0" alt=3D"" tit=
+le=3D"" style=3D"display:block;min-width:600px;width:600px;visibility:hidde=
+n;" role=3D"presentation"/>
+</td>
+</tr>
+</table>
+<table width=3D"600" align=3D"center" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"gmailFixMod fullwidth" role=3D"presentation">
+<tr>
+<td style=3D"font-size:1px;line-height:1px;min-width:600px;" height=3D"5" w=
+idth=3D"600" class=3D"hide" aria-hidden=3D"true">
+<img src=3D"https://secureir.ebaystatic.com/cr/mscdn/325472601571f31e1bf006=
+74c368d335/spacer.gif" height=3D"5" width=3D"600" class=3D"hide" border=3D"=
+0" alt=3D"" title=3D"" style=3D"display:block;max-height:5px;min-height:5px=
+;width:600px;min-width:600px;visibility:hidden;" role=3D"presentation"/>
+</td>
+</tr>
+</table>
+<div style=3D"display:none;white-space:nowrap;font:15px courier;line-height=
+:0;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+;
+</div>
+<!--| END: global_v3_2/wrapper |-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
