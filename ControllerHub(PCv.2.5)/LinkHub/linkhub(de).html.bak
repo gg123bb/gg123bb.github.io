@@ -1,0 +1,182 @@
+<html lang="de, DE">
+<head>
+
+<title>Themes</title>
+<style>
+body {
+	background-color: #bfbfbf;
+	height: 500px;
+	width: auto;
+	max-height: 480px;
+}
+.content03 {
+	height: 480px;
+	width: auto;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 3px solid #7d7285;
+}
+.Firstline01Fl{
+	display: flex;
+    align-items: flex-start;
+}
+.thme001{
+	position: relative;
+	height: 190px;
+	width: 220px;
+	background-color: #bfbfbf;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.web001{
+	position: relative;
+	height: 156px;
+	width: 203px;
+	left: 6px;
+	background-color: #bfbfbf;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.thmlink001{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.thmlink001:hover{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: #364663;
+	font-size: 20px;
+}
+.news01{
+	position: relative;
+	height: 190px;
+	width: 220px;
+	background-color: #e0490d;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.news01:hover{
+	background-color: #e0af0d;
+	.thmlink002{color: #f2eddf;}
+	.thmlink002:hover{color: #e0490d;}
+}
+.thmlink002 {
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: #fad73c;
+	font-size: 20px;
+	position: relative;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.thmlink002:hover{
+	color: #e0490d;
+	text-shadow:
+		1px 2px 1px white,
+		-1px 2px 1px white,
+		-1px -2px 1px white,
+		1px -2px 1px white;
+}
+.thme002{
+	position: relative;
+	height: 190px;
+	width: 220px;
+	background-color: #506596;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.thme002:hover{
+	background-color: #634f9c;
+	.thmlink003{color: #b3dce8;}
+	.thmlink003:hover{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+}
+.thmlink003{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: #dfffb8;
+	font-size: 20px;
+}
+.thmlink003:hover{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.thmlink004{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	text-shadow:
+		1px 2px 2px #7d3494,
+		-1px 2px 2px #7d3494,
+		-1px -2px 2px #7d3494,
+		1px -2px 2px #7d3494;
+}
+.thmlink004:hover{
+	font-family: Sigmar one;
+	text-decoration: none;
+	color: #753072;
+	font-size: 20px;
+	text-shadow:
+		1px 2px 2px #f0a1ec,
+		-1px 2px 2px #f0a1ec,
+		-1px -2px 2px #f0a1ec,
+		1px -2px 2px #f0a1ec;
+}
+</style>
+</head>
+<body>
+<div class="content03">
+
+	<div class="Firstline01Fl">
+		<a href="../webs\themes\DE\news(de).html" class="thmlink002" target="_blank" alt="error -(theme01); code:404.03.01">
+			<div class="news01">
+			<iframe src="../webs\themes\thumbnail(de)\news(de)thumbnail.html" class="web001"></iframe>
+			<center>News</center>
+			</div>
+		</a>
+		<div class="thme002">
+			<iframe src="../webs\01theme.html" class="web001"></iframe>
+			<center><div class="checker01"><a href="" class="thmlink003" alt="error -(theme01); code:404.03.01">Über Mich</a></div></center>
+		</div>
+	</div>
+	<div class="Firstline01Fl">
+		<div class="thme001">
+			<iframe src="../webs\01theme.html" class="web001"></iframe>
+			<center><a href="" class="thmlink004" alt="error -(theme01); code:404.03.01">Thema 1</a></center>
+		</div>
+		<div class="thme001">
+			<iframe src="../webs\01theme.html" class="web001"></iframe>
+			<center><a href="" class="thmlink001" alt="error -(theme01); code:404.03.01">Thema 2</a></center>
+		</div>
+	</div>
+
+</div>
+</div>
+</body>

@@ -1,19 +1,19 @@
 <!DOCTYPE html> <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Controller XD</title></head>
+	<title>Infos zu Mir</title></head>
 	<link rel="icon" type="images/x-icon" href="icon\CotrollerXD-title-immage.png" />
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-	<a href="Index.html">About Me</a>
-	<a href="Index.html">Home</a>
+	<a href="Index.html"></a>
+	<a href="../index.html">◀ZURÜCK!</a>
 </header>
 
 <div class="ControllerHub">
-	<h1><a href="Index.html">Controller Hub</a></h1>
+	<h1><a class="ab" href="infos(de).html">Infos:</a></h1>
 </div>
 <div id="Controller-parent">
 <div class="Controller-Front-Images-Jumpi"><img src="images\JumpiSpeed.png" alt="Jumpi (a speed'i roboter)" width="220" height="300">
@@ -22,18 +22,10 @@
 <div class="Controller-Content-background">
 </div>
 <div class="Controller-Content"><h3>
-<hr>
-Hallo <br>
-Ich bin Gamer und Designer,<br>
-Nebenbei Lerne ich HTML, CSS, sql<br>
-& C#, Ich arbeite mit an <br>
-Spieleentwicklungs Projekten <br> 
-gerade z.b bei "Cynegate" & <br>
-bei "Y-SOFT"! Ich selber <br>
-Spiele:Siedler(2,4)Polytopia.<br>
-Ich bin Aktiv auf Discord und<br>
-heiße dort: Controller XD #0001 
-<hr>
+<br>
+Hallo Freunde ich heiße<br>
+Controller,Also zumindest<br>
+in Discord (controller000)
 </h3>
 </div>
 

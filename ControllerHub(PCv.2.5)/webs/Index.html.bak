@@ -1,19 +1,19 @@
 <!DOCTYPE html> <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Controller XD</title></head>
+	<title>Infos zu Mir</title></head>
 	<link rel="icon" type="images/x-icon" href="icon\CotrollerXD-title-immage.png" />
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-	<a href="Index.html">About Me</a>
+	<a href="Index.html"></a>
 	<a href="Index.html">Home</a>
 </header>
 
 <div class="ControllerHub">
-	<h1><a class="ab" href="Index.html">Controller Hub</a></h1>
+	<h1><a class="ab" href="Index.html">Infos</a></h1>
 </div>
 <div id="Controller-parent">
 <div class="Controller-Front-Images-Jumpi"><img src="images\JumpiSpeed.png" alt="Jumpi (a speed'i roboter)" width="220" height="300">

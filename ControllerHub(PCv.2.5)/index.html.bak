@@ -1,0 +1,59 @@
+<html lang="de, DE">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Hi, ich bin Controller 2D und 3D designer und was ich noch mache könnt ihr hier lesen!"/>
+<meta name="keywords" content="Controller, controller000, 2D, 3D, Artist, Discord, Webseite"/>
+<meta name="author" content="controller000"/>
+<meta name="copyright" content="controller000"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Controller</title>
+<link rel="icon" type="images/x-icon" href="webseite\icon\CotrollerXD-title-immage.png"/>
+<style>
+<!--@media (max-width: 100%) {
+	 .headparant {
+        right: 0;
+    }
+    .bposition {
+        left: auto;
+		right: 0;
+    }
+}-->
+</style>
+</head>
+<body>
+	<div class="headposition">
+		<div class="content01">
+			<div class="headparant">
+				<div class="Title01"><a class="Home324" href="">HOME</a></div> 
+			</div>
+			<div class="bposition">
+				<div class="Menüpoition">
+					<div class="Menübuttonposition">
+						<img class="Menü01" src="images\Menü.svg"></img>
+						<div class="menüchase">
+							<center>
+								<a href="" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
+								<a href="" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
+								<a href="" style="text-decoration: none;"><div class="linkhome">Controller</div></a><br>
+								<a href="" style="text-decoration: none;"><div class="linkhome">Design</div></a><br>
+								<a href="" style="text-decoration: none;"><div class="linkhome">E-Mail</div></a><br>
+								<a href=""style="text-decoration: none;"><div class="linkhome">Support</div></a><br>
+								<a href="" style="text-decoration: none;"><div class="linkhome">Impressum</div></a>
+							</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+<center>
+<div class="lightbluetext"><a href="" class="01439421" style="text-decoration: none; color: rgba(93,165,147,100);">Controller</a></div>
+<div class="lightblue"></div>
+<a class="themes01">Themen:</a>
+<div class="blackhole"></div>
+<div class="content02">
+<iframe src="LinkHub\linkhub(de).html" width="98.5%" height="500" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" alt="error 404.02.01"></iframe>
+</div>
+</center>
+</body>

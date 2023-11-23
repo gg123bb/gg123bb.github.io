@@ -1,0 +1,202 @@
+body{
+	margin:0px;
+	width: 100%;
+	max-width: 100%;
+    overflow-x: hidden;
+	height: 800px;
+}
+.headposition {
+    width: 100%;
+}
+.content01 {
+	z-index: 2;
+	position: absolute;
+    top: 30px;
+    right: 30px;
+	margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+}
+.headparant {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 50px;	
+} 
+.Menüpoition {
+	z-index:2;
+	text-decoration: none;
+	display: block;
+	background-color:;
+}
+.Menübuttonposition:hover { 
+	z-index:2;
+	background-color:;
+	animation-name: Menübutton01;
+	animation-duration: 0.5s;
+	.Menü01{text-decoration: none;}
+	.Menüpoition {width: 110px;}
+}
+.Menübuttonposition { 
+	z-index:2;
+	text-decoration: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #c4cccb;
+	background-color:;
+	height: 334px;
+	width: -110px;
+	margin-left: 0px;
+	.menüchase {padding: 10px;}
+	.Menü01{display: none; text-decoration: none;}
+
+}
+@keyframes Menübutton01 {
+from {
+	z-index:2;
+	.Menü01 {display: block;}
+	.menüchase {display: none;}
+	margin-left: 0px;
+	background-color: transparent;
+	height: 54px;
+	width: 64px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	.Menüpoition {width: 0px;}
+}
+to {
+	z-index:2;
+	.Menü01 {display: none;}
+	text-decoration: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #c4cccb;
+	height: 334px;
+	width: -110px;
+	margin-left: 0px;
+	.menüchase {padding: 10px;}
+	.Menüpoition {width: 110px;}
+}
+}
+.Menübuttonposition:not(:hover) { 
+		z-index:2;
+		.menüchase {display: none;}
+		margin-left: 0px;
+		background-color: transparent;
+		height: 54px;
+		width: 67px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		.Menü01 {display: block;}
+		.Menüpoition {width: 0px;}
+}
+.linkhome {
+	margin-bottom: 0px;
+	margin-top: 7px;
+	text-decoration: none;
+	color: #464252;
+	font-family: Sigmar one;
+	font-size: 13px;
+	
+}
+.linkhome:hover{color: #ffeb14;}
+.Title01 {
+	z-index:0;
+	background-color: green;
+	height: 0px;
+	font-family: Sigmar one;
+}
+.Home324 {
+	z-index: 0;
+	position: relative;
+	height: 0px;
+	text-decoration: none;
+	color: #f7c80c;
+	font-size: 70px;
+	top: -38px;
+	text-shadow:
+		3px 3px 0px rgba(93,165,147,100),
+		-3px 3px 0px rgba(93,165,147,100),
+		-3px -3px 0px rgba(93,165,147,100),
+		3px -3px 0px rgba(93,165,147,100);
+}
+.lightbluetext {
+	z-index: 1;
+	position: relative;
+	font-family: Sigmar one;
+	text-decoration: none;
+	font-size: 70px;
+	color: rgba(93,165,147,100);
+	top: 60px;
+}
+.lightblue {
+	height: 80px;
+	width: auto;
+	background-color: rgba(93,165,147,100);
+	position: relative;
+	top: 26px;
+}
+.themes01 {
+	position: relative;
+	top: 30px;
+	color: #2d2a36;
+	position: relative;
+	font-family: Sigmar one;
+	text-decoration: none;
+	font-size: 30px;
+	right: 17px;
+}
+.themes01:hover{
+	animation-name: theme01ani02;
+	animation-duration: 0.5s;
+}
+@keyframes theme01ani02{
+from{
+	color: black;
+	position: relative;
+	top: 30px;
+	font-family: Sigmar one;
+	text-decoration: none;
+	font-size: 30px;
+	right: 0px;
+}
+to {
+	right: 17px;
+	color: #2d2a36; 
+}
+}
+.themes01:not(:hover) {
+	position: relative;
+	top: 30px;
+	color: black;
+	position: relative;
+	font-family: Sigmar one;
+	text-decoration: none;
+	font-size: 30px;
+	right: 0px;
+}
+.blackhole {
+	position: relative;
+	top: 20px;
+	background-color: black;
+	height: 3px;
+	width: auto;
+}
+.content02 {
+	position: relative;
+	top: 32px;
+	height: 500px;
+	width: 95%;
+	background-color:;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}

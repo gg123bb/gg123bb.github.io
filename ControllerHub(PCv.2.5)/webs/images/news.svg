@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="203"
+   height="153"
+   viewBox="0 0 53.710415 40.48125"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1283">
+      <stop
+         style="stop-color:#0662dd;stop-opacity:1;"
+         offset="0"
+         id="stop1279" />
+      <stop
+         style="stop-color:#de0747;stop-opacity:1;"
+         offset="1"
+         id="stop1281" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1246">
+      <stop
+         style="stop-color:#ede73d;stop-opacity:1;"
+         offset="0"
+         id="stop1242" />
+      <stop
+         style="stop-color:#19c73b;stop-opacity:1;"
+         offset="0.27299556"
+         id="stop1254" />
+      <stop
+         style="stop-color:#0db1f8;stop-opacity:0.49280575"
+         offset="0.37289679"
+         id="stop1250" />
+      <stop
+         style="stop-color:#bd9800;stop-opacity:1;"
+         offset="0.46164584"
+         id="stop1252" />
+      <stop
+         style="stop-color:#ffe819;stop-opacity:1;"
+         offset="1"
+         id="stop1244" />
+    </linearGradient>
+    <rect
+       x="26.72666"
+       y="27.261192"
+       width="155.54916"
+       height="95.681442"
+       id="rect1113" />
+    <linearGradient
+       xlink:href="#linearGradient1246"
+       id="linearGradient1248"
+       x1="75.740707"
+       y1="28.521832"
+       x2="135.59402"
+       y2="44.019947"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient1283"
+       id="linearGradient1285"
+       x1="72.596161"
+       y1="36.158585"
+       x2="136.49246"
+       y2="36.158585"
+       gradientUnits="userSpaceOnUse" />
+    <rect
+       x="26.72666"
+       y="27.261192"
+       width="155.54916"
+       height="95.681442"
+       id="rect1411" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1413"
+       x="-0.044040222"
+       y="-0.18306147"
+       width="1.0880804"
+       height="1.3661228">
+      <feGaussianBlur
+         stdDeviation="0.90008153"
+         id="feGaussianBlur1415" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#e14c26;fill-opacity:1;stroke:#d1d1d1;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect234"
+       width="57.402927"
+       height="44.602276"
+       x="-1.6000816"
+       y="-1.2000612" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#f8c617;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.508532"
+       d="m -1.2272704,29.529219 c 0,0 4.4288803,-41.814624 15.5115564,-0.453515 7.044802,26.291558 7.657396,-43.809344 17.592779,-6.72999 11.094083,41.403679 6.870359,-38.932476 17.188598,-0.424286 7.412699,27.664571 9.823756,1.131429 9.823756,1.131429"
+       id="path954" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.62966171,0,0,0.62966171,-38.52044,-2.8695789)"
+       id="text1111"
+       style="font-size:17.3333px;font-family:'Clash Text';-inkscape-font-specification:'Clash Text';text-align:center;white-space:pre;shape-inside:url(#rect1113);opacity:0.560606;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.20177;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter1413)"><tspan
+         x="72.070384"
+         y="43.295021"
+         id="tspan1597">NEWS!</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.62966171,0,0,0.62966171,-38.52044,-2.8695789)"
+       id="text1409"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3333px;font-family:'Clash Text';-inkscape-font-specification:'Clash Text, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1411);fill:url(#linearGradient1248);fill-opacity:1;stroke:url(#linearGradient1285);stroke-width:1.20177;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
+         x="72.070384"
+         y="43.295021"
+         id="tspan1599">NEWS!</tspan></text>
+  </g>
+</svg>

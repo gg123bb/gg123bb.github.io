@@ -78,7 +78,7 @@ The actual email begins here:<br>
 <div id="directinfo">Neue E-Mail!<h1 id="bigfont01title"><b>Überschrieft!</h1></b><hr><br>dein Text!</div>
 <div id="email-content">Text2!<br>AbschlussText!</div>
 <p id="htmlerror"><br></p>
-<div id="Impressum01">Impressum:<br>Bitte aktiviere <a href="https://g.co/kgs/7UeoSC" id="ImpressLink"><u>Html</u></a> und Fotos <br>um diese E-mail richtig<br>lesen zu können!<br>Links: <a id="Discord" href="https://discord.gg/uSkvdAAafm" alt="Leider kein link!"><u>Discord</u></a></div>
+<div id="Impressum01">Impressum:<br>Bitte aktiviere <a href="https://g.co/kgs/7UeoSC" id="ImpressLink"><u>Html</u></a><br>um diese E-mail richtig<br>lesen zu können!<br>Links: <a id="Discord" href="https://discord.gg/uSkvdAAafm" alt="Leider kein link!"><u>Discord</u></a></div>
 </center>
 </body>
 </html>

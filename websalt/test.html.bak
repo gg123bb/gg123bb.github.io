@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de, DE">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Hi, ich bin Controller 2D und 3D designer und was ich noch mache könnt ihr hier lesen!"/>
+<meta name="keywords" content="Controller, controller000, 2D, 3D, Artist, Discord, Webseite"/>
+<meta name="author" content="controller000"/>
+<meta name="copyright" content="controller000"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Controller</title>
+<link rel="icon" type="image/png" href="webseite/icon/ControllerXD-title-image.png"/>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+	width: 100%;
+    max-width: 100%;
+    height: 800px;
+}
+
+.headposition {
+    position: relative;
+   
+}
+
+.header-content {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.headparant {
+    background: orange;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.Title01 {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Home324 {
+    text-decoration: none;
+    color: #f7c80c;
+    font-size: 70px;
+}
+.lightblue {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	background-color: blue;
+	top: 113px;
+}
+</style>
+</head>
+<body>
+<div class="headposition">
+    <div class="header-content">
+        <div class="headparant">
+            <div class="Title01">
+                <a class="Home324" href="#">HOME</a>
+            </div>
+        </div>
+        <div class="Menüpoition">
+            <div class="Menübuttonposition">
+                <img class="Menü01" src="images/Menü.svg"></img>
+                <div class="menüchase">
+                    <center>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Controller</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Design</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">E-Mail</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Support</div></a><br>
+                        <a href="#" style="text-decoration: none;"><div class="linkhome">Impressum</div></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lightblue"></div>
+
+</body>
+</html>
