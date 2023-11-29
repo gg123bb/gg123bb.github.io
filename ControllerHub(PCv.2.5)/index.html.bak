@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="de, DE">
 <head>
 <meta charset="utf-8"/>
@@ -8,8 +9,18 @@
 <meta name="copyright" content="controller000"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Controller</title>
-<link rel="icon" type="images/x-icon" href="webseite\icon\CotrollerXD-title-immage.png"/>
+<link rel="icon" type="images/x-icon" href="icon\CotrollerXD-title-immage.png"/>
 <style>
+@font-face {
+ font-family: Sigmar One; 
+ src: url(Fonts\SigmarOne-Regular.ttf);
+ src: url('Fonts\SigmarOne-Regular.ttf?#iefix') 
+           format('embedded-opentype'),
+      url('Fonts\SigmarOne-Regular.ttf') 
+           format('tff'), 
+      url('Fonts\SigmarOne-Regular.ttf') 
+           format('truetype');
+}
 <!--@media (max-width: 100%) {
 	 .headparant {
         right: 0;
@@ -50,10 +61,13 @@
 <center>
 <div class="lightbluetext"><a href="" class="01439421" style="text-decoration: none; color: rgba(93,165,147,100);">Controller</a></div>
 <div class="lightblue"></div>
-<a class="themes01">Themen:</a>
+<a href="LinkHub\linkhub(de).html" class="themes01">Themen:</a>
 <div class="blackhole"></div>
 <div class="content02">
 <iframe src="LinkHub\linkhub(de).html" width="98.5%" height="500" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" alt="error 404.02.01"></iframe>
 </div>
 </center>
+
+
+<center><a href="" style="text-decoration: none; color: black;">"Controller-HOME": all rights reserved®!</a></center>
 </body>
