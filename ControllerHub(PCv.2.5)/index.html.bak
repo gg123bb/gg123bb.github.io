@@ -44,9 +44,9 @@
 						<img class="Menü01" src="images\Menü.svg"></img>
 						<div class="menüchase">
 							<center>
-								<a href="" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
-								<a href="" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
-								<a href="" style="text-decoration: none;"><div class="linkhome">Controller</div></a><br>
+								<a href="webs\themes\DE\news(de).html" style="text-decoration: none;"><div class="linkhome">News</div></a><br>
+								<a href="webs\themes\DE\UberMich(de).html" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
+								<a href="webs\infos(de).html" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
 								<a href="" style="text-decoration: none;"><div class="linkhome">Design</div></a><br>
 								<a href="" style="text-decoration: none;"><div class="linkhome">E-Mail</div></a><br>
 								<a href=""style="text-decoration: none;"><div class="linkhome">Support</div></a><br>
@@ -69,5 +69,6 @@
 </center>
 
 
-<center><a href="" style="text-decoration: none; color: black;">"Controller-HOME": all rights reserved®!</a></center>
+<center><a href="" style="text-decoration: none; color: black;">!SCHAUE UNTER INFOS DEN NEUSTEN UPDATE BERICHT!<br>"Controller-HOME": all rights reserved®!</a></center>
 </body>
+</htmL>

@@ -11,7 +11,7 @@
 			 justify-content: flex-end;
 	}
 header a { margin-right: 20px;
-		   padding-left: 20px;
+		   padding-left: 10px;
 		   margin-top: 30px;
 		   color: #e9daed;
 		   text-decoration: none;
@@ -79,7 +79,7 @@ header a:hover{color: #e6d85c;
 
 	.Controller-Content-background {
 			z-index: 0;
-			height: 362px;
+			height: 1800px;
 			margin-top: 45px;
 			background-color: #dae1e3;
 			display: flex;
