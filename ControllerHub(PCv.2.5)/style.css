@@ -4,6 +4,16 @@ body{
 	max-width: 100%;
     overflow-x: hidden;
 	height: 800px;
+	@font-face {
+	font-family: Sigmar One; 
+	src: url(font\SigmarOne-Regular.ttf);
+	src: url(font\SigmarOne-Regular.ttf?#iefix) 
+           format(embedded-opentype),
+      url(font\SigmarOne-Regular.ttf) 
+           format(ttf), 
+      url(font\SigmarOne-Regular.ttf) 
+           format(ttf);
+}
 }
 .headposition {
     width: 100%;

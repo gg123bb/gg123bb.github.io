@@ -11,7 +11,7 @@ body {
 	max-height: 480px;
 }
 .content03 {
-	height: 480px;
+	height: 880px;
 	width: auto;
 	background-color: white;
 	border-top-left-radius: 5px;
@@ -21,8 +21,8 @@ body {
 	border: 3px solid #7d7285;
 }
 .Firstline01Fl{
-	display: flex;
-    align-items: flex-start;
+	<!--display: flex;
+    align-items: flex-start;-->
 }
 .thme001{
 	position: relative;
@@ -163,7 +163,7 @@ body {
 		</div>
 		<div class="thme002">
 			<iframe src="../webs\themes\thumbnail(de)\UberMich(de)thumbnail.html" class="web001"></iframe>
-			<center><a href="../webs\themes\DE\UberMich(de).html" class="thmlink003" alt="error -(theme01); code:404.03.01">Über Mich</a></center>
+			<center><a href="../webs\themes\DE\UberMich(de).html" class="thmlink003" target="_blank" alt="error -(theme01); code:404.03.01">Über Mich</a></center>
 		</div>
 	</div>
 	<div class="Firstline01Fl">

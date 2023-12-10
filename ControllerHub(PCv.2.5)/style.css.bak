@@ -4,6 +4,16 @@ body{
 	max-width: 100%;
     overflow-x: hidden;
 	height: 800px;
+	@font-face {
+	font-family: Sigmar One; 
+	src: url(font\SigmarOne-Regular.ttf);
+	src: url(font\SigmarOne-Regular.ttf?#iefix) 
+           format(embedded-opentype),
+      url(font\SigmarOne-Regular.ttf) 
+           format(ttf), 
+      url(font\SigmarOne-Regular.ttf) 
+           format(ttf);
+}
 }
 .headposition {
     width: 100%;
@@ -11,9 +21,9 @@ body{
 .content01 {
 	z-index: 2;
 	position: absolute;
-    top: 30px;
-    right: 30px;
-	margin-left: auto;
+    top: 30%;
+    right: 30%;
+	margin-left: 100%;
     display: flex;
     align-items: flex-start;
 }
@@ -199,5 +209,5 @@ to {
 	border-bottom-right-radius: 7px;
 	border-top-left-radius: 7px;
 	border-bottom-left-radius: 7px;
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }

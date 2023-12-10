@@ -64,7 +64,7 @@ to {
 	background-color: #c4cccb;
 	height: 350px;
 	width: -110px;
-	margin-left: 10px;
+	margin-left: 0px;
 	.Menüpoition {width: 110px;}
 }
 }
