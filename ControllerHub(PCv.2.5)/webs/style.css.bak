@@ -79,7 +79,7 @@ header a:hover{color: #e6d85c;
 
 	.Controller-Content-background {
 			z-index: 0;
-			height: 1800px;
+			height: 100%;
 			margin-top: 45px;
 			background-color: #dae1e3;
 			display: flex;

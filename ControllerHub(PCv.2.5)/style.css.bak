@@ -21,9 +21,9 @@ body{
 .content01 {
 	z-index: 2;
 	position: absolute;
-    top: 30%;
-    right: 30%;
-	margin-left: 100%;
+    top: 30px;
+    right: 30px;
+	margin-left: auto;
     display: flex;
     align-items: flex-start;
 }
@@ -127,6 +127,7 @@ to {
 	z-index: 0;
 	position: relative;
 	height: 0px;
+	margin-left: 20px;
 	text-decoration: none;
 	color: #f7c80c;
 	font-size: 70px;
