@@ -54,7 +54,7 @@ header a:hover{color: #e6d85c;
 	.Controller-Content {
 		z-index: 3;
 		height: 370px; 
-		margin-top: 10px;
+		margin-top: -20px;
 		color: #544569;
 		display: flex;
 		justify-content: center; 
@@ -85,3 +85,7 @@ header a:hover{color: #e6d85c;
 			justify-content: center;
 			
 	}
+.version{
+	font-family: Bahnschrift SemiBold,Consolas,Franklin Gothic Medium;
+	
+}
