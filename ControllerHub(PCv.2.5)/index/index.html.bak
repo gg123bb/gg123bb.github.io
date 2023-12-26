@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Controller</title>
 <link rel="icon" type="images/x-icon" href="icon\CotrollerXD-title-immage.png"/>
-<link href="font\SigmarOne-Regular.ttf" rel="stylesheet"><!--Schrieftart-->
+<link href="https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf" rel="stylesheet"><!--Schrieftart-->
 <style>
 body{
 	margin:0px;
@@ -18,12 +18,12 @@ body{
 	height: 800px;
 	@font-face {
 	font-family: Sigmar One; 
-	src: url(font\SigmarOne-Regular.ttf);
-	src: url(font\SigmarOne-Regular.ttf?#iefix) 
+	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf);
+	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf#iefix) 
            format(embedded-opentype),
-      url(font\SigmarOne-Regular.ttf) 
+      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
            format(ttf), 
-      url(font\SigmarOne-Regular.ttf) 
+      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
            format(ttf);
 }
 
@@ -218,6 +218,6 @@ to {
 </center>
 
 
-<center><a href="" style="text-decoration: none; color: black;">SCHAUE UNTER INFOS DEN NEUSTEN UPDATE BERICHT!<br>"Controller-HOME": all rights reserved®!</a><br><a class="" href="">Links</a></center>
+<center><a href="" style="text-decoration: none; color: black;">SCHAUE UNTER INFOS DEN NEUSTEN UPDATE BERICHT!<br>10.12.2023<br>"Controller-HOME": all rights reserved® -2024/25!</a><br><a class="" href="">Links</a></center>
 </body>
 </htmL>
