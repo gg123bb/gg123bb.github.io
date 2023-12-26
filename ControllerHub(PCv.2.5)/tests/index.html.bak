@@ -26,12 +26,12 @@ body{
     background-color: lavender;
   }
   .content0001{
-		width: 70%;
+		width: 80%;
   }
 }
 </style>
 </head>
 <body>
-<center><a class="link0001" href="index\index.html"><img class="content0001" src="index\images\newdesign.svg"></img></a></center>
+<center><a class="link0001" href="../index.html"><img class="content0001" src="../images\newdesign.svg"></img></a></center>
 
 </body>
