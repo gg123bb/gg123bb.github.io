@@ -5,12 +5,12 @@ body{
     overflow-x: hidden;
 	height: 800px;
 	font-family: Sigmar One; 
-	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf);
-	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf#iefix) 
+	src: url(https://fonts.google.com/specimen/Sigmar+One);
+	src: url(https://fonts.google.com/specimen/Sigmar+One#iefix) 
            format(embedded-opentype),
-      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
+      url(https://fonts.google.com/specimen/Sigmar+One) 
            format(ttf), 
-      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
+      url(https://fonts.google.com/specimen/Sigmar+One) 
            format(ttf);
 }
 }

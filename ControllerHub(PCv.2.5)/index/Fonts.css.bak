@@ -1,0 +1,10 @@
+body{
+font-family: Sigmar One; 
+	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf);
+	src: url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf#iefix) 
+           format(embedded-opentype),
+      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
+           format(ttf), 
+      url(https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf) 
+           format(ttf);
+}
