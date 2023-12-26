@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Controller</title>
 <link rel="icon" type="images/x-icon" href="icon\CotrollerXD-title-immage.png"/>
+<link rel="stylesheet" href="Fonts.css">
 <link href="https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/font/SigmarOne-Regular.ttf" rel="stylesheet"><!--Schrieftart-->
 <style>
 body{
