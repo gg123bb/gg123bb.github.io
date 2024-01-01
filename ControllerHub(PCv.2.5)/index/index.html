@@ -18,67 +18,12 @@ body{
     overflow-x: hidden;
 	height: 800px;
 }
-
-}
-.headposition{
-	position: relative;
-}
-.Menübuttonposition:hover { 
-	position: absolute;
-	z-index:2;
-	animation-name: Menübutton01;
-	animation-duration: 0.5s;
-	width: 100px;
-	height: 350px;
-	margin: 10px;
-}
-@keyframes Menübutton01 {
-from {
-	z-index:2;
-	.Menü01 {display: block;}
-	.menüchase {display: none;}
-	margin-left: 0px;
-	background-color: transparent;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	.Menüpoition {width: 0px;}
-}
-to {
-	z-index:2;
-	.Menü01 {display: none;}
-	text-decoration: none;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	background-color: #c4cccb;
-	height: 350px;
-	width: -110px;
-	margin-left: 10px;
-	.Menüpoition {width: 110px;}
-}
-}
-.Menübuttonposition:not(:hover) { 
-		position: absolute;
-		margin: 10px;
-		top: 10px;
-		.menüchase {display: none;}
-		background-color: transparent;
-		border-top-left-radius: 0px;
-		border-top-right-radius: 0px;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
-		.Menü01 {display: block;}
-}
 .linkhome {
 	margin-bottom: 0px;
 	text-decoration: none;
 	color: #464252;
 	font-family: Sigmar one;
-	font-size: 13px;
-	
+	font-size: 13px;	
 }
 .linkhome:hover{color: #ffeb14;}
 .Title01 {
@@ -89,8 +34,8 @@ to {
 	background-color: transparent;
 }
 .Home324 {
-	position: absolute;
-	right: 0;
+	position: relative;
+	height: 0px;
 	text-decoration: none;
 	background-color: transparent;
 	color: #f7c80c;
@@ -180,22 +125,6 @@ to {
 </head>
 <body>
 <div class="headposition">
-	<div class="MenüButton">
-		<div class="Menübuttonposition">
-			<img class="Menü01" src="images\Menü.svg"></img>
-			<div class="menüchase">
-				<center>
-					<a href="webs\themes\DE\news(de).html" style="text-decoration: none;"><div class="linkhome">News</div></a><br>
-						<a href="webs\themes\DE\UberMich(de).html" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
-						<a href="webs\infos(de).html" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
-						<a href="" style="text-decoration: none;"><div class="linkhome">Design</div></a><br>
-						<a href="" style="text-decoration: none;"><div class="linkhome">E-Mail</div></a><br>
-						<a href=""style="text-decoration: none;"><div class="linkhome">Support</div></a><br>
-						<a href="" style="text-decoration: none;"><div class="linkhome">Impressum</div></a>
-				</center>
-			</div>
-		</div>
-	</div>
 	<div class="Title01"><a class="Home324" href="">HOME</a></div> 
 </div>	
 <!--Wichtig: schwierige Einteilung Text "HOME" zu Button!, daher !!Bottun funktion löschen und weiter experimrntieren!! -!!sonst gefahr auf beschädingung des bottuns!!-->
