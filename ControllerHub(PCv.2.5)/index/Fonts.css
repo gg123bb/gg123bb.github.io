@@ -1,12 +1,17 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 	
 }
 @font-face {
-		font-family: 'Sigmar One';
+		font-family: "Sigmar One";
 		font-style: normal;
 		font-weight: 300;
-		src: local('Sigmar One'),
-		local('Sigmar One'),
-		url('/fons/SigmarOne-Regular.ttf')
-		format('ttf');
+		src: local("Sigmar One"),
+		local("Sigmar One"),
+		url("/fons/SigmarOne-Regular.ttf")
+		format("truetype");
+		font-weight: 300;
+		font-style: regular;
+		font-display: swap;
 }

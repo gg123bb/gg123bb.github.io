@@ -30,6 +30,8 @@ body{
 }
 .headposition{
 	position: relative;
+	width: auto;
+	height: 50px;
 }
 .linkhome {
 	margin-bottom: 0px;
@@ -37,6 +39,7 @@ body{
 	color: #464252;
 	font-family: Sigmar one;
 	font-size: 13px;
+	display: inline-block;
 	
 }
 .linkhome:hover{color: #ffeb14;}
@@ -150,7 +153,7 @@ to {
 			<img class="Menü01" src="images\Menü.svg"></img>
 			<div class="menüchase">
 				<center>
-						<span class="label01"><a href="webs\themes\DE\news(de).html" style="text-decoration: none;"><div class="linkhome"></div></a></span><br>
+						<span class="label01"><a href="webs\themes\DE\news(de).html" style="text-decoration: none;"></a></span><br>
 						<a href="webs\themes\DE\UberMich(de).html" style="text-decoration: none;"><div class="linkhome">Über Mich!</div></a><br>
 						<a href="webs\infos(de).html" style="text-decoration: none;"><div class="linkhome">Infos</div></a><br>
 						<a href="" style="text-decoration: none;"><div class="linkhome">Design</div></a><br>

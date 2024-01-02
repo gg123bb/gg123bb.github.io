@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120.78mm"
+   height="81.18mm"
+   viewBox="0 0 120.78 81.18"
+   version="1.1"
+   id="svg1228"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1225">
+    <rect
+       x="285.44073"
+       y="282.23352"
+       width="177.46503"
+       height="43.831722"
+       id="rect9259" />
+    <rect
+       x="298.26953"
+       y="20.312262"
+       width="381.65668"
+       height="62.005852"
+       id="rect8498" />
+    <rect
+       x="38.486389"
+       y="85.525307"
+       width="147.53116"
+       height="113.32103"
+       id="rect8170" />
+    <rect
+       x="38.486389"
+       y="85.525307"
+       width="147.53116"
+       height="113.32103"
+       id="rect8488" />
+    <rect
+       x="38.486389"
+       y="85.525307"
+       width="147.53116"
+       height="113.32103"
+       id="rect8494" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(0,-0.28285714)">
+    <rect
+       style="fill:#c995ff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect9624"
+       width="120.78"
+       height="81.18"
+       x="6.8330053e-09"
+       y="0.28285715" />
+    <rect
+       style="fill:#4d1d7e;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect1349"
+       width="122.75999"
+       height="83.159996"
+       x="-2.2628572"
+       y="-1.6971428" />
+    <rect
+       style="fill:#f4d616;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect5562"
+       width="127.26562"
+       height="146.90825"
+       x="-53.028633"
+       y="-50.56197"
+       transform="matrix(0.9554522,0.2951459,-0.26960242,0.96297172,0,0)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.49345948,0,0,0.49345948,-17.530002,-23.30977)"
+       id="text8168"
+       style="font-size:38.4px;font-family:'Sigmar One';-inkscape-font-specification:'Sigmar One';white-space:pre;shape-inside:url(#rect8170);fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"><tspan
+         x="38.486328"
+         y="117.80085"
+         id="tspan9711">Light</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.41541982,0,0,0.41541982,46.193681,23.006578)"
+       id="text8486"
+       style="font-size:38.4px;font-family:'Sigmar One';-inkscape-font-specification:'Sigmar One';white-space:pre;shape-inside:url(#rect8488);fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"><tspan
+         x="38.486328"
+         y="117.80085"
+         id="tspan9713">Night</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.41541982,0,0,0.41541982,34.030824,1.7922923)"
+       id="text8492"
+       style="font-size:38.4px;font-family:'Sigmar One';-inkscape-font-specification:'Sigmar One';white-space:pre;shape-inside:url(#rect8494);fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"><tspan
+         x="38.486328"
+         y="117.80085"
+         id="tspan9715">VS</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.25597278,0,0,0.25597278,-37.298722,-1.2664388)"
+       id="text8496"
+       style="font-size:38.4px;font-family:'Sigmar One';-inkscape-font-specification:'Sigmar One';white-space:pre;shape-inside:url(#rect8498);fill:#f4d616;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"><tspan
+         x="298.26953"
+         y="52.587959"
+         id="tspan9721"><tspan
+   style="fill:#4d1d7e"
+   id="tspan9717">What</tspan><tspan
+   style="fill:#9c16f4"
+   id="tspan9719"> </tspan>MODE?:</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.18714758,0,0,0.18015845,39.812977,22.956361)"
+       id="text9257"
+       style="font-size:38.4px;font-family:'Sigmar One';-inkscape-font-specification:'Sigmar One';white-space:pre;shape-inside:url(#rect9259);fill:#c995ff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"><tspan
+         x="285.44141"
+         y="314.50983"
+         id="tspan9723">Mode</tspan></text>
+  </g>
+</svg>

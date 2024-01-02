@@ -1,20 +1,27 @@
 body{
-	font-family: Sigmar One; 
-	src: url(https://fonts.google.com/specimen/Sigmar+One);
-	src: url(https://fonts.google.com/specimen/Sigmar+One#iefix) 
-           format(embedded-opentype),
-      url(https://fonts.google.com/specimen/Sigmar+One) 
-           format(ttf), 
-      url(https://fonts.google.com/specimen/Sigmar+One) 
-           format(ttf);
+	@font-face {
+		font-family: "Sigmar One";
+		font-style: normal;
+		font-weight: 300;
+		src: local("Sigmar One"),
+		local("Sigmar One"),
+		url("/fons/SigmarOne-Regular.ttf")
+		format("truetype");
+		font-weight: 300;
+		font-style: regular;
+		font-display: swap;
+}
 	
 }
 @font-face {
-		font-family: 'Sigmar One';
+		font-family: "Sigmar One";
 		font-style: normal;
 		font-weight: 300;
-		src: local('Sigmar One'),
-		local('Sigmar One'),
-		url('/fons/SigmarOne-Regular.ttf')
-		format('ttf');
+		src: local("Sigmar One"),
+		local("Sigmar One"),
+		url("/fons/SigmarOne-Regular.ttf")
+		format("truetype");
+		font-weight: 300;
+		font-style: regular;
+		font-display: swap;
 }
