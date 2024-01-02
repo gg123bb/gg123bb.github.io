@@ -3,7 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <title>Vorschau</title>
+  <title>Vorschau!:</title>
+<meta property="og:title" content="Vorschau!:">
+<meta name="description" content="Info: Neues Web-Design! ~Controller"/>
+<meta name="keywords" content="Neuer Style, Neus Aussehen,Vorschau,Light,Light mode,Lightmode,Night,Night mode,Nightmode,Dark,Dark mode,Dark mode,Controller"/>
+<meta name="author" content="controller000"/>
+<meta name="copyright" content="controller000"/>
+<meta property="og:description" content="Dies ist eine Vorschau für Kommende Updates!">
+<meta property="og:image" content="https://github.com/gg123bb/gg123bb.github.io/blob/main/images/lightnightthumbnail.png">
+<meta property="og:url" content="https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/neu/testbuttons.html">
+
   <style>
 body{
 	margin: 0;
