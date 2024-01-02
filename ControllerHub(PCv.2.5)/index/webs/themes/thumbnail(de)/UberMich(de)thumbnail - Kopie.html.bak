@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--!Vorschau!:-->
+<html lang="de, DE">
+<head>
+<title>THEME-THUMBNAIL(DE)!VORSCHAU!</title>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background-color: purple;
+	height: 150px;
+	width: 200px;
+	max-height: 145px;
+	max-width:auto;
+}
+.TMmb1F2{
+	margin: 0;
+	position: relative;
+	top: 3px;
+	left: 2px;
+	height: 150px;
+	width: 200px;
+	background-color: #d6d4b8;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+</style>
+</head>
+<body>
+	<a href="../themes/webs/index\neu\index.html" class="l1Is23dCaMn921oaD" target="_blank">
+		<img src="../../../../../images/lightnightthumbnail.png" class="TMmb1F2" ></img>
+
+	</a>
+</body>
+</html>
