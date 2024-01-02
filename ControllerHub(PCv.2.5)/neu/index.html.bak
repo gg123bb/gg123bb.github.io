@@ -166,10 +166,8 @@ input:checked + .slider + .daynightc::after {
 	text-align: center;
 	color: white;
 }
-.night-mode .contenta {
-    background-color: white;
-	.texta{color: black;}
-}
+.night-mode .contenta {background-color: white;}
+.night-mode .texta{color: black;}
 .night-mode .contentb {
     background-color: white;
 	.textb{color: black;}
@@ -183,7 +181,7 @@ input:checked + .slider + .daynightc::after {
 	.textd{color: black;}
 }
 .night-mode .switch:hover .slider.round {
-    box-shadow: 0 0 4px #624f70;
+    box-shadow: 0 0 4px #bf9cd9;
 }
 body.night-mode {
     background-color: black;
