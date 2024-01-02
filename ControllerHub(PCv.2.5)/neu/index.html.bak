@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
   <title>Vorschau!:</title>
-  <link rel="icon" type="images/x-icon" href="../icon/CotrollerXD-title-immage.png"/>
+  <link rel="icon" type="images/x-icon" href="../index\icon/CotrollerXD-title-immage.png"/>
 
 <meta property="og:title" content="Vorschau!:">
 <meta name="description" content="Info: Neues Web-Design! ~Controller"/>
@@ -181,6 +181,9 @@ input:checked + .slider + .daynightc::after {
 .night-mode .contentd {
     background-color: #b0b0b0;
 	.textd{color: black;}
+}
+.night-mode .switch:hover .slider.round {
+    box-shadow: 0 0 4px #624f70;
 }
 body.night-mode {
     background-color: black;
