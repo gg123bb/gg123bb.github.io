@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="de, DE">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <title>Vorschau!:</title>
-  <link rel="icon" type="images/x-icon" href="../index\icon/CotrollerXD-title-immage.png"/>
+<title></title>
 
-<meta property="og:title" content="Vorschau!:">
-<meta name="description" content="Info: Neues Web-Design! ~Controller"/>
-<meta name="keywords" content="Neuer Style, Neus Aussehen,Vorschau,Light,Light mode,Lightmode,Night,Night mode,Nightmode,Dark,Dark mode,Dark mode,Controller"/>
-<meta name="author" content="controller000"/>
-<meta name="copyright" content="controller000"/>
-<meta property="og:description" content="Dies ist eine Vorschau für Kommende Updates!">
-<meta property="og:image" content="https://github.com/gg123bb/gg123bb.github.io/blob/main/images/lightnightthumbnail.png">
-<meta property="og:url" content="https://github.com/gg123bb/gg123bb.github.io/blob/main/ControllerHub(PCv.2.5)/index/neu/testbuttons.html">
-
-  <style>
-body{
-	margin: 0;
+<style>
+body {margin: 0px; background-color:white; transition: background-color 0.2s;}
+.black01 {
+	height: 13px;
+	width: 100%;
+	background-color: black;
+}
+.black02 {
+	position: absolute;
+	height: 387px;
+	width: 100%;
+	background-color: black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	transition: background-color 0.2s;
+}
+.white01 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto; 
+	height: 300px;
+	width: 99.9%;
 	background-color: white;
+	margin-top: 0px;
+	border-radius: 5px;
+	transition: background-color 0.2s;
+}
+.whitebar01 {
+	position: relative;
+	height: 2%;
+	width: 100%;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	transition: background-color 0.2s;
+}
+.contenthub01 {
+	position: relative;
+	margin-left: 1%;
+	height: 96%;
+	width: 98%;
+	background-color: #6d5480;
+	border-radius: 5px;
+	transition: background-color 0.2s;
+	box-shadow: 0px 0px 3px 3px #6d5480;
+}
+.chead01 {
+	width: 100%;
+	height: 50px;
+	background-color:;
 	transition: background-color 0.2s;
 }
 .switch {
     position: relative;
     display: inline-block;
-	top: 10px;
+	top: 8px;
 	left: 10px;
 	width: 72px;
     height: 34px;
+	z-index: 1;
 }
 .switch input {
     opacity: 0;
@@ -103,124 +138,91 @@ input:checked + .slider + .daynightc::after {
 .switch:hover .slider.round {
     box-shadow: 0 0 4px #624f70;
 }
-.hr {
-	color: black;
-	background-color: black;
-	height: 1px;
-	width: 98%;
-}
-.contenta {
-	position: relative;
-    height: 100px;
+.title01 {
+	position: absolute;
+	top: -16px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
-    background-color: black;
-    transition: background-color 0.4s;
-	margin-top: 10px;
+	padding: 0px;
+	background-color: transparent;
+	transition: background-color 0.2s;
 }
-.contentb {
-	position: relative;
-    height: 100px;
-	width: 100%;
-    background-color: black;
-    transition: background-color 0.3s;	
+.title02 {
+	font-family: ;
+	font-size: 35px;
+	color: yellow;
+	transition: color 0.4s;
 }
-.contentc {
+.text01 {
 	position: relative;
-    height: 100px;
-	width: 100%;
-    background-color: black;
-    transition: background-color 0.2s;	
-}
-.contentd {
-	position: relative;
-    height: 100px;
-	width: 100%;
-    background-color: #474747;
-    transition: background-color 0.1s;	
-}
-.texta {
-	position: relative;
-	height: 10px;
-	padding: 40px;
+	top: -15px;
 	text-align: center;
 	color: white;
+	font-family:; 
+	font-size: 17px;
+	z-index: 0;
+	transition: background-color 0.2s;
 }
-.textb {
+.whitebar02 {
 	position: relative;
-	height: 10px;
-	padding: 40px;
-	text-align: center;
-	color: white;
+	height: 5px;
+	width: 102%;
+	left: -1%;
+	background-color: white;
+	transition: background-color 0.4s;
 }
-.textc {
+.Thumbneil02 {
 	position: relative;
-	height: 10px;
-	padding: 40px;
-	text-align: center;
-	color: white;
+	height: 238px;
+	width: 102%;
+	left: -1%;
+	background-color: ;
+	filter: blur(4px);
+	transition: background-color 0.2s;
 }
-.textd {
-	position: relative;
-	height: 10px;
-	padding: 40px;
-	text-align: center;
-	color: white;
-}
-.night-mode .contenta {background-color: white;}
-.night-mode .texta{color: black;}
-.night-mode .contentb {background-color: white;}
-.night-mode .textb{color: black;}
-.night-mode .contentc {background-color: white;}
-.night-mode .textc{color: black;}
-.night-mode .contentd {background-color: #b0b0b0;}
-.night-mode .textd{color: black;}
-.night-mode .switch:hover .slider.round {
-    box-shadow: 0 0 4px #bf9cd9;
-}
-.texta:hover, .contenta:hover {background-color: yellow;
-.texta{color: black;}
-}
-.textb:hover, .contentb:hover {background-color: yellow;
-.textb{color: black;}
-}
-.textc:hover, .contentc:hover {background-color: yellow;
-.textc{color: black;}
-}
-.textd:hover, .contentd:hover {background-color: yellow;
-.textd{color: black;}
-}
+.h501 {font-family:; font-size: 18px; transition: background-color 0.2s;}
+.p01 {position: relative; top: -25px; transition: background-color 0.2s;}
+.text02 {position: relative; margin-top: 395px; text-align: center; color: black;}
+.night-mode .black02 {background-color: #292540;}
+.night-mode .white01 {background-color: #2e0f2d;}
+.night-mode .title02 {color: #95ff0a;}
+.night-mode .whitebar01 {background-color: #2e0f2d;}
+.night-mode .whitebar02 {background-color: #2ad424; filter: blur(1px);}
+.night-mode .text02 {color: white;}
 body.night-mode {
     background-color: black;
 }
-.Impressum {
-	margin-top: 92px;
-	height: 58px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	background-color: rgb(128, 128, 128,0.5);
-	text-align: center;
-	padding: 10px;
-	color: #4e1c80;
-}
-.night-mode .Impressum{
-	color: #ffadec;
-}
-  </style>
+</style>
 </head>
 <body>
-  <label class="switch">
-    <input id="modeSwitch" type="checkbox">
-    <span class="slider round"></span>
-    <span class="daynightc"></span>
-  </label>
-  <center><hr class="hr"></center>
-  <div class="contenta"><div class="texta">content</div></div>
-  <div class="contentb"><div class="textb">content</div></div>
-  <div class="contentc"><div class="textc">content</div></div>
-  <div class="contentd"><div class="textd">content</div></div>
-  <center><hr class="hr" style="top: 20px;"></center>
-  <div class="Impressum">Vorschau!:<br>Dies ist eine Vorschau für Kommende Updates!</div>
-  <script>
+<div class="black01"></div>
+<div class="black02">
+<div class="white01">
+	<div class="whitebar01"></div>
+	<div class="contenthub01">
+	<div class="chead01">
+		<label class="switch">
+			<input id="modeSwitch" type="checkbox">
+			<span class="slider round"></span>
+			<span class="daynightc"></span>
+		</label>
+		<div class="title01"><h1 class="title02">HOME</h1></div>
+	</div>
+	<div class="whitebar02"></div>
+	<div class="Thumbneil02"></div>
+	</div>
+</div>
+<div class="text01"><h5 class="h501">*Controller-Artis!*</h5><p class="p01">Hallo ich bin Controller!</p></div>
+</div>
+<div class="text02">Diese webseite ist Erstmal nur<br>Für mobile (250px-720px) ausgerichtet!<br>Dies ist Der anfang Einer<br>"Neuen" Webseite in einem anderen<br>style und mehr funktion<br>Schon jetzt über 400 Zeilen: HTML, CSS<br>und auch etwas Javascript!<br>Controller</div>
+<hr style="height: 1px; width: 97%; background-color: black;">
+<div class=""><a href="" class="">-DEBUG-</a></div>
+
+
+
+ <script>
     const modeSwitch = document.getElementById('modeSwitch');
 
     modeSwitch.addEventListener('change', function() {
@@ -228,4 +230,4 @@ body.night-mode {
     });
   </script>
 </body>
-</html>
+<html>
