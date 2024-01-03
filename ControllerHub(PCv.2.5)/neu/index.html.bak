@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="de, DE">
 <head>
+<meta charset="utf-8"/>
+<meta name="description" content="Info: Neues Web-Design! ~Controller"/>
+<meta name="keywords" content="Neuer Style, Neus Aussehen"/>
+<meta name="author" content="controller000"/>
+<meta name="copyright" content="controller000"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title></title>
 
 <style>
@@ -195,11 +201,15 @@ body.night-mode {background-color: black;}
 </style>
 <style>
 @media screen and (min-width: 730px) {
-  .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+  .whitebar01 {border-top-left-radius: 19px; border-top-right-radius: 19px; width: 90%; left: 2%; background-color: black;}
+  .whitebar02 {width: 100%; left: 0%; border-radius: 2px;}
+  .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-radius: 19px; background-color: black;}
   
-  .night-mode .black02 {background-color: #361334;}
-  .night-mode .white01 {border-radius: 2px; box-shadow: 0 0 5px #2e0f2d;}
+  .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+  .night-mode .white01 {border-radius: 11px; box-shadow: 0 0 5px #2e0f2d;}
   .night-mode .whitebar02 {width: 70%; transition: width 1.6; margin-left: auto; margin-right: auto;}
+  
+
 }
 </style>
 </head>
@@ -223,8 +233,7 @@ body.night-mode {background-color: black;}
 </div>
 <div class="text01"><h5 class="h501">*Controller-Artis!*</h5><p class="p01">Hallo ich bin Controller!</p></div>
 </div>
-<div class="text02">Diese webseite ist Erstmal nur<br>Für mobile (250px-720px) ausgerichtet!<br>Dies ist Der anfang Einer<br>"Neuen" Webseite in einem anderen<br>style und mehr funktion<br>Schon jetzt über 400 Zeilen: HTML, CSS<br>und auch etwas Javascript!<br>Controller</div>
-<hr style="height: 1px; width: 97%; background-color: black;">
+<div class="text02"><br>Dies ist Der anfang Einer<br>"Neuen" Webseite in einem anderen<br>style und mehr funktion<br>Schon jetzt über 400 Zeilen: HTML, CSS<br>und auch etwas Javascript!<br>Controller<br></div>
 <div class=""><a href="" class="">-DEBUG-</a></div>
 
 
