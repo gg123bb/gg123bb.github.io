@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="de, DE">
 <head>
+<meta charset="utf-8"/>
+<meta name="description" content="Info: Neues Web-Design! ~Controller"/>
+<meta name="keywords" content="Neuer Style, Neus Aussehen"/>
+<meta name="author" content="controller000"/>
+<meta name="copyright" content="controller000"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title></title>
 
 <style>
@@ -191,8 +197,15 @@ input:checked + .slider + .daynightc::after {
 .night-mode .whitebar01 {background-color: #2e0f2d;}
 .night-mode .whitebar02 {background-color: #2ad424; filter: blur(1px);}
 .night-mode .text02 {color: white;}
-body.night-mode {
-    background-color: black;
+body.night-mode {background-color: black;}
+</style>
+<style>
+@media screen and (min-width: 730px) {
+  .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+  
+  .night-mode .black02 {background-color: #361334;}
+  .night-mode .white01 {border-radius: 2px; box-shadow: 0 0 5px #2e0f2d;}
+  .night-mode .whitebar02 {width: 70%; transition: width 1.6; margin-left: auto; margin-right: auto;}
 }
 </style>
 </head>
