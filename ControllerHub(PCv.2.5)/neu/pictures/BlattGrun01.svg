@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="68.497047mm"
+   height="57.204365mm"
+   viewBox="0 0 68.497047 57.204365"
+   version="1.1"
+   id="svg9728"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9730"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs9725" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.96058007,-1.1164202)">
+    <path
+       style="fill:#2ee206;fill-opacity:1;stroke:#00c606;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 15.557142,2.2628567 c 0,0 43.007693,-3.3848605 51.951607,29.9942723 C 76.452661,65.636264 15.557142,42.994283 15.557142,2.2628567 Z"
+       id="path9912"
+       inkscape:export-filename="BlattGrün01.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#2ee206;fill-opacity:1;stroke:#00c606;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 2.0105422,44.616828 c 0,0 28.0175738,-32.804489 57.9444878,-15.52618 C 89.881943,46.36896 30.81201,73.418296 2.0105422,44.616828 Z"
+       id="path10277" />
+  </g>
+</svg>
