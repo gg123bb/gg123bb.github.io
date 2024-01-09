@@ -206,8 +206,11 @@ input:checked + .slider + .daynightc::after {
 }
 .Thumbnail01 {
 	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 236px;
 	width: 100%;
+	background: url(pictures/littleThumbneil01Waterv01.svg) 50% 50% no-repeat;
 	z-index: 1;
 }
 .Thumbneil02 {
@@ -235,6 +238,9 @@ input:checked + .slider + .daynightc::after {
 .night-mode .whitebar02 {background-color: #2ad424; filter: blur(0px);}
 .night-mode .text02 {color: white;}
 body.night-mode {background-color: black;}
+</style>
+<style>
+@media screen and (min-width: 364px) {.Thumbnail01 {background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;}}
 </style>
 <style>
 @media screen and (min-width: 730px) {
@@ -269,7 +275,7 @@ body.night-mode {background-color: black;}
 	<div class="Parant01">
 	<div class="water01"></div>
 	<div class="grass01"></div>
-	<center><img src="pictures/Thumbneil01Waterv01.svg" class="Thumbnail01" alt=""/></center>
+	<center><div class="Thumbnail01"></div></center>
 	</div>
 	<div class="Thumbneil02"></div>
 	</div>
