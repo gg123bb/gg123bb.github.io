@@ -210,7 +210,7 @@ input:checked + .slider + .daynightc::after {
 	transform: translateX(-50%);
 	height: 236px;
 	width: 100%;
-	background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;
+	background: url(pictures/littleThumbneil01Waterv01.svg) 50% 50% no-repeat;
 	z-index: 1;
 }
 .Thumbneil02 {
@@ -222,6 +222,106 @@ input:checked + .slider + .daynightc::after {
 	filter: blur(4px);
 	transition: background-color 0.2s;
 }
+.BlackboxRight01 {
+	position: relative;
+	margin-top: 75px;
+	height: 330px;
+	width: 100%;
+	left: 0%;
+	background-color: black;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	transition: background-color 0.2s;
+}
+.title04 {
+	position: relative;
+	text-align: center;
+	padding-left: 1%;
+	padding-top: 27px;
+	font-family:;
+	font-size: 19px;
+	font-weight: 900;
+	color: white;
+}
+.text05 {
+	position: relative;
+	text-align: justify;
+	padding-left: 1%;
+	padding-top: 16px;
+	font-family:;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	width: 80%;
+	left: 10%;
+}
+
+.linkl01 {
+	position: relative;
+	padding-left: 11%;
+	top: -16px;
+	text-decoration: underline white;
+	color: white;
+	font-family:;
+	font-size: 19px;
+	font-weight: 950;
+}
+.linkl02 {
+	position: absolute;
+	margin: 0px;
+	margin-top: -65px;
+	right: auto;
+	left: 11%;
+	text-decoration: underline white;
+	color: white;
+	font-family:;
+	font-size: 19px;
+	font-weight: 950;
+}
+.BlackboxLeft01 {
+	position: relative;
+	margin-top: 75px;
+	height: 460px;
+	width: 100%;
+	left: 0%;
+	background-color: black;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	transition: background-color 0.2s;
+}
+.link201 {
+	position: absolute;
+	margin: 0px;
+	margin-top: -5px;
+	right: 9%;
+	left: auto;
+	text-decoration: underline white;
+	color: white;
+	font-family:;
+	font-size: 19px;
+	font-weight: 950;
+}
+.link202 {
+	position: absolute;
+	margin: 0px;
+	margin-top: 30px;
+	right: 9%;
+	left: auto;
+	text-decoration: underline white;
+	color: white;
+	font-family:;
+	font-size: 19px;
+	font-weight: 950;
+}
+
+.Impressum {
+	position: relative;
+	margin-top: 150px;
+	width: 100%;
+	height: 100px;
+	bottom: 0px;
+}
+.imptext01 {padding: 20px; background-color: #a1a1a1; color: #1a1a1a; transition: color 0.2s; transition: background-color 0.2s;}
 .title03 {position: relative;}
 .h501 {font-family:; font-weight: 900; font-size: 18px; transition: background-color 0.2s;}
 .h502 {font-family:; font-size: 18px; margin-top: 30px; transition: background-color 0.2s;}
@@ -237,10 +337,21 @@ input:checked + .slider + .daynightc::after {
 .night-mode .whitebar01 {background-color: #2e0f2d;}
 .night-mode .whitebar02 {background-color: #2ad424; filter: blur(0px);}
 .night-mode .text02 {color: white;}
+.night-mode .BlackboxRight01 {background-color: #292540;}
+.night-mode .BlackboxLeft01 {background-color: #292540;}
+.night-mode .imptext01 {background-color: #1a1a1a; color: #a1a1a1;}
 body.night-mode {background-color: black;}
 </style>
 <style>
-@media screen and (min-width: 364px) {.Thumbnail01 {background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;}}
+@media screen and (min-width: 280px) {.BlackboxLeft01 {width: 80%; height: 480px;}}
+@media screen and (min-width: 338px) {
+	.Thumbnail01 {background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;}
+	.BlackboxRight01 {width: 80%; height: 340px; left: 20%;}
+	.linkl01 {top: -16px;}
+	.linkl02 {margin-top: -65px; left: 11%; right: auto;}
+	.BlackboxLeft01 {width: 80%; height: 415px;}
+}
+@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;}}
 </style>
 <style>
 @media screen and (min-width: 730px) {
@@ -249,11 +360,16 @@ body.night-mode {background-color: black;}
   .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-radius: 19px; background-color: black;}
   .contenthub01 {box-shadow: 0px 0px 0px 0px #6d5480;}
   .grass01 {box-shadow: 0px 0px 0px 0px #13a855ff;}
+  .BlackboxRight01 {width: 80%; left: 20%; 330px;}
+  .linkl01 {position: relative; top: 15px; padding-left: 11%;}
+  .linkl02 {position: absolute; margin-top: -34px; left: auto; right: 9%;}
+  .link201 {margin-top: 30px; left: 11%; right: auto;}
+  .BlackboxLeft01 {width: 80%; height: 330px;}
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
   .night-mode .white01 {border-radius: 11px; box-shadow: 0 0 5px #2e0f2d;}
   .night-mode .whitebar02 {width: 70%; transition: width 1.6; margin-left: auto; margin-right: auto;}
-  
-
+  .night-mode .BlackboxRight01 {background-color: #361334;}
+  .night-mode .BlackboxLeft01 {background-color: #361334;}
 }
 </style>
 </head>
@@ -280,27 +396,65 @@ body.night-mode {background-color: black;}
 	<div class="Thumbneil02"></div>
 	</div>
 </div>
-<div class="text01"><h5 class="h501">*Controller-Artis!*</h5><p class="p01">Hallo ich bin Controller!</p></div>
-</div>
-<div class="text02">
-	<br>Dies ist der Anfang einer<br>
-	"neuen" Webseite in einem anderen<br>
-	Style und mehr Funktion<br>
-	schon jetzt über 400 Zeilen: HTML, CSS<br>
-	und auch etwas Java-Script!<br>
-	~Controller<br>
+<div class="text01">
+	<h5 class="h501">
+	*Controller-Artis!*
+	</h5>
+<p class="p01">
+	Hallo ich bin Controller!
+</p>
 </div>
 <div class="text03">
 <div class="title03">
 </div>
 </div>
 <div class="">
-<center><img src="pictures/BlattGrun01.svg" class="" alt="GreuneBleatte!"></img></center>
+<center><img src="pictures/BlattGrun01.svg" class="" alt="GreuneBleatter!"></img></center>
 </div>
-<div class="BlackboxRight01"></div>
-<div class="BlackboxLeft01"></div>
-
-
+<div class="BlackboxRight01">
+<div class="title04">What's up Controller?</div>
+<div class="text05">
+2D, 3D und Web-Artist. Hallo, ich bin Contoller: 
+Ein Deutscher Artist im 2D Bereich wippne ich mich 
+T-posen und "GUI" und im 3D Bereich bin ich im 
+Stylized-Style unterwegs auserdem übe ich mich 
+in Font und Music Erstellung!
+</div>
+	<div class="linkContainer">
+			<a class="linkl01" href="">
+				<p class="linkl01">Art Galerie*!</p>
+			</a>
+			<a class="linkl02" href="">
+				<p>Über Mich*!</p>
+			</a>
+	</div>
+</div>
+<div class="BlackboxLeft01">
+<div class="title04">Games, Ideen und Verwirklichung!</div>
+<div class="text05">
+Ich bin im PC, Mobile & Web Devlog tätig und Versuche
+Kreative und Inovative NEUE Games zu Erstellen die auch
+Langfristig Spaß, Motivation und neue Inhalte bieten
+Gleichzeitig Lerne ich mehr über IT, Server, Computer Sprachen,
+Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr! 
+</div>
+	<div class="linkContainer">
+			<a class="link201" href="">
+				<p>Games*!</p>
+			</a>
+			<a class="link202" href="">
+				<p>Artstyle*!</p>
+			</a>
+	</div>
+</div>
+<div class="Impressum">
+<div class="imptext01">
+<center>
+<h3>Debug: 500 Zeilen c0de! Neuste Version: 9,5e.1f.12d.14h! 22.01.24</h3>
+<h5> Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)</h5><br> 
+</center>
+</div>
+</div>
  <script>
     const modeSwitch = document.getElementById('modeSwitch');
 
