@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title></title>
+	<style>
+	body {margin: 0;}
+	</style>
+	<script>
+	function b() {
+		var x = true;
+		 if (x == true){
+			 while (x == true) {
+				 document.write("hi");
+				 document.write("ho");
+			 }
+		 }
+	}
+	</script>
+</head>
+<body>
+	<p id="0102">Hallo</p>
+	<button type="button" onclick="b()">Try it</button>
+</body>
+</html>

@@ -222,6 +222,13 @@ input:checked + .slider + .daynightc::after {
 	filter: blur(4px);
 	transition: background-color 0.2s;
 }
+.image01 {
+	height: auto;
+	width: 100%;
+}
+.linkContainer {
+	position: relative;
+}
 .BlackboxRight01 {
 	position: relative;
 	margin-top: 75px;
@@ -313,7 +320,28 @@ input:checked + .slider + .daynightc::after {
 	font-size: 19px;
 	font-weight: 950;
 }
-
+.BlueberryboxRight01 {
+	position: relative;
+	margin-top: 75px;
+	height: 590px;
+	width: 100%;
+	left: 0%;
+	background-image: linear-gradient(45deg, #171a6e 0%, #3b38d9 50%, #171a6e);
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	transition: background-color 0.2s;
+	transition: background-image 0.2s;
+}
+.title06 {
+	position: relative;
+	text-align: center;
+	padding-left: 1%;
+	padding-top: 27px;
+	font-family:;
+	font-size: 19px;
+	font-weight: 900;
+	color: white;
+}
 .Impressum {
 	position: relative;
 	margin-top: 150px;
@@ -339,19 +367,21 @@ input:checked + .slider + .daynightc::after {
 .night-mode .text02 {color: white;}
 .night-mode .BlackboxRight01 {background-color: #292540;}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
+.night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
 .night-mode .imptext01 {background-color: #1a1a1a; color: #a1a1a1;}
 body.night-mode {background-color: black;}
 </style>
 <style>
-@media screen and (min-width: 280px) {.BlackboxLeft01 {width: 80%; height: 480px;}}
+@media screen and (min-width: 280px) {.BlackboxLeft01 {width: 80%; height: 480px;} .BlueberryboxRight01 {width: 80%; height:540px;}}
 @media screen and (min-width: 338px) {
 	.Thumbnail01 {background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;}
 	.BlackboxRight01 {width: 80%; height: 340px; left: 20%;}
+	.BlueberryboxRight01 {width: 80%; height: 500px; left: 20%;}
 	.linkl01 {top: -16px;}
 	.linkl02 {margin-top: -65px; left: 11%; right: auto;}
 	.BlackboxLeft01 {width: 80%; height: 415px;}
 }
-@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;}}
+@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;} .BlueberryboxRight01 {width: 80%; height: 370px;}}
 </style>
 <style>
 @media screen and (min-width: 730px) {
@@ -360,16 +390,19 @@ body.night-mode {background-color: black;}
   .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-radius: 19px; background-color: black;}
   .contenthub01 {box-shadow: 0px 0px 0px 0px #6d5480;}
   .grass01 {box-shadow: 0px 0px 0px 0px #13a855ff;}
+  .image01 {width: 70%;}
   .BlackboxRight01 {width: 80%; left: 20%; 330px;}
   .linkl01 {position: relative; top: 15px; padding-left: 11%;}
   .linkl02 {position: absolute; margin-top: -34px; left: auto; right: 9%;}
   .link201 {margin-top: 30px; left: 11%; right: auto;}
   .BlackboxLeft01 {width: 80%; height: 330px;}
+  .BlueberryboxRight01 {width: 80%; left: 20%; 330px;}
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
   .night-mode .white01 {border-radius: 11px; box-shadow: 0 0 5px #2e0f2d;}
   .night-mode .whitebar02 {width: 70%; transition: width 1.6; margin-left: auto; margin-right: auto;}
   .night-mode .BlackboxRight01 {background-color: #361334;}
   .night-mode .BlackboxLeft01 {background-color: #361334;}
+  .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #40143d 0%, #94188d 50%, #40143d);}
 }
 </style>
 </head>
@@ -409,7 +442,7 @@ body.night-mode {background-color: black;}
 </div>
 </div>
 <div class="">
-<center><img src="pictures/BlattGrun01.svg" class="" alt="GreuneBleatter!"></img></center>
+<center><img src="pictures/ArtRobo01.png" class="image01" alt="GreuneBleatter!"></img></center>
 </div>
 <div class="BlackboxRight01">
 <div class="title04">What's up Controller?</div>
@@ -447,10 +480,28 @@ Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr!
 			</a>
 	</div>
 </div>
+<div class="BlueberryboxRight01">
+<div class="title06">Was <b>ich</b> mache und <b>meine</b> Projekte</div>
+<div class="text05">
+Ich habe schon an einigen Projekten mitgearbeitet hier eine
+Aufzählung: ProfessorGame, WallDefence, ShooterGame, ZombieGame, GoblinGame und StareFlare.
+fast alle sind nie Erschienen oder wurden abgeprochen von WallDefence und GoblinGame gibt es einen 
+Prototypen und an Shootergame und StareFlare wird noch gearbeitet!
+Ich bin bei den meisten Projekten 2D/3D Artist, und 
+</div>
+	<div class="linkContainer">
+			<a class="linkl01" href="">
+				<p class="linkl01">Mehr*!</p>
+			</a>
+			<a class="linkl02" href="">
+				<p>C-Mail-system*!</p>
+			</a>
+	</div>
+</div>
 <div class="Impressum">
 <div class="imptext01">
 <center>
-<h3>Debug: 500 Zeilen c0de! Neuste Version: 9,5e.1f.12d.14h! 22.01.24</h3>
+<h3>Debug: 500 Zeilen c0de!<br>Neuste Version: 9,5e.1f.12d.14h! 22.01.24</h3>
 <h5> Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)</h5><br> 
 </center>
 </div>

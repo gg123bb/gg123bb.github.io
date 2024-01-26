@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title></title>
+	<style>
+	body {margin: 0; padding: 0;}
+	.b01 {
+		height: auto;
+		width: auto;
+		border-radius: 20px;
+		background-color: purple;
+		border-color: black;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+<a href="https://www.google.de" title="Controller-Button:" class="l01"><button class="b01"><h1>Klicken</h1></button></a>
+</body>
+</html>
