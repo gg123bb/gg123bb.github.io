@@ -8,30 +8,23 @@
 </head>
 <body style="margin: 0; padding: 0; width: 100%; background-color: #919191;">
 <div style="margin: auto; margin-top: 20px; width: 585px; background-color: #ffffff; padding: 0px; border-radius: 5px;">
-<table border="1" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-	<td border="0" style="border: 0px solid black;">
-	<div style="background-color: black; height: 18px; width: 100%;"></div>
-	</td>
-  </tr>
-  <tr>
-    <td style="background-color: black; border: 0;">
-      <center>
-		<a href="" title="Controller-EMail-contact-system:" style="text-decoration: underline; color: white;"><h1 style="color: white;"><b><u>Neue E-Mail</u></b></h1>
-	  </center>
-    </td>
-  </tr>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
 	<td>
 	  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="">
 		<tr>
 			<td>
-				<label style="font-size: 9px; color: black;"><b>Controller-Contact-System:</b></label>
+				<label style="font-size: 9px; color: black; margin-left: 2px;"><b>Controller-Contact-System:</b></label>
 			</td>
 		</tr>
-		<tr><td height="11px;" style="background-color: #ffffff; color: black;"></td></tr>
 		<tr>
-			<td height="67px;" style="background-color: #ffffff; color: black;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
+				<a href="" title="Controller:" style="text-decoration: none; color: black;" alt="Controller"><img src="../icons\Cicon.png" width="8%" style="float: right;margin-right: 10px; border-radius: 30px; border: 1; border-color: black;" border="2" title="Controller:" alt="ControllerIcon"/></a>
+				<label style="clear: right;"></label>
+			</td>
+		</tr>
+		<tr>
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					<h2>Hi wat's up? Im Controller!</h2>
 					<!--<hr width="70%">-->
@@ -39,68 +32,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td height="100px;" style="background-color: #ffffff; color: black;">
-				<center>
-				<div style="position: relative; width: 80%; height: auto; border-radius: 25px; background-color: #6b1f94;">
-					<h4 style="padding: 10%; color: white;">Ich bin Controller,<br>
-					und sollte dir per E-Mail schreiben!<br>
-					Alles weitere ist im Anhang dabei!
-					</h4>
-				</div>
-				</center>
-			</td>
-		</tr>
-		<tr>
 			<td height="18px;" style="background-color: #ffffff; color: black;">
 				<center>
 					<hr style="width: 80%;">
-				</center>
-			</td>
-		</tr>
-		<tr>
-			<td height="18px;" style="background-color: #ffffff; color: black;">
-				<center>
-					<div style="position: relative; width: 80%; height: auto; border-radius: 25px; background-color: #8c8c19;">
-					<h4 style="padding: 10%; color: white;">
-					<a href="" title="Controller-Contact-System:" style="text-decoration: text-decoration; color: white;">
-					<u>E-Mail Style?</u></a><br>
-					Dies ist mein Standart E-Mail Layout<br>"<a href="" title="Controller-Contact-System:" style="text-decoration: text-decoration; color: white;">hier</a>" kannst du mehr daüber Erfahren!
-					</h4>
-				</div>
-				</center>
-			</td>
-		</tr>
-		<tr>
-			<td height="18px;" style="background-color: #ffffff; color: black;">
-				<center>
-					<hr style="width: 80%;">
-				</center>
-			</td>
-		</tr>
-		<tr>
-			<td height="18px;" style="background-color: #ffffff; color: black;">
-				<center>
-					<div style="position: relative; width: 80%; height: auto; border-radius: 25px; background-color: #1c719e;">
-					<h4 style="padding: 10%; color: white;">
-					Security:<br>
-					Sicher und Einfach! Diese Mail sieht nicht<br>
-					nur cool aus sie hat auch Funktion!
-					</h4>
-				</div>
-				</center>
-			</td>
-		</tr>
-		<tr>
-			<td height="18px;" style="background-color: #ffffff; color: black;">
-				<center>
-					<hr style="width: 80%;"
-				</center>
-			</td>
-		</tr>
-		<tr>
-			<td height="18px;" style="background-color: #ffffff; color: black;">
-				<center>
-					<img src="../pictures/ArtRobo01.png" width="100%" height="auto" border="0" alt="RoboterSecurity"/>
 				</center>
 			</td>
 		</tr>
@@ -131,12 +65,12 @@
   </tr>
   <tr>
 	<td style="border-top: 0px solid white; color: black;">
-		<div style="text-align: right;"><label style="text-align: right;"><a href="mailto:valentin.talas@32osdd.lernsax.de?subject=Re%20zu:%20Controllers%20letzter%20E-Mail:%20" title="Controller-EMail-Replay-System:" style="text-decoration: underline; color: purple;"><b>Replay</b></a></label></div>
+		<div style="text-align: right;"><label style="text-align: right; margin-right: 10px;"><a href="mailto:valentin.talas@32osdd.lernsax.de?subject=Re%20zu:%20Controllers%20letzter%20E-Mail:%20" title="Controller-EMail-Replay-System:" style="text-decoration: underline; color: purple;"><b>Replay</b></a></label></div>
 	</td>
   </tr>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr style="background-color: black; color: white;">
-	<td width="100%" style="padding: 7px;">
+	<td width="100%" style="width:100%; padding-top: 5px;">
 		<center><b>Infos und Kontakte:</b></center>
 	</td>
   </tr>
@@ -171,9 +105,9 @@
 	</td>
   </tr>
 </table>
-<table border="1" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid gray; border-left-color: black; border-right-color: black; border-bottom-color: black;">
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid gray; border-left-color: solid black; border-right-color: solid black; border-bottom-color: solid black;">
 	<tr>
-		<td style="background-color: black; color: white; padding: 15px;">
+		<td width="100%" style="background-color: black; color: white; padding-top: 5px; padding-bottom: 5px;">
 			<center><b>Hat diese E-Mail <a href="" title="Controller-Fehler-behebungs-Support:" style="text-decoration: underline; color: white;">Fehler</a>? Bitte: "<a href="" title="Controller-Feedback-System" style="text-decoration: underline; color: white;">Hier</a>" Feedback senden!<b></center>
 		</td>
 	</tr>

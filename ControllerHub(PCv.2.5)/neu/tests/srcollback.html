@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .scroll-container {
+            white-space: nowrap;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .section {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        /* Individuelle Übergangszeiten für jeden Abschnitt */
+        .section:nth-child(1) { transition-duration: 0.5s; }
+        .section:nth-child(2) { transition-duration: 0.5s; }
+        .section:nth-child(3) { transition-duration: 0.5s; }
+        .section:nth-child(4) { transition-duration: 0.5s; }
+
+        /* Stil für die "swipe"-Animation */
+        .swipe-left { transform: translateX(-100%); opacity: 0; }
+        .swipe-right { transform: translateX(100%); opacity: 0; }
+
+        /* Klasse für die sofortige Anzeige ohne Transition */
+        .no-transition { transition: none !important; }
+
+        /* Klasse zum Ausblenden */
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="section">Über Mich</div>
+        <div class="section">Kontakte</div>
+        <div class="section">Projekte</div>
+        <div class="section">Art Galerie</div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const sections = document.querySelectorAll('.section');
+        const scrollContainer = document.querySelector('.scroll-container');
+        let swipeInProgress = false;
+        let sensitivity = 0.3;
+
+        function scrollToIndex(index) {
+            currentIndex = index;
+            const translateValue = `translateX(${-currentIndex * 100}vw)`;
+            scrollContainer.style.transition = `transform 0.5s ease-in-out`;
+            scrollContainer.style.transform = translateValue;
+        }
+
+        function hideIntermediateDivs(startIndex, endIndex) {
+            for (let i = 0; i < sections.length; i++) {
+                if (i < startIndex || i > endIndex) {
+                    sections[i].classList.add('hidden');
+                } else {
+                    sections[i].classList.remove('hidden');
+                }
+            }
+        }
+
+        function swipeAnimation(direction, speed) {
+            if (!swipeInProgress) {
+                swipeInProgress = true;
+
+                const nextIndex = direction === 'left' ? currentIndex + 1 : currentIndex - 1;
+
+                sections[currentIndex].classList.add(direction === 'left' ? 'swipe-left' : 'swipe-right');
+
+                setTimeout(() => {
+                    sections[currentIndex].style.opacity = 0;
+
+                    sections[currentIndex].addEventListener('transitionend', function transitionEnd() {
+                        sections[currentIndex].removeEventListener('transitionend', transitionEnd);
+                        sections[currentIndex].style.opacity = 1;
+                        sections[currentIndex].classList.remove('swipe-left', 'swipe-right');
+                        swipeInProgress = false;
+
+                        // Überprüfen, ob wir den Anfang oder das Ende erreicht haben
+                        if (nextIndex < 0) {
+                            currentIndex = sections.length - 1;
+                            hideIntermediateDivs(0, currentIndex - 1);
+                        } else if (nextIndex >= sections.length) {
+                            currentIndex = 0;
+                            hideIntermediateDivs(currentIndex + 1, sections.length - 1);
+                        } else {
+                            currentIndex = nextIndex;
+                        }
+
+                        // Scrollen überspringt die Divs zwischen den Indexen
+                        scrollToIndex(currentIndex);
+                    }, { once: true });
+
+                }, 50);
+            }
+        }
+
+        function loopScroll() {
+            if (currentIndex < 0) {
+                currentIndex = sections.length - 1;
+            } else if (currentIndex >= sections.length) {
+                currentIndex = 0;
+            }
+
+            scrollToIndex(currentIndex);
+        }
+
+        document.addEventListener('wheel', (event) => {
+            if (event.deltaY > 0) {
+                currentIndex++;
+            } else {
+                currentIndex--;
+            }
+
+            loopScroll();
+        });
+
+        document.addEventListener('mousedown', (event) => {
+            let startX = event.clientX;
+
+            document.addEventListener('mousemove', handleMouseMove);
+
+            document.addEventListener('mouseup', () => {
+                document.removeEventListener('mousemove', handleMouseMove);
+            });
+
+            function handleMouseMove(moveEvent) {
+                const deltaX = moveEvent.clientX - startX;
+
+                if (deltaX > 50) {
+                    swipeAnimation('left', Math.abs(deltaX) / window.innerWidth);
+                    document.removeEventListener('mousemove', handleMouseMove);
+                } else if (deltaX < -50) {
+                    swipeAnimation('right', Math.abs(deltaX) / window.innerWidth);
+                    document.removeEventListener('mousemove', handleMouseMove);
+                }
+            }
+        });
+
+        // Aktiviere die Swipe-Animation auch beim Linksklick
+        document.addEventListener('contextmenu', (event) => {
+            event.preventDefault(); // Verhindert das Kontextmenü
+            swipeAnimation('left', sensitivity);
+        });
+
+        // Simuliere ein "swipe"-Ereignis mit benutzerdefiniertem Event "swipe"
+        let initialX = null;
+
+        document.addEventListener('touchstart', (event) => {
+            initialX = event.touches[0].clientX;
+        });
+
+        document.addEventListener('touchend', (event) => {
+            if (initialX !== null) {
+                const deltaX = event.changedTouches[0].clientX - initialX;
+                initialX = null;
+
+                if (Math.abs(deltaX) > 50) {
+                    const direction = deltaX > 0 ? 'right' : 'left';
+                    swipeAnimation(direction, Math.abs(deltaX) / window.innerWidth);
+                }
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            const currentTranslate = -currentIndex * 100;
+            const newTranslate = window.innerWidth * (currentTranslate / 100);
+            scrollContainer.style.transform = `translateX(${newTranslate}px)`;
+        });
+
+        // Pfeiltastensteuerung hinzufügen
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                swipeAnimation('right', sensitivity);
+            } else if (event.key === 'ArrowRight') {
+                swipeAnimation('left', sensitivity);
+            }
+        });
+
+        // Nahtlose Übergänge am Anfang und Ende
+        scrollContainer.addEventListener('transitionend', () => {
+            if (currentIndex < 0) {
+                hideIntermediateDivs(0, currentIndex + 1);
+                currentIndex = sections.length - 1;
+                scrollToIndex(currentIndex);
+            } else if (currentIndex >= sections.length) {
+                hideIntermediateDivs(currentIndex, sections.length - 1);
+                currentIndex = 0;
+                scrollToIndex(currentIndex);
+            } else {
+                hideIntermediateDivs(0, sections.length - 1);
+            }
+        });
+    </script>
+</body>
+</html>
