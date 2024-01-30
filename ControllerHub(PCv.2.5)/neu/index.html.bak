@@ -13,7 +13,8 @@
 <style>
 body {
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-x: scroll;
     color: black;
 	background-color: white;
 	transition: background-color 0.2s;
@@ -471,6 +472,10 @@ body.night-mode {background-color: black;}
 			<div class="slide"><a href="" class="Üblinkdiv01" title="Projekte:"><b>Projekte</b></a></div>
 			<div class="slide"><a href="" class="Üblinkdiv01" title="Kontakte:"><b>Kontakte</b></a></div>
 			<div class="slide"><a href="" class="Üblinkdiv01" title="Art Galerie:"><b>Art Galerie</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Werbung:"><b>Hier Könnte ihre Werbung stehen!</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Platzthalter:"><b>Platzthalter</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Platzthalter:"><b>Platzthalter</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Platzthalter:"><b>Platzthalter</b></a></div>
 		</div>
 </div>
 </div>

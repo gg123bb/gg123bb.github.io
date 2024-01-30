@@ -6,7 +6,7 @@
   <style>
     body {
       margin: 0;
-      overflow: hidden;
+      overflow-x: hidden; /* Verhindern des horizontalen Scrollens im Body */
       background-color: white;
       color: black;
     }
@@ -14,6 +14,9 @@
     #carousel-container {
       background-color: black;
       overflow: hidden;
+      height: 100vh;
+      overflow-y: hidden; /* Verhindern des vertikalen Scrollens im Carousel-Container */
+      overflow-x: scroll; /* Horizontales Scrollen im Carousel-Container erlauben */
     }
 
     #carousel {
@@ -27,7 +30,6 @@
       padding: 20px;
       text-align: center;
       font-size: 24px;
-	  color: white;
     }
   </style>
 </head>
@@ -101,9 +103,14 @@
   document.addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
       nextSlide();
-    } else {
+    } else if (e.deltaY < 0) {
       prevSlide();
     }
+  });
+
+  document.addEventListener('scroll', () => {
+    // Set scroll position to the top to prevent vertical scrolling
+    document.documentElement.scrollTop = 0;
   });
 </script>
 

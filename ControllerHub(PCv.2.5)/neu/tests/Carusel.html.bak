@@ -45,6 +45,7 @@
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
   const carousel = document.getElementById('carousel');
+  const container = document.getElementById('carousel-container');
 
   function updateCarousel() {
     carousel.style.transform = `translateX(${-currentIndex * 100}vw)`;
@@ -100,9 +101,14 @@
   document.addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
       nextSlide();
-    } else {
+    } else if (e.deltaY < 0) {
       prevSlide();
     }
+  });
+
+  document.addEventListener('scroll', () => {
+    // Set scroll position to the top to prevent vertical scrolling
+    document.documentElement.scrollTop = 0;
   });
 </script>
 
