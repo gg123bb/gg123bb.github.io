@@ -6,9 +6,9 @@
   <!--Den title sieht man bei manchen Programmen unter dem betreff!-->
   <title>Neue E-Mail von Controller</title>
 </head>
-<body style="margin: 0; padding: 0; width: 100%; background-color: #6a6a6a;" vlink="#551A8B" link="#0B6CDA" bgcolor="#6a6a6a" alink="#EE0000">
+<body style="margin: 0; padding: 0; width: 100%; background-color: #919191;">
 <div style="margin: auto; margin-top: 20px; width: 585px; background-color: #ffffff; padding: 0px; border-radius: 5px;">
-<table border="0" style="padding-top: 10px" cellpadding="0" cellspacing="0" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
 	<td>
 	  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="">
@@ -19,14 +19,14 @@
 		</tr>
 		<!--User Icon: (Controller)-->
 		<tr>
-			<td height="18px" align="right" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" align="right" style="background-color: #ffffff; color: black; height: 18px;">
 				<a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/index.html" title="Controller:" style="text-decoration: none; color: black;" alt="Controller"><img src="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/icons/Cicon.png" width="8%" style="float: right;margin-right: 10px; border-radius: 30px; border: 1; border-color: black;" border="2" title="Controller:" alt="Icon"/></a>
 				<label style="clear: right;"></label>
 			</td>
 		</tr>
 		<!--Mail Text ereich (Content)-->
 		<tr>
-			<td height="18px" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					<h2>Hi wat's up? Im Controller!</h2>
 					<!--<hr width="70%">-->
@@ -34,34 +34,34 @@
 			</td>
 		</tr>
 		<tr>
-			<td height="18px" align="center" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					<hr style="width: 80%;">
 				</center>
 			</td>
 		</tr>
 		<tr>
-			<td height="18px" align="center" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					
 				</center>
 			</td>
 		</tr>
 		<tr>
-			<td height="18px" align="center" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					
 				</center>
 			</td>
 		</tr>
 		<tr>
-			<td height="18px" align="center" style="background-color: #ffffff; color: black; height: 18px;">
+			<td height="18px;" style="background-color: #ffffff; color: black; height: 18px;">
 				<center>
 					
 				</center>
 			</td>
 		</tr>
-		<tr><td height="20px" align="center" style="background-color: #ffffff; color: black; height: 18px;"></td></tr>
+		<tr><td height="20px;" style="background-color: #ffffff; color: black; height: 18px;"></td></tr>
 	  </table>
 	</td>
   </tr>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: white;
+      color: black;
+    }
+
+    #carousel-container {
+      background-color: black;
+      overflow: hidden;
+    }
+
+    #carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100vw;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+	  color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div id="carousel-container">
+  <div id="carousel">
+    <div class="slide">Über mich</div>
+    <div class="slide">Projekte</div>
+    <div class="slide">Kontakte</div>
+    <div class="slide">Art Galerie</div>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const carousel = document.getElementById('carousel');
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(${-currentIndex * 100}vw)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  function handleSwipeStart(e) {
+    startX = e.clientX || e.touches[0].clientX;
+    startY = e.clientY || e.touches[0].clientY;
+  }
+
+  function handleSwipeEnd(e) {
+    const endX = e.clientX || e.changedTouches[0].clientX;
+    const endY = e.clientY || e.changedTouches[0].clientY;
+
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      // horizontal swipe
+      if (deltaX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    }
+  });
+
+  let startX, startY;
+  carousel.addEventListener('mousedown', handleSwipeStart);
+  carousel.addEventListener('touchstart', handleSwipeStart);
+
+  carousel.addEventListener('mouseup', handleSwipeEnd);
+  carousel.addEventListener('touchend', handleSwipeEnd);
+
+  document.addEventListener('wheel', (e) => {
+    if (e.deltaY > 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+  });
+</script>
+
+</body>
+</html>

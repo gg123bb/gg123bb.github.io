@@ -7,18 +7,25 @@
 <meta name="author" content="controller000"/>
 <meta name="copyright" content="controller000"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title></title>
+<link rel="icon" type="image/x-icon" href="icons/Cicon.png" style="border-radius: 20px;">
+<title>ControllerArtist</title>
 
 <style>
-body {margin: 0px; background-color:white; transition: background-color 0.2s;}
+body {
+	margin: 0;
+	overflow: hidden;
+    color: black;
+	background-color: white;
+	transition: background-color 0.2s;
+}
 .black01 {
 	height: 13px;
 	width: 100%;
 	background-color: black;
 }
 .black02 {
-	position: absolute;
-	height: 387px;
+	position: relative;
+	height: 447px;
 	width: 100%;
 	background-color: black;
 	border-bottom-left-radius: 5px;
@@ -164,6 +171,7 @@ input:checked + .slider + .daynightc::after {
 .text01 {
 	position: relative;
 	top: -15px;
+	height: 120px;
 	text-align: center;
 	color: white;
 	font-family:; 
@@ -342,6 +350,27 @@ input:checked + .slider + .daynightc::after {
 	font-weight: 900;
 	color: white;
 }
+    #carousel-container {
+	  position: absolute;
+      overflow: hidden;
+	  top: 55px;
+    }
+	.Üblinkdiv01 {
+		text-decoration: underline;
+		color: white;
+	}
+    #carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100vw;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+	  color: white;
+    }
 .Impressum {
 	position: relative;
 	margin-top: 150px;
@@ -381,7 +410,7 @@ body.night-mode {background-color: black;}
 	.linkl02 {margin-top: -65px; left: 11%; right: auto;}
 	.BlackboxLeft01 {width: 80%; height: 415px;}
 }
-@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;} .BlueberryboxRight01 {width: 80%; height: 370px;}}
+@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;} .BlueberryboxRight01 {width: 80%; height: 350px;}}
 </style>
 <style>
 @media screen and (min-width: 730px) {
@@ -436,6 +465,15 @@ body.night-mode {background-color: black;}
 <p class="p01">
 	Hallo ich bin Controller!
 </p>
+<div id="carousel-container">
+		<div id="carousel">
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Über Mich:"><b>Über mich</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Projekte:"><b>Projekte</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Kontakte:"><b>Kontakte</b></a></div>
+			<div class="slide"><a href="" class="Üblinkdiv01" title="Art Galerie:"><b>Art Galerie</b></a></div>
+		</div>
+</div>
+</div>
 </div>
 <div class="text03">
 <div class="title03">
@@ -506,6 +544,70 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 </center>
 </div>
 </div>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const carousel = document.getElementById('carousel');
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(${-currentIndex * 100}vw)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  function handleSwipeStart(e) {
+    startX = e.clientX || e.touches[0].clientX;
+    startY = e.clientY || e.touches[0].clientY;
+  }
+
+  function handleSwipeEnd(e) {
+    const endX = e.clientX || e.changedTouches[0].clientX;
+    const endY = e.clientY || e.changedTouches[0].clientY;
+
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      // horizontal swipe
+      if (deltaX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    }
+  });
+
+  let startX, startY;
+  carousel.addEventListener('mousedown', handleSwipeStart);
+  carousel.addEventListener('touchstart', handleSwipeStart);
+
+  carousel.addEventListener('mouseup', handleSwipeEnd);
+  carousel.addEventListener('touchend', handleSwipeEnd);
+
+  document.addEventListener('wheel', (e) => {
+    if (e.deltaY > 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+  });
+</script>
  <script>
     const modeSwitch = document.getElementById('modeSwitch');
 
