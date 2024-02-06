@@ -511,7 +511,7 @@ body.night-mode {background-color: black;}
 <div class="ControllerYearContainer">
 <div class="title03"></div>
 <div class="ControllerYearPicture"></div>
-<div class="Controlltext"><center>Controller<label class="CRights01">®</label></center></div>
+<div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024</center></div>
 </div>
 <div class="BlackboxRight01">
 <div class="title04">What's up Controller?</div>
@@ -570,7 +570,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 <div class="Impressum">
 <div class="imptext01">
 <center>
-<h3>Debug: 500 Zeilen c0de!<br>Neuste Version: 9,5e.1f.12d.14h! 22.01.24</h3>
+<h3>Debug: 700 Zeilen c0de!<br>Neuste Version: 11e.1f.20d.30h! 06.02.24</h3>
 <h5> Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)</h5><br> 
 </center>
 </div>
