@@ -511,7 +511,7 @@ body.night-mode {background-color: black;}
 <div class="ControllerYearContainer">
 <div class="title03"></div>
 <div class="ControllerYearPicture"></div>
-<div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024</center></div>
+<div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024!</center></div>
 </div>
 <div class="BlackboxRight01">
 <div class="title04">What's up Controller?</div>
@@ -531,6 +531,7 @@ in Font und Music Erstellung!
 			</a>
 	</div>
 </div>
+<div style="margin-top: 60px;"><center><img src="pictures/Let'sGo!byControllerArtist.png" style="border-radius: 20px;"width="48%" border="0" title="let'sGo! -by ControllerArtist" alt='hier wäre das Bild: "LetsGo!" by ControllerArtist!'/></center></div>
 <div class="BlackboxLeft01">
 <div class="title04">Games, Ideen und Verwirklichung!</div>
 <div class="text05">
