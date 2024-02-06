@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<!--
+V.3.9.3!:
+
+----------
+
+Dies ist ein Web-Game-Test 
+der boden ist in form einer tabelle gespeichert
+layer sind verfügbar! 
+
+Fehler & Debug!:
+i dount know warum der game kasten nicht center ist!? (if you know please send me your version!:
+Discord: "controllerartist";
+E-Mail:  <a href="mailto:valentin.talas@32osdd.lernsax.de" title="help Me!" alt=":-(" >C-Mail</a>
+
+..-Danke!..
+
+--Diese Webseite:
+
+Diese Webseite soll ein javascript lernseite werden
+um Javascript besser ausführlich und praktisch zu lernen!
+dabei soll man den "P" / "user" / "player" -steuern können
+und mit "NPC" / "ent" / "enteties" interargieren können!
+NPC's sollen auch teilweise leufen können! 
+es gibt Layers wie bg die den hindergrund darstellen sollen z.b: Erde!
+Buildings: Häuser oder auch ein Busch oder Baum oder eine Sitz-Bank!
+stuff: Münzen, Müll, Ball, also kleinere sachen die wieder zu removen sind!
+enteties: beweglich! interaktionen!
+player/user: spieler!
+
+Gamelicense: Opensource!
+
+---------
+
+Debug-Dev-Erklärungen:
+bg ist für den background-layer
+buildings ist für den building-layer
+stuff ist für den -layer
+player ist für den background-layer
+
+
+bgt = background-table
+bdt = Building-table
+stt = stuff-table
+
+l01 ..etc.. = layer + zahl(01) =(l01)
+
+Mechaniken:
+
+alles absolute, damit es aufeinander liegt!
+
+Gebe dies nicht als deins aus! ~Controller! R®:2024|25 Private!
+-->
+<style>
+body {
+	margin: 1;
+	background-color: #5daac2;
+}
+.Gameposition {
+	position: relative;
+    top: 50%;
+    left: center;
+	right: center;
+    text-align: center;
+}
+#GameContainer {
+   
+}
+#bg {
+	position: relative;
+	
+}
+#buildings{
+	position: relative;
+	left: 0px;
+	top: -150px;
+}
+#stuff {
+	position: relative;
+	left: 0px;
+	top: -300px;
+}
+#enteties {
+
+}
+#player {
+	
+}
+.bgt {
+	background-color: #351bb5;
+}
+.bdt {
+	background-color: transparent;
+}
+.stt {
+	background-color: transparent;
+}
+#l01{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	background-color: #351bb5;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+#l01:hover{
+	background-color: purple;
+}
+#l02{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+#l02:hover{
+	background-color: #f21bd9;
+}
+#h01:hover {background-color: red;}
+#l03{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+#l03:hover{
+	background-color: yellow;
+}
+#ent {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	left: 150px;
+	top: 107px;
+}
+#ent:hover {background-color: green;}
+#user {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	left: 10px;
+	top: 10px;
+}
+#user:hover {background-color: purple;}
+</style>
+<script>
+</script>
+</head>
+<body>
+<div class="234092j" style="margin-top: 10px; margin-bottom: 10px; text-align: center; font-size: 20px; font-family: Arial; color: white; font-weight: 900; text-decoration: underline;">Controllers Web-Game-Engine-Test:</div>
+<div class="Gameposition">
+<div id="GameContainer">
+<label id="bg">
+<table border="0" cellpadding="0" cellspacing="0" class="bgt" >
+	<tr>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+		<td>
+			<div id="l01"></div>
+		</td>
+	</tr>
+</table>
+</label>
+<label id="enteties"> 
+	<div id="ent" style="font-size: 13px;">NPC</div>
+</label>
+<label id="player">
+	<div id="user" style="font-size: 13px; color: white;">P</div>
+</label>
+</div>
+</div>
+<script>
+</script>
+</body>
+</html>

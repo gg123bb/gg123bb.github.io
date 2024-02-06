@@ -14,7 +14,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	overflow-x: scroll;
+	overflow-y: scroll;
     color: black;
 	background-color: white;
 	transition: background-color 0.2s;
@@ -238,6 +238,30 @@ input:checked + .slider + .daynightc::after {
 .linkContainer {
 	position: relative;
 }
+.ControllerYearPicture {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 336px;
+	width: 100%;
+	background: url(pictures/B24ContollerArtistRv1.svg) 50% no-repeat;
+	z-index: 1;
+}
+.Controlltext {
+	position: relative;
+	top: 0px;
+	font-family: Sigmar One;
+	font-size: 50px;
+	font-weight: ;
+	
+}
+.CRights01 {
+	position: relative;
+	font-family: Sigmar One;
+	font-size: 25px;
+	font-weight: ;
+	top: -10px;
+}
 .BlackboxRight01 {
 	position: relative;
 	margin-top: 75px;
@@ -395,6 +419,8 @@ input:checked + .slider + .daynightc::after {
 .night-mode .whitebar01 {background-color: #2e0f2d;}
 .night-mode .whitebar02 {background-color: #2ad424; filter: blur(0px);}
 .night-mode .text02 {color: white;}
+.night-mode .ControllerYearPicture {background: url(pictures/W24ContollerArtistRv2.svg) 50% no-repeat;}
+.night-mode .Controlltext {color: white;}
 .night-mode .BlackboxRight01 {background-color: #292540;}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
 .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
@@ -466,6 +492,7 @@ body.night-mode {background-color: black;}
 <p class="p01">
 	Hallo ich bin Controller!
 </p>
+<!-- Finktioniert nicht so wie es soll!
 <div id="carousel-container">
 		<div id="carousel">
 			<div class="slide"><a href="" class="Üblinkdiv01" title="Über Mich:"><b>Über mich</b></a></div>
@@ -478,14 +505,13 @@ body.night-mode {background-color: black;}
 			<div class="slide"><a href="" class="Üblinkdiv01" title="Platzthalter:"><b>Platzthalter</b></a></div>
 		</div>
 </div>
+-->
 </div>
 </div>
-<div class="text03">
-<div class="title03">
-</div>
-</div>
-<div class="">
-<center><img src="pictures/ArtRobo01.png" class="image01" alt="GreuneBleatter!"></img></center>
+<div class="ControllerYearContainer">
+<div class="title03"></div>
+<div class="ControllerYearPicture"></div>
+<div class="Controlltext"><center>Controller<label class="CRights01">®</label></center></div>
 </div>
 <div class="BlackboxRight01">
 <div class="title04">What's up Controller?</div>

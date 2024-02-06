@@ -6,7 +6,7 @@
   <style>
     body {
       margin: 0;
-      overflow: hidden;
+      overflow-x: hidden;
       background-color: white;
       color: black;
     }
@@ -14,6 +14,9 @@
     #carousel-container {
       background-color: black;
       overflow: hidden;
+      height: ;
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
 
     #carousel {
@@ -22,11 +25,12 @@
     }
 
     .slide {
-      min-width: 100vw;
+      min-width: 250px; /* Mindestbreite für jedes .slide-Element */
       box-sizing: border-box;
       padding: 20px;
       text-align: center;
       font-size: 24px;
+	  color: white;
     }
   </style>
 </head>
@@ -45,10 +49,9 @@
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
   const carousel = document.getElementById('carousel');
-  const container = document.getElementById('carousel-container');
 
   function updateCarousel() {
-    carousel.style.transform = `translateX(${-currentIndex * 100}vw)`;
+    carousel.style.transform = `translateX(${-currentIndex * 250}px)`;
   }
 
   function nextSlide() {
@@ -107,7 +110,6 @@
   });
 
   document.addEventListener('scroll', () => {
-    // Set scroll position to the top to prevent vertical scrolling
     document.documentElement.scrollTop = 0;
   });
 </script>

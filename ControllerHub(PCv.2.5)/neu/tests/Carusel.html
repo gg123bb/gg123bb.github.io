@@ -6,7 +6,7 @@
   <style>
     body {
       margin: 0;
-      overflow-x: hidden; /* Verhindern des horizontalen Scrollens im Body */
+      overflow-x: hidden;
       background-color: white;
       color: black;
     }
@@ -14,9 +14,9 @@
     #carousel-container {
       background-color: black;
       overflow: hidden;
-      height: 100vh;
-      overflow-y: hidden; /* Verhindern des vertikalen Scrollens im Carousel-Container */
-      overflow-x: scroll; /* Horizontales Scrollen im Carousel-Container erlauben */
+      height: ;
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
 
     #carousel {
@@ -25,11 +25,12 @@
     }
 
     .slide {
-      min-width: 100vw;
+      min-width: 100%;
       box-sizing: border-box;
       padding: 20px;
       text-align: center;
       font-size: 24px;
+	  color: white;
     }
   </style>
 </head>
@@ -50,7 +51,7 @@
   const carousel = document.getElementById('carousel');
 
   function updateCarousel() {
-    carousel.style.transform = `translateX(${-currentIndex * 100}vw)`;
+    carousel.style.transform = `translateX(${-currentIndex * 250}px)`;
   }
 
   function nextSlide() {
@@ -109,7 +110,6 @@
   });
 
   document.addEventListener('scroll', () => {
-    // Set scroll position to the top to prevent vertical scrolling
     document.documentElement.scrollTop = 0;
   });
 </script>
