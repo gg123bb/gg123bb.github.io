@@ -240,11 +240,11 @@ input:checked + .slider + .daynightc::after {
 }
 .ControllerYearPicture {
 	position: relative;
+	margin-top: 60px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 336px;
-	width: 100%;
-	background: url(pictures/B24ContollerArtistRv1.svg) 50% no-repeat;
+	height: auto;
+	width: 80%;
 	z-index: 1;
 }
 .Controlltext {
@@ -353,6 +353,7 @@ input:checked + .slider + .daynightc::after {
 	font-size: 19px;
 	font-weight: 950;
 }
+.LetsGO {width: 100%; height: auto;}
 .BlueberryboxRight01 {
 	position: relative;
 	margin-top: 75px;
@@ -419,16 +420,17 @@ input:checked + .slider + .daynightc::after {
 .night-mode .whitebar01 {background-color: #2e0f2d;}
 .night-mode .whitebar02 {background-color: #2ad424; filter: blur(0px);}
 .night-mode .text02 {color: white;}
-.night-mode .ControllerYearPicture {background: url(pictures/W24ContollerArtistRv2.svg) 50% no-repeat;}
+.night-mode .ControllerYearPicture {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .Controlltext {color: white;}
 .night-mode .BlackboxRight01 {background-color: #292540;}
+.night-mode .LetsGO {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
 .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
 .night-mode .imptext01 {background-color: #1a1a1a; color: #a1a1a1;}
 body.night-mode {background-color: black;}
 </style>
 <style>
-@media screen and (min-width: 280px) {.BlackboxLeft01 {width: 80%; height: 480px;} .BlueberryboxRight01 {width: 80%; height:540px;}}
+@media screen and (min-width: 280px) {.BlackboxLeft01 {width: 80%; height: 480px;} .BlueberryboxRight01 {width: 80%; height:540px;} .ControllerYearPicture {width: 100%;}}
 @media screen and (min-width: 338px) {
 	.Thumbnail01 {background: url(pictures/Thumbneil01Waterv01.svg) 50% 50% no-repeat;}
 	.BlackboxRight01 {width: 80%; height: 340px; left: 20%;}
@@ -436,8 +438,9 @@ body.night-mode {background-color: black;}
 	.linkl01 {top: -16px;}
 	.linkl02 {margin-top: -65px; left: 11%; right: auto;}
 	.BlackboxLeft01 {width: 80%; height: 415px;}
+	.ControllerYearPicture {width: 100%;}
 }
-@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;} .BlueberryboxRight01 {width: 80%; height: 350px;}}
+@media screen and (min-width: 540px) {.BlackboxLeft01 {width: 80%; height: 345px;} .BlueberryboxRight01 {width: 80%; height: 350px;} .ControllerYearPicture {width: 83%;} .LetsGO {width: 60%;}}
 </style>
 <style>
 @media screen and (min-width: 730px) {
@@ -451,6 +454,8 @@ body.night-mode {background-color: black;}
   .linkl01 {position: relative; top: 15px; padding-left: 11%;}
   .linkl02 {position: absolute; margin-top: -34px; left: auto; right: 9%;}
   .link201 {margin-top: 30px; left: 11%; right: auto;}
+  .LetsGo {width: 48%;}
+  .ControllerYearPicture {width: 80%;}
   .BlackboxLeft01 {width: 80%; height: 330px;}
   .BlueberryboxRight01 {width: 80%; left: 20%; 330px;}
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
@@ -510,7 +515,7 @@ body.night-mode {background-color: black;}
 </div>
 <div class="ControllerYearContainer">
 <div class="title03"></div>
-<div class="ControllerYearPicture"></div>
+<div class=""><img src="pictures/B24ContollerArtistRv1.svg" class="ControllerYearPicture" title="Controller24!" border="0" alt=""/></div>
 <div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024!</center></div>
 </div>
 <div class="BlackboxRight01">
@@ -531,7 +536,7 @@ in Font und Music Erstellung!
 			</a>
 	</div>
 </div>
-<div style="margin-top: 60px;"><center><img src="pictures/Let'sGo!byControllerArtist.png" style="border-radius: 20px;"width="48%" border="0" title="let'sGo! -by ControllerArtist" alt='hier wäre das Bild: "LetsGo!" by ControllerArtist!'/></center></div>
+<div style="margin-top: 60px;"><center><img src="pictures/Let'sGo!byControllerArtist.png"  class="LetsGO" style="border-radius: 20px;" border="0" title="let'sGo! -by ControllerArtist" alt='hier wäre das Bild: "LetsGo!" by ControllerArtist!'/></center></div>
 <div class="BlackboxLeft01">
 <div class="title04">Games, Ideen und Verwirklichung!</div>
 <div class="text05">
