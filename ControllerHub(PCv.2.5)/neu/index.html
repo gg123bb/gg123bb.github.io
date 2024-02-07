@@ -354,6 +354,7 @@ input:checked + .slider + .daynightc::after {
 	font-weight: 950;
 }
 .LetsGO {width: 100%; height: auto;}
+.Mobile01 {position: relative; margin-top: 70px; height: auto; width: 40%;}
 .BlueberryboxRight01 {
 	position: relative;
 	margin-top: 75px;
@@ -366,6 +367,7 @@ input:checked + .slider + .daynightc::after {
 	transition: background-color 0.2s;
 	transition: background-image 0.2s;
 }
+.BluePrint01 {position: relative; margin-top: 70px; width: 70%; height: auto;}
 .title06 {
 	position: relative;
 	text-align: center;
@@ -399,7 +401,7 @@ input:checked + .slider + .daynightc::after {
     }
 .Impressum {
 	position: relative;
-	margin-top: 150px;
+	margin-top: 60px;
 	width: 100%;
 	height: 100px;
 	bottom: 0px;
@@ -410,8 +412,9 @@ input:checked + .slider + .daynightc::after {
 .h502 {font-family:; font-size: 18px; margin-top: 30px; transition: background-color 0.2s;}
 .p01 {position: relative; top: -25px; transition: background-color 0.2s;}
 .text02 {position: relative; margin-top: 395px; text-align: center; color: black;}
-.text03 {position: relative; margin-top: 0px; text-align: center; color: black; transition: color 0.2s;}
+.text03 {position: relative; margin-top: 50px; padding-top: 30px; left: 10%; text-align: center; color: black; transition: color 0.2s; height: 300px; width: 80%; background-color: #a8a8a8; border-radius: 20px;}
 .text04 {position: relative; padding: 20px; margin-top: 20px; width: 470px; height: 240px; background-color: #adadad;}
+.text06 {position: relative; margin-top: 100px; padding-top: 30px; left: 10%; text-align: center; color: black; transition: color 0.2s; height: 500px; width: 80%; background-color: #a8a8a8; border-radius: 20px;}
 .p02 {position: relative; margin-top: -5px; text-align: justify; color: black; font-family:; font-size: 14px; font-weight: 700;}
 .p03 {position: relative; top: -10px;}
 .night-mode .black02 {background-color: #292540;}
@@ -424,6 +427,8 @@ input:checked + .slider + .daynightc::after {
 .night-mode .Controlltext {color: white;}
 .night-mode .BlackboxRight01 {background-color: #292540;}
 .night-mode .LetsGO {-webkit-filter: invert(1);filter: invert(1);}
+.night-mode .Mobile01 {-webkit-filter: invert(1);filter: invert(1);}
+.night-mode .BluePrint01 {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
 .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
 .night-mode .imptext01 {background-color: #1a1a1a; color: #a1a1a1;}
@@ -456,6 +461,7 @@ body.night-mode {background-color: black;}
   .link201 {margin-top: 30px; left: 11%; right: auto;}
   .LetsGO {width: 48%;}
   .ControllerYearPicture {width: 80%;}
+  .Mobile01 {width: 20%;}
   .BlackboxLeft01 {width: 80%; height: 330px;}
   .BlueberryboxRight01 {width: 80%; left: 20%; 330px;}
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
@@ -518,6 +524,11 @@ body.night-mode {background-color: black;}
 <div class=""><img src="pictures/B24ContollerArtistRv1.svg" class="ControllerYearPicture" title="Controller24!" border="0" alt=""/></div>
 <div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024!</center></div>
 </div>
+<center><hr width="80%"></center>
+<div class="text03" title="Algemeines über mich:">
+	Algemeines über mich!<br><hr>
+	more Content coming soon!...
+</div>
 <div class="BlackboxRight01">
 <div class="title04">What's up Controller?</div>
 <div class="text05">
@@ -555,6 +566,7 @@ Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr!
 			</a>
 	</div>
 </div>
+<div><center><img src="pictures/HandyMobile.svg" border="0" alt="Handy" title="Games und Style!" class="Mobile01"/></center></div>
 <div class="BlueberryboxRight01">
 <div class="title06">Was <b>ich</b> mache und <b>meine</b> Projekte</div>
 <div class="text05">
@@ -573,6 +585,13 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 			</a>
 	</div>
 </div>
+<div><center><img src="pictures/BluePrint.svg" class="BluePrint01" border="0" title="Meine Pläne:" alt="Blueprint"/></center></div>
+<div class="text06">
+	Fazinationen und Realität!<br><hr>
+	*Der Grafik Fehler vom "BluePrint-pfeil" wird im<br>
+	nächsten update behoben!<br><br>more Content coming soon!...
+</div>
+<hr width="80%" style="position: relative; margin-top: 150px;">
 <div class="Impressum">
 <div class="imptext01">
 <center>
@@ -581,6 +600,9 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 </center>
 </div>
 </div>
+<!--
+Funktioniert nicht richtig!
+
 <script>
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
@@ -645,6 +667,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
     }
   });
 </script>
+-->
  <script>
     const modeSwitch = document.getElementById('modeSwitch');
 
@@ -653,4 +676,4 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
     });
   </script>
 </body>
-<html>
+</html>
