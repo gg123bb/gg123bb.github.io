@@ -366,8 +366,14 @@ input:checked + .slider + .daynightc::after {
 	border-bottom-left-radius: 25px;
 	transition: background-color 0.2s;
 	transition: background-image 0.2s;
+	margin-bottom: 25%;
 }
-.BluePrint01 {position: relative; margin-top: 70px; width: 70%; height: auto;}
+.BP01 {
+	position: relative;
+	margin-bottom: 25%;
+}
+.BluePrint01 {position: absolute; left: 50%; transform: translate(-50%, -50%); width: 70%; visibility: visible;}
+.BluePrint02 {position: absolute; left: 50%; transform: translate(-50%, -50%); width: 70%; visibility: collapse;}
 .title06 {
 	position: relative;
 	text-align: center;
@@ -429,9 +435,11 @@ input:checked + .slider + .daynightc::after {
 .night-mode .BlackboxRight01 {background-color: #292540;}
 .night-mode .LetsGO {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .Mobile01 {}
-.night-mode .BluePrint01 {-webkit-filter: invert(1);filter: invert(1);}
+.night-mode .BluePrint01 {visibility: collapse;}
+.night-mode .BluePrint02 {visibility: visible;}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
 .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
+.night-mode .Signarture01 {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .imptext01 {background-color: #1a1a1a; color: #a1a1a1;}
 body.night-mode {background-color: black;}
 </style>
@@ -540,11 +548,11 @@ Stylized-Style unterwegs auserdem übe ich mich
 in Font und Music Erstellung!
 </div>
 	<div class="linkContainer">
-			<a class="linkl01" href="">
-				<p class="linkl01">Art Galerie*!</p>
+			<label class="linkl01" href="">
+				<p class="linkl01"><a href="" title="Art Galerie*" style="color: white;">Art Galerie*!</a></p>
 			</a>
-			<a class="linkl02" href="">
-				<p>Über Mich*!</p>
+			<label class="linkl02" href="">
+				<p><a href="" title="Über Mich*" style="color: white;">Über Mich*!</a></p>
 			</a>
 	</div>
 </div>
@@ -559,10 +567,10 @@ Gleichzeitig Lerne ich mehr über IT, Server, Computer Sprachen,
 Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr! 
 </div>
 	<div class="linkContainer">
-			<a class="link201" href="">
+			<a class="link201" href="" title="Games*">
 				<p>Games*!</p>
 			</a>
-			<a class="link202" href="">
+			<a class="link202" href="" title="Artstyle*">
 				<p>Artstyle*!</p>
 			</a>
 	</div>
@@ -578,22 +586,25 @@ Prototypen und an Shootergame und StareFlare wird noch gearbeitet!
 Ich bin bei den meisten Projekten 2D/3D Artist, und 
 </div>
 	<div class="linkContainer">
-			<a class="linkl01" href="">
-				<p class="linkl01">Mehr*!</p>
+			<label class="linkl01" href="">
+				<p class="linkl01"><a href="" title="Mehr*" style="color: white;">Mehr*!</a></p>
 			</a>
-			<a class="linkl02" href="">
-				<p>C-Mail-system*!</p>
+			<label class="linkl02" href="">
+				<p><a href="" title="C-Mail-system*" style="color: white;">C-Mail-system*!</a></p>
 			</a>
 	</div>
 </div>
-<div><center><img src="pictures/BluePrint.svg" class="BluePrint01" border="0" title="Meine Pläne:" alt="Blueprint"/></center></div>
+<div style="position: relative; width: 100%; height: 10px;"></div>
+<div class="BP01">
+<div class="BPP01"><img src="pictures/BluePrint1.svg" class="BluePrint01" border="0" title="Meine Pläne:" alt="Blueprint"/></div>
+<div class="BPP02"><img src="pictures/WBluePrint1.svg" class="BluePrint02" border="0" title="Meine Pläne:" alt="Blueprint"/></div>
+</div>
 <div class="text06">
 	Fazinationen und Realität!<br><hr>
-	*Der Grafik Fehler vom "BluePrint-pfeil" wird im<br>
-	nächsten update behoben!<br><br>more Content coming soon!...
+	more Content coming soon!...
 </div>
 <hr width="80%" style="position: relative; margin-top: 150px;">
-<div><img src="pictures/UnterschrieftReal.png" class="Signarture01" border="0" alt="" title="Contoller!"/></div>
+<div><a href="#" title="Valle!" alt=""><img src="pictures/UnterschrieftReal.png" class="Signarture01" border="0" alt="" title="Valle!"/></a></div>
 <div class="Impressum">
 <div class="imptext01">
 <center>

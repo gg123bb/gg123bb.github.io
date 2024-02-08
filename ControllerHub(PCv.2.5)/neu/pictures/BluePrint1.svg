@@ -23,41 +23,18 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     showgrid="false" />
+     showgrid="false"
+     inkscape:zoom="0.877598"
+     inkscape:cx="346.40006"
+     inkscape:cy="149.27108"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2">
-    <marker
-       markerWidth="1.05"
-       markerHeight="0.99999994"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       id="CapRibbon1"
-       viewBox="0 0 1.05 1"
-       style="overflow:visible"
-       preserveAspectRatio="xMidYMid">
-      <path
-         id="path56643"
-         style="fill:context-stroke;stroke-linecap:butt"
-         d="M 0,-1 H 2 L 1,0 2,1 H 0 L -0.1,0 Z"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow1L"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       markerWidth="8.75"
-       markerHeight="5"
-       viewBox="0 0 8.75 5"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="arrow1L"
-         transform="scale(-0.5)" />
-    </marker>
     <pattern
        xlink:href="#Checkerboard"
        id="pattern3330"
@@ -83,6 +60,140 @@
          height="1"
          id="rect2413" />
     </pattern>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:menu-tooltip="Fades hue progressively to white"
+       inkscape:menu="Color"
+       inkscape:label="Hue to White"
+       id="filter3771"
+       x="-0.059195273"
+       y="-0.25533766"
+       width="1.306778"
+       height="1.3367156">
+      <feColorMatrix
+         values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="r"
+         in="SourceGraphic"
+         id="feColorMatrix3743" />
+      <feColorMatrix
+         values="0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="g"
+         in="SourceGraphic"
+         id="feColorMatrix3745" />
+      <feColorMatrix
+         values="0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="b"
+         in="SourceGraphic"
+         id="feColorMatrix3747" />
+      <feBlend
+         result="minrg"
+         in="r"
+         mode="darken"
+         in2="g"
+         id="feBlend3749" />
+      <feBlend
+         result="p"
+         in="minrg"
+         mode="darken"
+         in2="b"
+         id="feBlend3751" />
+      <feBlend
+         result="maxrg"
+         in="r"
+         mode="lighten"
+         in2="g"
+         id="feBlend3753" />
+      <feBlend
+         result="q"
+         in="maxrg"
+         mode="lighten"
+         in2="b"
+         id="feBlend3755" />
+      <feComponentTransfer
+         result="q2"
+         in="q"
+         id="feComponentTransfer3759">
+        <feFuncR
+           slope="0"
+           type="linear"
+           id="feFuncR3757" />
+      </feComponentTransfer>
+      <feBlend
+         result="pq"
+         in="p"
+         mode="lighten"
+         in2="q2"
+         id="feBlend3761" />
+      <feColorMatrix
+         values="-1 1 0 0 0 -1 1 0 0 0 -1 1 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="qminp"
+         in="pq"
+         id="feColorMatrix3763" />
+      <feComposite
+         k3="1"
+         operator="arithmetic"
+         result="qminpc"
+         in="qminp"
+         in2="qminp"
+         id="feComposite3765"
+         k1="0"
+         k2="0"
+         k4="0" />
+      <feBlend
+         result="result2"
+         in2="SourceGraphic"
+         mode="screen"
+         id="feBlend3767" />
+      <feComposite
+         operator="in"
+         in="result2"
+         in2="SourceGraphic"
+         result="result1"
+         id="feComposite3769" />
+    </filter>
+    <marker
+       markerWidth="1.05"
+       markerHeight="0.99999994"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       viewBox="0 0 1.05 1"
+       inkscape:stockid="marker3384829653395692563"
+       style="overflow:visible"
+       preserveAspectRatio="xMidYMid"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       id="marker3384829653395692563">
+      <path
+         id="path14268"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-linecap:butt;stroke-opacity:1"
+         d="M 0,-1 H 2 L 1,0 2,1 H 0 L -0.1,0 Z"
+         sodipodi:nodetypes="sssssscsss"
+         transform="scale(0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="marker47016730693969549679"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       id="marker47016730693969549679">
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path14271"
+         transform="scale(-0.5)" />
+    </marker>
   </defs>
   <g
      id="layer1"
@@ -93,7 +204,10 @@
        width="60.865654"
        height="76.858162"
        x="7.9200001"
-       y="6.222857" />
+       y="6.222857"
+       inkscape:export-filename="BluePrint1.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        style="opacity:0.193939;fill:url(#pattern3330);fill-opacity:1;stroke:none;stroke-width:6.259;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect3328"
@@ -192,7 +306,7 @@
       </g>
     </g>
     <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.981;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#CapRibbon1);marker-end:url(#Arrow1L);paint-order:markers fill stroke"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.981;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3384829653395692563);marker-end:url(#marker47016730693969549679);paint-order:markers fill stroke;filter:url(#filter3771)"
        d="M 18.985984,70.191454 C 24.6339,47.2032 41.28334,45.373438 56.163967,27.927109"
        id="path4302" />
     <rect
