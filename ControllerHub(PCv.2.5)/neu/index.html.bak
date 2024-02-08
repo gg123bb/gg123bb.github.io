@@ -399,6 +399,7 @@ input:checked + .slider + .daynightc::after {
       font-size: 24px;
 	  color: white;
     }
+.Signarture01 {position: absolute; width: 80px; height: auto; right: 10%;}
 .Impressum {
 	position: relative;
 	margin-top: 60px;
@@ -566,7 +567,7 @@ Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr!
 			</a>
 	</div>
 </div>
-<div><center><img src="pictures/2HandywithGamePlayRender.png" border="0" alt="Handy" title="Games und Style!" class="Mobile01"/></center></div>
+<div><center><img src="pictures/2HandywithGamePlayRender.png" border="0" alt="Handy" title="Games und Style!" class="Mobile01" id="Gameplay"/></center></div>
 <div class="BlueberryboxRight01">
 <div class="title06">Was <b>ich</b> mache und <b>meine</b> Projekte</div>
 <div class="text05">
@@ -592,6 +593,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 	nächsten update behoben!<br><br>more Content coming soon!...
 </div>
 <hr width="80%" style="position: relative; margin-top: 150px;">
+<div><img src="pictures/UnterschrieftReal.png" class="Signarture01" border="0" alt="" title="Contoller!"/></div>
 <div class="Impressum">
 <div class="imptext01">
 <center>
