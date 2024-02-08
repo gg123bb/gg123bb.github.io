@@ -354,7 +354,7 @@ input:checked + .slider + .daynightc::after {
 	font-weight: 950;
 }
 .LetsGO {width: 100%; height: auto;}
-.Mobile01 {position: relative; margin-top: 70px; height: auto; width: 40%;}
+.Mobile01 {position: relative; margin-top: 70px; height: auto; width: 80%;}
 .BlueberryboxRight01 {
 	position: relative;
 	margin-top: 75px;
@@ -427,7 +427,7 @@ input:checked + .slider + .daynightc::after {
 .night-mode .Controlltext {color: white;}
 .night-mode .BlackboxRight01 {background-color: #292540;}
 .night-mode .LetsGO {-webkit-filter: invert(1);filter: invert(1);}
-.night-mode .Mobile01 {-webkit-filter: invert(1);filter: invert(1);}
+.night-mode .Mobile01 {}
 .night-mode .BluePrint01 {-webkit-filter: invert(1);filter: invert(1);}
 .night-mode .BlackboxLeft01 {background-color: #292540;}
 .night-mode .BlueberryboxRight01 {background-image: linear-gradient(45deg, #1e1840 0%, #332391 50%, #1e1840);}
@@ -461,7 +461,7 @@ body.night-mode {background-color: black;}
   .link201 {margin-top: 30px; left: 11%; right: auto;}
   .LetsGO {width: 48%;}
   .ControllerYearPicture {width: 80%;}
-  .Mobile01 {width: 20%;}
+  .Mobile01 {width: 60%;}
   .BlackboxLeft01 {width: 80%; height: 330px;}
   .BlueberryboxRight01 {width: 80%; left: 20%; 330px;}
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
@@ -566,7 +566,7 @@ Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr!
 			</a>
 	</div>
 </div>
-<div><center><img src="pictures/HandyMobile.svg" border="0" alt="Handy" title="Games und Style!" class="Mobile01"/></center></div>
+<div><center><img src="pictures/2HandywithGamePlayRender.png" border="0" alt="Handy" title="Games und Style!" class="Mobile01"/></center></div>
 <div class="BlueberryboxRight01">
 <div class="title06">Was <b>ich</b> mache und <b>meine</b> Projekte</div>
 <div class="text05">
@@ -591,7 +591,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 	*Der Grafik Fehler vom "BluePrint-pfeil" wird im<br>
 	nächsten update behoben!<br><br>more Content coming soon!...
 </div>
-<hr width="80%" style="position: relative; margin-top: 100px;">
+<hr width="80%" style="position: relative; margin-top: 150px;">
 <div class="Impressum">
 <div class="imptext01">
 <center>
