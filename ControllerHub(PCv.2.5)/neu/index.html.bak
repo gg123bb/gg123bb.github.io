@@ -8,6 +8,7 @@
 <meta name="copyright" content="controller000"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="icon" type="image/x-icon" href="icons/Cicon.png" style="border-radius: 20px;">
+<link rel="stylesheet" type="text/css" href="fonts\SigmarOne\stylesheet.css" media="screen" />
 <title>ControllerArtist</title>
 
 <style>
@@ -608,7 +609,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 <div class="Impressum">
 <div class="imptext01">
 <center>
-<h3>Debug: 700 Zeilen c0de!<br>Neuste Version: 11e.1f.20d.30h! 06.02.24</h3>
+<h3>Debug: 700 Zeilen c0de!<br>Neuste Version: 12e.1f.22d.36h! 08.02.24</h3>
 <h5> Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)</h5><br> 
 </center>
 </div>
