@@ -412,7 +412,7 @@ input:checked + .slider + .daynightc::after {
     }
 .bluebar01 {height: 25px; background-image: linear-gradient(to right, #3e5cbd 0%, #c2066d); border-radius: 9px;}
 .bluebar01:hover {background-image: linear-gradient(to left, #4d71e3 0%, #eb2a94); border-radius: 20px; -webkit-transition: background 0.4s linear; -moz-transition: background 0.4s linear; -o-transition: background 0.4s linear; transition: background 0.4s linear; transition: all 0.4s ease;}
-.letsgolink01 {padding: 4px; color: white; text-decoration: none; font-weight: bold; font-family: Sigmar one;}
+.letsgolink01 {padding: 4px; color: white; text-decoration: none; font-weight: bold; font-family: ;}
 .Signarture01 {position: absolute; width: 80px; height: auto; right: 10%;}
 .Impressum {
 	position: relative;
