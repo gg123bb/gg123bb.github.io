@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bunte & Interaktive Mega-Webseite</title>
+    <style>
+        /* Globale Stile */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Stile für Header und Navigation */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Neue Vorlagen für verschiedene Designs */
+        .template1 {
+            background-color: #E91E63;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .template2 {
+            background-color: #2196F3;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .template3 {
+            background-color: #FFC107;
+            color: #333;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .template4 {
+            background-color: #673AB7;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .template5 {
+            background-color: #009688;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #008CBA;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #005E7A;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Super Bunte & Interaktive Mega-Webseite 🚀</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a href="#">Leistungen</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Verschiedene Vorlagen für Designs -->
+    <div class="template1">
+        <h2>Willkommen auf unserer bunten Webseite!</h2>
+        <p>Entdecken Sie eine Welt voller Farben und interaktiver Elemente.</p>
+        <button onclick="changeDesign()">Design ändern</button>
+    </div>
+    <div class="template2" style="display:none;">
+        <h2>Willkommen auf unserer Webseite!</h2>
+        <p>Entdecken Sie eine Welt voller Möglichkeiten und Innovation.</p>
+        <button onclick="changeDesign()">Design ändern</button>
+    </div>
+    <div class="template3" style="display:none;">
+        <h2>Super Bunte & Interaktive Mega-Webseite</h2>
+        <p>Wir bieten Ihnen erstklassige Webdesign-Lösungen.</p>
+        <button onclick="changeDesign()">Design ändern</button>
+    </div>
+    <div class="template4" style="display:none;">
+        <h2>Willkommen auf unserer Seite!</h2>
+        <p>Erleben Sie eine neue Ära des Webdesigns.</p>
+        <button onclick="changeDesign()">Design ändern</button>
+    </div>
+    <div class="template5" style="display:none;">
+        <h2>Bunte & Interaktive Webseite</h2>
+        <p>Entdecken Sie die kreative Welt des Internets.</p>
+        <button onclick="changeDesign()">Design ändern</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Super Bunte & Interaktive Mega-Webseite. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script>
+        function changeDesign() {
+            var templates = document.querySelectorAll('[class^="template"]');
+            var randomIndex = Math.floor(Math.random() * templates.length);
+
+            templates.forEach(function(template) {
+                template.style.display = 'none';
+            });
+
+            templates[randomIndex].style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -85,7 +85,6 @@
         url('Silkscreen/Silkscreen-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 	//*Silkscreen*//
 }
 @font-face {
@@ -95,7 +94,6 @@
         url('Silkscreen/Silkscreen-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 	//*Silkscreen*//
 }
 
