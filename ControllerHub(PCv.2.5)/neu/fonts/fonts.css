@@ -1,0 +1,102 @@
+@font-face {
+	//*ArchivoBlack*//
+    font-family: 'Archivo';
+    src: url('ArchivoBlack/ArchivoBlack-Regular.woff2') format('woff2'),
+        url('ArchivoBlack/ArchivoBlack-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+	//*ArchivoBlack*//
+}
+@font-face {
+	//*LondrinaSolid -Thin*//
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid/LondrinaSolid-Thin.woff2') format('woff2'),
+        url('LondrinaSolid/LondrinaSolid-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+	//*LondrinaSolid*//
+}
+@font-face {
+	//*LondrinaSolid*//
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid/LondrinaSolid-Regular.woff2') format('woff2'),
+        url('LondrinaSolid/LondrinaSolid-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	//*LondrinaSolid*//
+}
+@font-face {
+	//*LondrinaSolid -Light*//
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid/LondrinaSolid-Light.woff2') format('woff2'),
+        url('LondrinaSolid/LondrinaSolid-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+	//*LondrinaSolid*//
+}
+@font-face {
+	//*LondrinaSolid -Black*//
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid/LondrinaSolid-Black.woff2') format('woff2'),
+        url('LondrinaSolid/LondrinaSolid-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+	//*LondrinaSolid*//
+}
+@font-face {
+	//*PermanentMarker*//
+    font-family: 'Permanent Marker';
+    src: url('PermanentMarker/PermanentMarker-Regular.woff2') format('woff2'),
+        url('PermanentMarker/PermanentMarker-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	//*PermanentMarker*//
+}
+@font-face {
+	//*RamettoOne*//
+    font-family: 'Rammetto One';
+    src: url('RamettoOne/RammettoOne-Regular.woff2') format('woff2'),
+        url('RamettoOne/RammettoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	//*RamettoOne*//
+}
+@font-face {
+	//*Sigmar One*//
+    font-family: 'Sigmar One';
+    src: url('SigmarOne/SigmarOne-Regular.woff2') format('woff2'),
+        url('SigmarOne/SigmarOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	//*Sigmar One*//
+}
+@font-face {
+	//*Silkscreen Bold*//
+    font-family: 'Silkscreen';
+    src: url('Silkscreen/Silkscreen-Bold.woff2') format('woff2'),
+        url('Silkscreen/Silkscreen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+	//*Silkscreen*//
+}
+@font-face {
+	//*Silkscreen*//
+    font-family: 'Silkscreen';
+    src: url('Silkscreen/Silkscreen-Regular.woff2') format('woff2'),
+        url('Silkscreen/Silkscreen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	//*Silkscreen*//
+}
+
+

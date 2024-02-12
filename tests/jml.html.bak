@@ -73,7 +73,7 @@ body {
 }
 #bg {
 	position: relative;
-	left: 50%;
+	
 }
 #buildings{
 	position: relative;

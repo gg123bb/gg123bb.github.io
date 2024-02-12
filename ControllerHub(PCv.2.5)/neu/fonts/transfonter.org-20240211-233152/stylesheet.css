@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('Silkscreen-Bold.woff2') format('woff2'),
+        url('Silkscreen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('Silkscreen-Regular.woff2') format('woff2'),
+        url('Silkscreen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rammetto One';
+    src: url('RammettoOne-Regular.woff2') format('woff2'),
+        url('RammettoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('PermanentMarker-Regular.woff2') format('woff2'),
+        url('PermanentMarker-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid-Thin.woff2') format('woff2'),
+        url('LondrinaSolid-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid-Regular.woff2') format('woff2'),
+        url('LondrinaSolid-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid-Light.woff2') format('woff2'),
+        url('LondrinaSolid-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('LondrinaSolid-Black.woff2') format('woff2'),
+        url('LondrinaSolid-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('ArchivoBlack-Regular.woff2') format('woff2'),
+        url('ArchivoBlack-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
