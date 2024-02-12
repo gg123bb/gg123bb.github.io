@@ -11,7 +11,6 @@
 <!--Schrieft!-->
 <link rel="stylesheet" type="text/css" href="fonts\fonts.css" media="screen" />
 
-<link rel="preload" href="fonts/Silkscreen/Silkscreen-Bold.woff2" as="font" type="font/woff2" crossorigin/>
 
 <title>ControllerArtist</title>
 
@@ -375,7 +374,7 @@ input:checked + .slider + .daynightc::after {
 }
 .BP01 {
 	position: relative;
-	margin-bottom: 20%;
+	margin-bottom: 25%;
 }
 .BluePrint01 {position: absolute; left: 50%; transform: translate(-50%, -50%); width: 70%; visibility: visible;}
 .BluePrint02 {position: absolute; left: 50%; transform: translate(-50%, -50%); width: 70%; visibility: collapse;}
@@ -410,9 +409,10 @@ input:checked + .slider + .daynightc::after {
       font-size: 24px;
 	  color: white;
     }
-.bluebar01 {height: 25px; background-image: linear-gradient(to right, #3e5cbd 0%, #c2066d); border-radius: 9px;}
+.bluebar01 {height: 45px; background-image: linear-gradient(to right, #3e5cbd 0%, #c2066d); border-radius: 13px; width: 150px; position: relative; left: 50%; transform: translateX(-50%); font-size: 20px;}
 .bluebar01:hover {background-image: linear-gradient(to left, #4d71e3 0%, #eb2a94); border-radius: 20px; -webkit-transition: background 0.4s linear; -moz-transition: background 0.4s linear; -o-transition: background 0.4s linear; transition: background 0.4s linear; transition: all 0.4s ease;}
-.letsgolink01 {padding: 4px; color: white; text-decoration: none; font-weight: bold; font-family: ;}
+.letsgolink01 {padding: 12px; color: white; text-decoration: none; font-weight: bold; font-family: ;}
+.letts022ll:hover {text-decoration: underline; color: #b2f763;}
 .Signarture01 {position: absolute; width: 80px; height: auto; right: 10%;}
 .Impressum {
 	position: relative;
@@ -429,7 +429,7 @@ input:checked + .slider + .daynightc::after {
 .text02 {position: relative; margin-top: 395px; text-align: center; color: black;}
 .text03 {position: relative; margin-top: 50px; padding-top: 30px; left: 10%; text-align: center; color: black; transition: color 0.2s; height: 300px; width: 80%; background-color: #a8a8a8; border-radius: 20px;}
 .text04 {position: relative; padding: 20px; margin-top: 20px; width: 470px; height: 240px; background-color: #adadad;}
-.text06 {position: relative; margin-top: 140px; padding-top: 30px; left: 10%; text-align: center; color: black; transition: color 0.2s; height: 500px; width: 80%; background-color: #a8a8a8; border-radius: 20px;}
+.text06 {position: relative; margin-top: 15%; padding-top: 30px; left: 10%; text-align: center; color: black; transition: color 0.2s; height: 500px; width: 80%; background-color: #a8a8a8; border-radius: 20px;}
 .p02 {position: relative; margin-top: -5px; text-align: justify; color: black; font-family:; font-size: 14px; font-weight: 700;}
 .p03 {position: relative; top: -10px;}
 .night-mode .black02 {background-color: #292540;}
@@ -607,7 +607,7 @@ Ich bin bei den meisten Projekten 2D/3D Artist, und
 <div class="BPP01"><img src="pictures/BluePrint1.svg" class="BluePrint01" border="0" title="Meine Pläne:" alt="Blueprint"/></div>
 <div class="BPP02"><img src="pictures/WBluePrint1.svg" class="BluePrint02" border="0" title="Meine Pläne:" alt="Blueprint"/></div>
 </div>
-<a href=""title="" class="" style="text-decoration: none;" alt=""><div class="bluebar01" title="Auf geht's zum Plan!"><center><div class="letsgolink01" style="">Let's Go!</div></center></div></a>
+<div class="bluebar01" title="Auf geht's zum Plan!"><a href="" title="Auf geht's zum Plan!" class="" style="text-decoration: none;" alt=""><center><div class="letsgolink01" style=""><label class="letts022ll">Let's Go!</label></div></center></a></div>
 <div class="text06">
 	Fazinationen und Realität!<br><hr>
 	more Content coming soon!...
