@@ -8,12 +8,96 @@
 <meta name="copyright" content="controller000"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="icon" type="image/x-icon" href="icons/Cicon.png" style="border-radius: 20px;">
+
+<title>ControllerArtist</title>
+
 <!--Schrieft!-->
 <link rel="stylesheet" type="text/css" href="fonts\fonts.css" media="screen" />
 
 
-<title>ControllerArtist</title>
-
+<style>
+	@font-face {
+    font-family: 'Archivo';
+    src: url('fonts/ArchivoBlack/ArchivoBlack-Regular.woff2') format('woff2'),
+        url('fonts/ArchivoBlack/ArchivoBlack-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('fonts/LondrinaSolid/LondrinaSolid-Thin.woff2') format('woff2'),
+        url('fonts/LondrinaSolid/LondrinaSolid-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('fonts/LondrinaSolid/LondrinaSolid-Regular.woff2') format('woff2'),
+        url('fonts/LondrinaSolid/LondrinaSolid-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('fonts/LondrinaSolid/LondrinaSolid-Light.woff2') format('woff2'),
+        url('fonts/LondrinaSolid/LondrinaSolid-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('fonts/LondrinaSolid/LondrinaSolid-Black.woff2') format('woff2'),
+        url('fonts/LondrinaSolid/LondrinaSolid-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('fonts/PermanentMarker/PermanentMarker-Regular.woff2') format('woff2'),
+        url('fonts/PermanentMarker/PermanentMarker-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rammetto One';
+    src: url('fonts/RamettoOne/RammettoOne-Regular.woff2') format('woff2'),
+        url('fonts/RamettoOne/RammettoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sigmar One';
+    src: url('fonts/SigmarOne/SigmarOne-Regular.woff2') format('woff2'),
+        url('fonts/SigmarOne/SigmarOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('fonts/Silkscreen/Silkscreen-Bold.woff2') format('woff2'),
+        url('fonts/Silkscreen/Silkscreen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('fonts/Silkscreen/Silkscreen-Regular.woff2') format('woff2'),
+        url('fonts/Silkscreen/Silkscreen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+</style>
+<!--schrieft-->
 <style>
 body {
 	margin: 0;
