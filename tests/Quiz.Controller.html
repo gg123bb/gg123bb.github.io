@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dies ist eine Webseite für Quize von Controller"/>
+<meta name="author" content="controllerartist"/>
+<meta name="copyright" content="controllerartist"/>
+<link rel="icon" type="image/x-icon" href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/icons/Cicon.png" style="border-radius: 20px;">
+<title>Quiz von Controller:</title>
+<link href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/fonts/fonts.css" rel="stylesheet">
+<style>
+    body {margin: 0;padding:0;border:0;background-color:rgb(45, 16, 54); background-image: linear-gradient(72deg, rgb(45, 16, 54) 6%, rgb(15, 5, 15) 50%, rgb(45, 16, 54) 87%);}
+.Version {position: relative; left: 10px; top: 10px; color: rgb(181, 118, 184); font-family: Silkscreen; font-size: 14px;}
+.Version:hover {color: rgb(255, 192, 252);}
+.questionBlock {
+    position: relative;
+    width: 94%;
+    height: auto;
+    left: 3%;
+    background-color: rgb(91, 92, 148);
+    border-radius: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ScoreTextContainer {
+    position: relative;
+    color: rgb(209, 248, 236);
+    font-family: Silkscreen;
+    font-size: ;
+    font-weight: ;
+}
+.ScoreTextContainer:hover {color: white;}
+#quiz-container {
+    position: relative;
+    color: rgb(219, 171, 214);
+}
+#question {text-decoration: underline;}
+#question:hover {color: white;}
+#answers {position: relative;}
+    button {
+        background-color: rgb(162, 71, 204);
+        border: 1;
+        border-style: solid;
+        border-color: rgb(133, 28, 133);
+        border-radius: 5px;
+        margin: 2px;
+        color: rgb(241, 255, 242);
+    }
+    button:hover{color: rgb(219, 194, 243);background-color: rgb(141, 63, 177); border-color: rgb(172, 43, 172);}
+#next-button {
+    margin-top: 10px;
+    background-color: rgb(91, 71, 204);
+    border-color: rgb(56, 28, 133);
+    color: rgb(251, 241, 255);
+}
+#next-button:hover {
+    background-color: rgb(99, 54, 158);
+    border-color: rgb(199, 103, 124);
+    color: rgb(228, 180, 188);
+}
+.EndScore {
+    position: relative;
+    color: rgb(209, 248, 236);
+    font-family: Silkscreen;
+    font-size: ;
+    font-weight: ;
+}
+#refresh {}
+.rrefreshusernewQuizbuttontextstyle01 {
+    width: auto;
+    height: auto;
+    background-color: rgb(189, 49, 154);
+    border: 1;
+    border-style: solid;
+    border-color: rgb(230, 41, 120);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(245, 181, 228);
+    font-family: Arial black, Sigmar one, Rammetto One;
+    font-size: ;
+    font-weight: ;
+}
+.rrefreshusernewQuizbuttontextstyle01:hover {
+    background-color: rgb(190, 60, 158);
+    border-color: rgb(247, 95, 158);
+    color: rgb(255, 231, 249);
+}
+.content01 {
+    position: relative;
+    width: 94%;
+    height: auto;
+    left: 3%;
+    background-color: rgb(93, 22, 134);
+    border-radius: 17px;
+    color: rgb(215, 229, 238);
+    text-align: center;
+    font-family: ;
+    font-weight: ;
+    font-size: 18px;
+}
+.TextContent01 {
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 8%;
+    background-color: rgb(107, 63, 116);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.dc01fixbar {
+    position: relative;
+    height: 30px;
+}
+.hhc {
+    position: relative;
+    top: 8px;
+}
+.ccopytext01:hover {color: rgb(243, 212, 243);}
+.imclassFix {
+    position: relative;
+    width: 100%;
+}
+.Impressium {
+    position: relative;
+	margin-top: 60px;
+	width: 94%;
+    left: 3%;
+	height: auto;
+	bottom: 0px;
+    background-color: rgb(87, 87, 87);
+    color: rgb(221, 171, 175);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.qquizz01hovv {
+    color: white; text-decoration: none;
+}
+.qquizz01hovv:hover {color: rgb(212, 212, 212);}
+.QWTt01hhover {color: rgb(215, 229, 238);}
+.QWTt01hhover:hover {color: rgb(161, 173, 180);}
+</style>
+<style>
+@media screen and (min-width: 508px){
+    .Version {left: 10px; top: 10px;}
+    .questionBlock {width: 80%; left: 10%;}
+    .content01 {width: 80%; left: 10%;}
+    .Impressium {width: 80%; left: 10%;}
+}
+</style>
+</head>
+<body>
+    <a href="#" style="text-decoration: none;" title='Die Versions-Numer setzt sich aus File:(2f),Anzahl an Änderungen:(6e), Anzahl Developend Tage:(2d), ungefähre insgesamt Zeit in Stunden:(7h) -Zusammen, dies sieht dann z.B so aus: "2f6e2d7!"'><label class="Version">V.2f6e2d7.5h</label></a><!--1File2Editiert2Days4Hours ~?Controller~VersionCodeSystem?-->
+    <center>
+        <h1 style="color: white; font-family: Sigmar one;"><a href="#" title="Ein Quiz von Controller!:" class="qquizz01hovv">Quiz</a></h1>
+    </center>
+    <div class="questionBlock">
+    <center>
+    <div class="ScoreTextContainer">
+        <h2 id="scoreText">Score: <span id="score"></span></h1>
+    </div>
+    </center>
+    <center>
+    <div id="quiz-container">
+        <h1 id="question"></h1>
+        <div id="answers"></div>
+        <button id="next-button" onclick="nextquestion()">Überspringen!</button>
+       <!--<button id="back-button" onclick="backquestion()">Zurück!</button>-->
+        <p id="errortext"></p>
+    </div>
+    </center>
+    <center>
+    <div class="EndScore">
+        <h1 id="ScoreUserText" hidden="true">Dein Score ist:</h1>
+        <h1 id="result"></h1>
+        <h4 id="refresh" hidden="true"><a href="" class="rrefreshusernewQuizbuttontextstyle01" title="Score nicht hoch Genug? Komm, probier es nochmal!">Erneut Versuchen!</a></h4>
+    </div>
+    </center>
+    </div>
+    <div class="content01">
+        
+        <h1 class="hhc"><a href="#" class="QWTt01hhover" style="text-decoration: none;" title="Dein Wissen Test!:">Quiz um dein Wissen zu Testen!</a></h1>
+        <div class="TextContent01">
+            Diese Seite bietet dir den 
+            Ultimativen Wissen Test! <i>Einfach</i>durchklicken!
+            Die Fragen gehen von algemein-Wissen zu auch spezielen Fragen
+            wie: <b>Frage:</b> <u><i>Wie schmeckt ein Gummibärchen</i></u> <b> Antwort:</b>
+            <u><i>süß</i></u><br>
+            Diese Seite Speichert deine Antworten <b><i><u>Nicht!</u></i></b> Dies ist nur
+            eine Test Webseite!<br>
+            <b>Quiz:</b>
+            Das Quiz ist in Java Script gecodet! das anzeigen in HTML und
+            das Styling in CSS<br>
+            Diese Webseite ist zum Üben da!<br>
+            Tipp für Devs: in der Console findet ihr zusätzliche infos!<br><br>
+            <center><a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/" style="color: rgb(227, 191, 238); text-decoration: none; font-family: Londrina Solid; font-size: 20px;" title="Controller24!:"><label class="ccopytext01">&copy;Controller24!<br>
+            &copy;Controller ~controllerartist® 24|25</label></a></center>
+        </div>
+        <div class="dc01fixbar"></div>
+    </div>
+    <div class="imclassFix"></div>
+    <div class="Impressium">
+        <table border="0" style="padding: 10px;" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td style="text-align: center;"><a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/" title="Controller24!:" style="text-decoration: none; color: rgb(221, 171, 175); font-weight: bold;" class="">&copy;Controller24!</a></td>
+            </tr>
+            <table border="0" class="imp01" cellpadding="0" cellspacing="0" width="80%">
+                <tr style="position: relative; text-align:center; left: 10%;">
+                    <td width="25%">
+                        Controller Web:
+                    </td>
+                    <td width="25%">
+                        Controller Informationen:
+                    </td>
+                    <td width="25%">
+                        Controller Kontakte:
+                    </td>
+                    <td width="25%">
+                        <a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/"><img src="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/icons/Cicon.png" style="width: 50px; height: auto; border-radius: 25px;" alt="Controller" title="C~Icon"></a>
+                    </td>
+                </tr>
+                <tr style="position: relative; text-align:center; left: 10%;">
+                    <td width="25%">
+                        <a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/" title="Komm, und schau dir meine Webseite an!" style="color: rgb(241, 140, 191); font-weight: bold; text-decoration: none;">Webseite</a>
+                    </td>
+                    <td width="25%">
+                        <a href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/" title="Mein Art, Meine Bilder!" style="color: rgb(241, 140, 191); font-weight: bold; text-decoration: none;">a artist!</a>
+                    </td>
+                    <td width="25%">
+                        <a href="mailto:valentin.talas@32osdd.lernsax.de?subject=Hallo%20Controller:" title="Schreibe mir eine E-Mail!" style="color: rgb(241, 140, 191); font-weight: bold; text-decoration: none;">E-Mail</a>
+                    </td>
+                    <td width="25%">
+                        <a href="mailto:valentin.talas@32osdd.lernsax.de?subject=eine%20Mail%20zur%20Quiz%20Web-Seite:&amp;?body=Hallo%20Controller,%0D%0A%0D%0Aich%20wollte%20mit%20ihnen,%20über%20ihre%20Quiz-Webseite%20Reden%21" title="Antworte ganz entspannt direkt auf diese Webseite per E-Mail!" style="color: rgb(209, 93, 233); font-weight: 500; text-decoration: none; font-family: Silkscreen;">Replay</a>
+                    </td>
+                </tr>
+                <tr><td height="12px"></td></tr>
+            </table>
+        </table>
+    </div>
+    <script>
+        console.log("JavaScript-Test:JavaScript-Funktioniert!"); //debug-test-javascript-test
+        let score = 0;
+        let realscore = 0;
+        let cqi = 0; //currentQuestionIndex
+        let qc = 3; //questionsCounter
+
+        document.getElementById("score").textContent = score;
+
+        let questions = [
+            {
+                question: "Hauptstadt von Deutschland?",
+                answer: ["Frankreich","Bayern","Berlin","Frankfurt"],
+                correct: 2,
+            },
+            {
+                question: "Farbe von Zitrone?",
+                answer: ["Gelb", "Rot", "Blau", "Schwarz"],
+                correct: 0,
+            },
+            {
+                question: "ist Schokolade süß?",
+                answer: ["Nein", "Ja"],
+                correct: 1,
+            }
+        ]
+        function displayQuestion() {
+            if (score > qc) {
+                score = 0;
+                console.log("Error oder Cheater wurde Endeckt " + 'Fahlercode: "f0ec01" error or cheat' + " score over:" + ' "' + qc + '" ' + " please dount Cheat! " + " so einfach mach ich euch das nicht XD ");
+                document.getElementById("errortext").textContent = "Ein Fahler oder Cheat wurde gefunden, Bitte nicht Cheaten! Spiel Fair! >:(";
+            }
+            if(cqi >= questions.length){
+                document.getElementById("quiz-container").hidden = true;
+                document.getElementById("score").hidden= true;
+                document.getElementById("scoreText").hidden= true;
+                document.getElementById("result").hidden = false;
+                document.getElementById("result").textContent = score + "/" + qc;
+                document.getElementById("ScoreUserText").hidden = false;
+                document.getElementById("refresh").hidden = false;
+                console.log("Dein Score mit Minus Zahlen Erlaubt:", realscore);
+            }
+
+            let question = questions[cqi];
+            document.getElementById('question').textContent = question.question;
+            
+            let answersDiv = document.getElementById("answers");
+            
+            answersDiv.innerHTML = "";
+
+            question.answer.forEach((answer, index) => {
+                let answerButton = document.createElement("button");
+                answerButton.textContent = answer;
+                answerButton.onclick = () => checkAnswer(index);
+                answersDiv.appendChild(answerButton);
+            })
+        }
+        displayQuestion();
+
+        function checkAnswer(userAnswer){
+            let correct = questions[cqi].correct;
+            
+            if (userAnswer == correct){
+                score++;
+                realscore++;
+                if (score > qc) {
+                score = 0;
+                console.log("Error oder Cheater wurde Endeckt " + 'Fahlercode: "f0ec01" error or cheat' + " score over: " + '"' + qc + '" '  + " please dount Cheat! " + " so einfach mach ich euch das nicht XD ");
+                document.getElementById("errortext").textContent = "Ein Fahler oder Cheat wurde gefunden, Bitte nicht Cheaten! Spiel Fair! >:(";
+                }
+                console.log(realscore);
+                document.getElementById("score").textContent = score;
+            }
+            else { 
+                score--;
+                realscore--;
+                console.log(realscore);
+                if (score < 0){
+                    score = 0;
+                }
+                document.getElementById("score").textContent = score;
+            } 
+            cqi++;
+            displayQuestion();
+        }
+        function nextquestion() {
+            cqi++;
+            if (cqi > questions.length) {cqi=questions.length;}
+            displayQuestion();
+        }
+        function backquestion() {
+            cqi--;
+            if (cqi < 0) {cqi=0;}
+            displayQuestion();
+        }
+    </script>
+</body>
+</html>
