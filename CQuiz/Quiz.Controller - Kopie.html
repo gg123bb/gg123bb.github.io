@@ -244,96 +244,26 @@
         let score = 0;
         let realscore = 0;
         let cqi = 0; //currentQuestionIndex
-        let qc = 15; //questionsCounter
+        let qc = 3; //questionsCounter
 
-        document.getElementById("score").textContent = score + "/" + qc;
+        document.getElementById("score").textContent = score;
 
         let questions = [
             {
                 question: "Hauptstadt von Deutschland?",
-                answer: ["Frankreich","Bayern","Berlin","Frankfurt","Deutschland","Sachsen","Dresden"],
+                answer: ["Frankreich","Bayern","Berlin","Frankfurt"],
                 correct: 2,
             },
             {
                 question: "Farbe von Zitrone?",
-                answer: ["Gelb", "Rot", "Blau", "Schwarz","Orange"],
+                answer: ["Gelb", "Rot", "Blau", "Schwarz"],
                 correct: 0,
             },
             {
                 question: "ist Schokolade süß?",
-                answer: ["Nein", "Ja","Mexico"],
+                answer: ["Nein", "Ja"],
                 correct: 1,
-            },
-            {
-                question: "2+3•4+2(x-9)",
-                answer: ["Nein","Ferien","2x−4","y","Ja","28","-3","-2x+6","8-9x","-8+9x"],
-                correct: 2,
-            },
-            {
-                question: "wie heißt der sourche-code von Webseiten?",
-                answer: ["Friedrich","Konrad","Roald","WEP","WEPsync","C#","#","java","HTML"],
-                correct: 8,
-            },
-            {
-                question: "Bist du Dumm? :P",
-                answer: ["nein","ja","Patrick","bin eine kartoffel","divers!"],
-                correct: 0,
-            },
-            {
-                question: "wer den nächsten punkt haben will sagt was:",
-                answer: ["was?","nein","wer","wo?"],
-                correct: 1,
-            },
-            {
-                question: "wer diesen punkt haben will sagt was:",
-                answer: ["wau","nein","was","wo?","warum?"],
-                correct: 2,
-            },
-            {
-                question: "sind die fragen gemein? 😈",
-                answer: ["nein!","neiin","ja","jaaa","jooo","noo","☹"],
-                correct: 2,
-            },
-            {
-                question: "😎",
-                answer: ["😎","🙃","🤔","😍","🙄","😶","🤑","😬","😈"],
-                correct: 0,
-            },
-            {
-                question: "kann eine Programmier-sprache leben?",
-                answer: ["nein!","ja die python XD","villeicht?","ich bin kein experte, ich sage wasserstoff!","🐸"],
-                correct: 1,
-            },
-            {
-                question: "Wer hat die kekse aus der Dose geklaut?",
-                answer: ["die Anika wars!","Petze!","Klaus","Der Hermann hat die Kekse aus der Dose geklaut!","ich Petze nicht!","mein rechter platz ist frei!"],
-                correct: 1,
-            },
-            {
-                question: "Bestes Sozial-Media",
-                answer: ["Google","Meta","Facebook🌚","Youtube","Discord","Reddit","Instagramm","Whatsapp","X","Gutefrage👾","TikTok","Snapchat","BeReal","Vimeo","XING","Twitch","Skype","Paintris","kick","Ard","TV","LinkedIN","E-Mail"],
-                correct: 3,
-            },
-            {
-                question: "Ronaldo oder Messi?",
-                answer: ["so heiße ich nich!","Fußball!!!","Ronaldo","Messi","ist mir egal!","haha, fang-Frage!"],
-                correct: 5,
-            },
-            {
-                question: "Wer ist der Sieger?",
-                answer: ["no skin","all skin","i have a skin!","publisher"],
-                correct: 3,
-            },
-            {
-                question: "1+1",
-                answer: ["2","11","2+2","1+1","2  2","3","4","1","1.2","22","1+1+1+2"],
-                correct: 1,
-            },
-            {
-                question: "Hund oder katze",
-                answer: ["Hund🐶","Katze🐱","ich darf nicht mit fremden Reden!","sag ich nicht!","Beides😍"],
-                correct: 4,
-            },
+            }
         ]
         function displayQuestion() {
             if (score > qc) {
@@ -380,7 +310,7 @@
                 document.getElementById("errortext").textContent = "Ein Fahler oder Cheat wurde gefunden, Bitte nicht Cheaten! Spiel Fair! >:(";
                 }
                 console.log(realscore);
-                document.getElementById("score").textContent = score + "/" + qc;
+                document.getElementById("score").textContent = score;
             }
             else { 
                 score--;
@@ -389,7 +319,7 @@
                 if (score < 0){
                     score = 0;
                 }
-                document.getElementById("score").textContent = score + "/" + qc;
+                document.getElementById("score").textContent = score;
             } 
             cqi++;
             displayQuestion();
