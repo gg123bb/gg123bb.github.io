@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenüTest</title>
+<style>
+body {
+    margin: 0;
+}    
+.Menü {
+    position: fixed;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0px;
+    right: 0px;
+    
+}
+.Menü:hover {
+    animation-name: Menühover;
+    animation-duration: 0.4s;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}
+@keyframes Menühover {
+  from {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: transparent;
+  }
+  to {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}
+}
+.Menü:not(:hover) {
+    animation-name: Menühovernot;
+    animation-duration: 0.3s;
+    right: 0px;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+@keyframes Menühovernot {
+  from {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: gray;
+  }
+  to {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+}
+.strichparant {
+    
+    height: 35px;
+    width: 100%;
+    right: 0;
+}
+.Menü:hover .strichparant{ 
+    padding: relative;
+    right: -30px;
+}
+.Menü:not(:hover) .strichparant{ 
+    padding: relative;
+    right: 0px;
+}
+.Menü:hover .strich01{
+    margin-bottom: 8px;
+}
+.strich01 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: black;
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich01{
+    animation-name: strich01menü;
+    animation-duration: 0.3s;
+    transform: rotate(-30deg);
+    top: 12px;
+}
+@keyframes strich01menü {
+  from {
+    height: 8px;
+    width: 54px;
+    transform: rotate(0deg);
+    top: 0px;
+  }
+  to {
+    transform: rotate(-30deg);
+    top: 12px;
+}
+}
+.strich02 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: black;
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich02{
+    animation-name: strich02menü;
+    animation-duration: 0.3s;
+    height: 0px;
+    width: 0px;
+    left: 18px;
+}
+@keyframes strich02menü {
+  from {
+    height: 8px;
+    width: 54px;
+    left: 0px;
+  }
+  to {
+    height: 8px;
+    width: 0px;
+    left: 25px;
+    top: -5px;
+}
+}
+.strich03 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: black;
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich03{
+    animation-name: strich03menü;
+    animation-duration: 0.3s;
+    transform: rotate(30deg);
+    top: -4px;
+}
+@keyframes strich03menü {
+  from {
+    height: 8px;
+    width: 54px;
+    transform: rotate(0deg);
+    top: 0px;
+  }
+  to {
+    transform: rotate(30deg);
+    top: -17px;
+}
+}
+.Menülist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.linkContainer {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.Menü:hover .linkContainer{
+    display: block;
+    .link{color: black;}
+    animation-name: Menülisthover;
+    animation-duration: 0.2s;
+}
+.link{
+    width:100%;
+    text-align: right;
+    color: black;
+    margin: 10px;
+}
+.Menü:hover .link:hover{    
+    color: gold;
+}
+@keyframes Menülisthover {
+  from {
+    transform: translate(100%,0);
+    visibility: hidden;
+    .link {color: transparent;}
+  }
+  to {
+    transform: translate(0%,0%);
+    visibility: visible;
+    .link {color: black;}
+}
+}
+.Menü:not(:hover) .linkContainer{
+    animation-name: Menülisthovernot;
+    animation-duration: 0.3s;
+    transform: translate(0%,0);
+    .link {color: black;}
+}
+@keyframes Menülisthovernot {
+  from {
+    transform: translate(0%,0);
+    visibility: visible;
+    display: block;
+    .link {color: black;}
+  }
+  to {
+    transform: translate(-100%,0%);
+    visibility: hidden;
+    display: block;
+    .link {color: transparent;}
+    
+}
+}
+</style>
+</head>
+<body>
+    <div class="Menü">
+        <div class="strichparant">
+            <div class="strich01"></div>
+            <div class="strich02"></div>
+            <div class="strich03"></div>
+        </div>
+        <ul class="Menülist">
+            <li>
+                <label class="linkContainer"><a href="" class="link co">Home</a></label>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Über Mich</a></label>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Art Galerie</a></label>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Impressum</a></label>
+            </li>
+            <li>
+                <div class="linkContainer"><a href="" class="link co">Home</a></div>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Über Mich</a></label>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Art Galerie</a></label>
+            </li>
+            <li>
+                <label class="linkContainer"><a href="" class="link">Impressum</a></label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
