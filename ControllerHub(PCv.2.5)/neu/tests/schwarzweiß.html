@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="backgroundElement" style="position: absolute; width: 200px; height: 200px; background-color: black; top: 50px; left: 50px;"></div>
+<div id="movingElement" style="position: absolute; width: 100px; height: 100px; background-color: black; top: 20px; left: 20px;"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const movingElement = document.getElementById('movingElement');
+    const backgroundElement = document.getElementById('backgroundElement');
+
+    function updateElementColor() {
+        const movingRect = movingElement.getBoundingClientRect();
+        const backgroundRect = backgroundElement.getBoundingClientRect();
+
+        // Prüfen, ob sich die Elemente überschneiden
+        const overlap = !(movingRect.right < backgroundRect.left ||
+                          movingRect.left > backgroundRect.right ||
+                          movingRect.bottom < backgroundRect.top ||
+                          movingRect.top > backgroundRect.bottom);
+
+        if (overlap) {
+            // Wenn sie sich überschneiden, Farbe des beweglichen Elements ändern
+            movingElement.style.backgroundColor = "white";
+        } else {
+            // Wenn nicht, bewegliches Element zurück zu seiner ursprünglichen Farbe ändern
+            movingElement.style.backgroundColor = "black";
+        }
+    }
+
+    // Funktion zum Überprüfen und Aktualisieren der Farbe, könnte basierend auf einem Ereignis oder einer Aktion aufgerufen werden
+    setInterval(updateElementColor, 100); // Beispiel: Überprüfung alle 100ms
+});
+
+</script>
+</body>
+</html>
