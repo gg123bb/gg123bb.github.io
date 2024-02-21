@@ -159,13 +159,14 @@ body {
 	transition: background-color 0.2s;
 }
 .switch {
-    position: relative;
+    position: fixed;
     display: inline-block;
-	top: 8px;
+	top: 25px;
 	left: 10px;
 	width: 72px;
     height: 34px;
-	z-index: 1;
+	transition: transform 0.3s ease;
+	z-index: 600;
 }
 .switch input {
     opacity: 0;
@@ -456,6 +457,7 @@ input:checked + .slider + .daynightc::after {
 	transition: background-color 0.2s;
 	transition: background-image 0.2s;
 	margin-bottom: 25%;
+	
 }
 .BP01 {
 	position: relative;
@@ -554,6 +556,7 @@ body.night-mode {background-color: black;}
 @media screen and (min-width: 730px) {
   .whitebar01 {border-top-left-radius: 19px; border-top-right-radius: 19px; width: 90%; left: 2%; background-color: black;}
   .whitebar02 {width: 100%; left: 0%; border-radius: 2px;}
+  .switch { left: 75px;}
   .white01 {width: 92%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-radius: 19px; background-color: black;}
   .contenthub01 {box-shadow: 0px 0px 0px 0px #6d5480;}
   .grass01 {box-shadow: 0px 0px 0px 0px #13a855ff;}
@@ -782,6 +785,24 @@ Funktioniert nicht richtig!
     modeSwitch.addEventListener('change', function() {
       document.body.classList.toggle('night-mode', this.checked);
     });
+  </script>
+   <script>
+	document.addEventListener("scroll", function() {
+	 var triggerHeight = 217;
+	 var userScreenWidth = window.innerWidth;
+    if (window.scrollY >= triggerHeight && userScreenWidth > 729) {
+        var switchposer = document.querySelectorAll('.switch');
+        switchposer.forEach(function(switchposer) {
+            switchposer.style.transform = "translateX(-60px)";
+        });
+    }
+	else {
+		var switchposer = document.querySelectorAll('.switch');
+        switchposer.forEach(function(switchposer) {
+            switchposer.style.transform = "translateX(0px)";
+        });
+	}
+});
   </script>
 </body>
 </html>
