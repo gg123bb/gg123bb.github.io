@@ -130,6 +130,7 @@
                     zeigen wie dies ausehen würde!
                     ja auch <b>Dicke Schrieft geht
                     </b>genauso wie <i>Kursief!</i>
+					<img src="pictures/Youtube_logo.png" width="20px" height="" border="0" alt="" />
 
 
                 </div>
@@ -347,10 +348,10 @@
                 <table class="ImptCPTabLiTexCContRAMEDIA">
                     <tr>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="Schreibe mit uns!"><img src="pictures/XTwitter.png" class="IMPCPPIcons01" alt="X-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="Schreibe mit uns!"><img href="pictures/XTwitter.png" class="IMPCPPIcons01" alt="X-icon" /></a>
                         </td>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="Schaue dir unser neustes Video an!"><img src="pictures\Youtube_logo.png" class="IMPCPPIcons01" alt="Youtube-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="Schaue dir unser neustes Video an!"><img href="pictures\Youtube_logo.png" class="IMPCPPIcons01" alt="X-icon" /></a>
                         </td>
                     </tr>
                     <tr>
@@ -363,10 +364,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="zu Facebook:"><img src="pictures/Facebook.png" class="IMPCPPIcons01" alt="Facebook-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="zu Facebook:">Facebook</a>
                         </td>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="zu Instagram:"><img src="pictures/InstagrammICON.png" class="IMPCPPIcons01" alt="Instagram-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="zu Instagram:">Instagram</a>
                         </td>
                     </tr>
                     <tr>
@@ -468,16 +469,16 @@
                 <table class="ImptCPTabLiTexCContRAMEDIA">
                     <tr>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="Schreibe mit uns!"><img src="pictures/XTwitter.png" class="IMPCPPIcons01" alt="X-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="Schreibe mit uns!">X | Twitter</a>
                         </td>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="Schaue dir unser neustes Video an!"><img src="pictures/Youtube_logo.png" class="IMPCPPIcons01" alt="Youtube-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="Schaue dir unser neustes Video an!">Youtube</a>
                         </td>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="Mach mit uns lustige Boomer witze!"><img src="pictures/Facebook.png" class="IMPCPPIcons01" alt="Facebook-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="Mach mit uns lustige Boomer witze!">Facebook</a>
                         </td>
                         <td>
-                            <a href="#" class="ImpLinkCPPT01" title="teile und like mit uns Fotos von deinen Hausaufgaben!"><img src="pictures/InstagrammICON.png" class="IMPCPPIcons01" alt="Instagram-icon" /></a>
+                            <a href="#" class="ImpLinkCPPT01" title="teile und like mit uns Fotos von deinen Hausaufgaben!">Instagram</a>
                         </td>
                     </tr>
                     <tr>
@@ -503,7 +504,6 @@
                     </tr>
                 </table>
                 <!--tabele für große bildschirme!-->
-                <div class="EMailAndTeleFAXIMPCPP01C">
                 <div class="EMailAndTeleFAXIMPCPP01">
                     <table>
                         <tr>
@@ -532,29 +532,6 @@
                         </tr>
                     </table>
                 </div>
-                </div>
-
-
-                <script>
-                    document.addEventListener("scroll", function() {
-                     var triggerHeight = 717;
-                     var userScreenWidth = window.innerWidth;
-                    if (window.scrollY >= triggerHeight) {
-                        var Menüposer = document.querySelectorAll('.EMailAndTeleFAXIMPCPP01C');
-                        Menüposer.forEach(function(Menüposer) {
-                            Menüposer.style.display = "block";
-                        });
-                    }
-                    else {
-                        var Menüposer = document.querySelectorAll('.EMailAndTeleFAXIMPCPP01C');
-                        Menüposer.forEach(function(Menüposer) {
-                            Menüposer.style.display = "none";
-                        });
-                    }
-                });
-                  </script>
-
-
             </div>
         </div>
     </div>

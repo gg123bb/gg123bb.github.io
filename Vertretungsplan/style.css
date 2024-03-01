@@ -245,8 +245,16 @@ h1{
     margin: auto;
     text-align: center;
     width: 100%;
+    display: none;
 }
 
+.ImptabelCCPP02{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
 .ImptCPTabLiTexCContRAMEDIA {
     margin: auto;
     width: 50%;
@@ -271,6 +279,10 @@ h1{
 
 .ImpLinkCPPT01 {
     color: rgb(129, 129, 129);
+}
+
+.EMailAndTeleFAXIMPCPP01C {
+    display: none;
 }
 
 .EMailAndTeleFAXIMPCPP01 {
@@ -299,4 +311,11 @@ h1{
     color: rgb(221, 221, 221);
     font-weight: 500;
 
+}
+
+.IMPCPPIcons01{
+    width: 40px;
+    height: auto;
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
 }
