@@ -247,7 +247,7 @@ input:checked + .slider + .daynightc::after {
 	
 }
 .Menü {
-    position: fixed;
+    position: fixed; /*Positionierung ist schei**** soll eig auch beim hovern rechts sein! aber ist kein bug ist ein feature, you know?!*/
     display: block;
     width: auto;
     height: auto;
@@ -423,6 +423,7 @@ input:checked + .slider + .daynightc::after {
 }
 .linkContainer {
     display: none;
+	font-weight: bold;
     margin-top: 4px;
     margin-bottom: 4px;
 }
@@ -471,7 +472,6 @@ input:checked + .slider + .daynightc::after {
     visibility: hidden;
     display: block;
     .link {color: transparent;}
-    
 }
 }
 .title01 {
@@ -689,7 +689,6 @@ input:checked + .slider + .daynightc::after {
 	transition: background-color 0.2s;
 	transition: background-image 0.2s;
 	margin-bottom: 25%;
-	
 }
 .BP01 {
 	position: relative;
@@ -793,7 +792,7 @@ body.night-mode {background-color: black;}
   .contenthub01 {box-shadow: 0px 0px 0px 0px #6d5480;}
   .grass01 {box-shadow: 0px 0px 0px 0px #13a855ff;}
   .image01 {width: 70%;}
-  .BlackboxRight01 {width: 80%; left: 20%; 330px;}
+  .BlackboxRight01 {width: 80%; left: 20%;}/*-!330px!: Da war irgendwas mit 330px aber weiß nicht mehr wo für meil das atribut dafür weg war warscheinlich hab ich nicht aufgepasst und wurde delet!*/
   .linkl01 {position: relative; top: 15px; padding-left: 11%;}
   .linkl02 {position: absolute; margin-top: -34px; left: auto; right: 9%;}
   .link201 {margin-top: 30px; left: 11%; right: auto;}
@@ -801,7 +800,7 @@ body.night-mode {background-color: black;}
   .ControllerYearPicture {width: 80%;}
   .Mobile01 {width: 60%;}
   .BlackboxLeft01 {width: 80%; height: 330px;}
-  .BlueberryboxRight01 {width: 80%; left: 20%; 330px;}
+  .BlueberryboxRight01 {width: 80%; left: 20%; }/*-!330px!: Da war irgendwas mit 330px aber weiß nicht mehr wo für meil das atribut dafür weg war warscheinlich hab ich nicht aufgepasst und wurde delet!*/
   .night-mode .black02 {background-color: #361334; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
   .night-mode .white01 {border-radius: 11px; box-shadow: 0 0 5px #2e0f2d;}
   .night-mode .whitebar02 {width: 70%; transition: width 1.6; margin-left: auto; margin-right: auto;}
@@ -832,32 +831,68 @@ body.night-mode {background-color: black;}
 						</div>
 					<ul class="Menülist">
 						<li>
-							<label class="linkContainer"><a href="" class="link co">Home</a></label>
+							<label class="linkContainer">
+								<a href="#" class="link" title="Home">
+									Home
+								</a>
+							</label>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Über Mich</a></label>
+							<label class="linkContainer">
+								<a href="ContentPages\DE\ÜberMichDE.html" class="link" title="Über Mich">
+									Über Mich
+								</a>
+							</label>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Art Galerie</a></label>
+							<label class="linkContainer">
+								<a href="ContentPages\DE\ArtGalerieDE.html" class="link" title="Art Galerie">
+									Art Galerie
+								</a>
+							</label>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Impressum</a></label>
+							<label class="linkContainer">
+								<a href="ContentPages\DE\.html" class="link">
+									Games
+								</a>
+							</label>
 						</li>
 						<li>
-							<div class="linkContainer"><a href="" class="link co">Home</a></div>
+							<div class="linkContainer">
+								<a href="" class="link co">
+									Home
+								</a>
+							</div>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Über Mich</a></label>
+							<label class="linkContainer">
+								<a href="" class="link">
+									Über Mich
+								</a>
+							</label>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Art Galerie</a></label>
+							<label class="linkContainer">
+								<a href="" class="link">
+									Art Galerie
+								</a>
+							</label>
 						</li>
 						<li>
-							<label class="linkContainer"><a href="" class="link">Impressum</a></label>
+							<label class="linkContainer">
+								<a href="" class="link">
+									Impressum
+								</a>
+							</label>
 						</li>
 					</ul>
 				</div>
-			<div class="title01"><h1 class="title02">HOME</h1></div>
+			<div class="title01">
+				<h1 class="title02">
+					HOME
+				</h1>
+			</div>
 		</div>
 	</div>
 	<div class="whitebar02"></div>
@@ -896,8 +931,18 @@ body.night-mode {background-color: black;}
 </div>
 <div class="ControllerYearContainer">
 	<div class="title03"></div>
-	<div class=""><img src="pictures/B24ContollerArtistRv1.svg" class="ControllerYearPicture" title="Controller24!" border="0" alt=""/></div>
-	<div class="Controlltext"><center>Controller<label class="CRights01">®</label> 2024!</center></div>
+		<div class="">
+			<img src="pictures/B24ContollerArtistRv1.svg" class="ControllerYearPicture" title="Controller24!" border="0" alt=""/>
+		</div>
+	<div class="Controlltext">
+		<center>
+			Controller
+				<label class="CRights01">
+					®
+				</label>
+			 2024!
+		</center>
+	</div>
 </div>
 <center>
 	<hr width="80%">
@@ -919,10 +964,18 @@ body.night-mode {background-color: black;}
 </div>
 	<div class="linkContainer">
 			<label class="linkl01" href="">
-				<p class="linkl01"><a href="" title="Art Galerie*" style="color: white;">Art Galerie*!</a></p>
+				<p class="linkl01">
+					<a href="" title="Art Galerie*" style="color: white;">
+						Art Galerie*!
+					</a>
+				</p>
 			</a>
 			<label class="linkl02" href="">
-				<p><a href="" title="Über Mich*" style="color: white;">Über Mich*!</a></p>
+				<p>
+					<a href="" title="Über Mich*" style="color: white;">
+						Über Mich*!
+					</a>
+				</p>
 			</a>
 	</div>
 </div>
@@ -935,20 +988,24 @@ body.night-mode {background-color: black;}
 	<div class="title04">
 		Games, Ideen und Verwirklichung!
 	</div>
-<div class="text05">
-	Ich bin im PC, Mobile & Web Devlog tätig und Versuche
-	Kreative und Inovative NEUE Games zu Erstellen die auch
-	Langfristig Spaß, Motivation und neue Inhalte bieten
-	Gleichzeitig Lerne ich mehr über IT, Server, Computer Sprachen,
-	Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr! 
-</div>
+	<div class="text05">
+		Ich bin im PC, Mobile & Web Devlog tätig und Versuche
+		Kreative und Inovative NEUE Games zu Erstellen die auch
+		Langfristig Spaß, Motivation und neue Inhalte bieten
+		Gleichzeitig Lerne ich mehr über IT, Server, Computer Sprachen,
+		Team Building, 3D modelling, 2D Art, Music, GUI, Web-Devlopment und Mehr! 
+	</div>
 	<div class="linkContainer">
-			<a class="link201" href="" title="Games*">
-				<p>Games*!</p>
-			</a>
-			<a class="link202" href="" title="Artstyle*">
-				<p>Artstyle*!</p>
-			</a>
+		<a class="link201" href="" title="Games*">
+			<p>
+				Games*!
+			</p>
+		</a>
+		<a class="link202" href="" title="Artstyle*">
+			<p>
+				Artstyle*!
+			</p>
+		</a>
 	</div>
 </div>
 <div>
@@ -960,14 +1017,14 @@ body.night-mode {background-color: black;}
 	<div class="title06">
 		Was <b>ich</b> mache und <b>meine</b> Projekte
 	</div>
-<div class="text05">
-	Ich habe schon an einigen Projekten mitgearbeitet hier eine
-	Aufzählung: ProfessorGame, WallDefence, ShooterGame, ZombieGame, GoblinGame und StareFlare.
-	fast alle sind nie Erschienen oder wurden abgeprochen von WallDefence und GoblinGame gibt es einen 
-	Prototypen und an Shootergame und StareFlare wird noch gearbeitet!
-	Ich bin bei den meisten Projekten 2D/3D Artist, und 
-</div>
-<div class="linkContainer">
+	<div class="text05">
+		Ich habe schon an einigen Projekten mitgearbeitet hier eine
+		Aufzählung: ProfessorGame, WallDefence, ShooterGame, ZombieGame, GoblinGame und StareFlare.
+		fast alle sind nie Erschienen oder wurden abgeprochen von WallDefence und GoblinGame gibt es einen 
+		Prototypen und an Shootergame und StareFlare wird noch gearbeitet!
+		Ich bin bei den meisten Projekten 2D/3D Artist, und 
+	</div>
+	<div class="linkContainer">
 		<label class="linkl01" href="">
 			<p class="linkl01">
 				<a href="" title="Mehr*" style="color: white;">
@@ -989,24 +1046,43 @@ body.night-mode {background-color: black;}
 	<div class="BPP01">
 		<img src="pictures/BluePrint1.svg" class="BluePrint01" border="0" title="Meine Pläne:" alt="Blueprint"/>
 	</div>
-<div class="BPP02">
-	<img src="pictures/WBluePrint1.svg" class="BluePrint02" border="0" title="Meine Pläne:" alt="Blueprint"/>
+	<div class="BPP02">
+		<img src="pictures/WBluePrint1.svg" class="BluePrint02" border="0" title="Meine Pläne:" alt="Blueprint"/>
+	</div>
 </div>
+<div class="bluebar01" title="Auf geht's zum Plan!">
+	<a href="" title="Auf geht's zum Plan!" class="" style="text-decoration: none;" alt="">
+		<center>
+			<div class="letsgolink01" style="">
+				<label class="letts022ll">
+					Let's Go!
+				</label>
+			</div>
+		</center>
+	</a>
 </div>
-<div class="bluebar01" title="Auf geht's zum Plan!"><a href="" title="Auf geht's zum Plan!" class="" style="text-decoration: none;" alt=""><center><div class="letsgolink01" style=""><label class="letts022ll">Let's Go!</label></div></center></a></div>
 <div class="text06">
 	Fazinationen und Realität!<br><hr>
 	more Content coming soon!...
 </div>
 <hr width="80%" style="position: relative; margin-top: 150px;">
-<div><a href="#" title="Valle!" alt=""><img src="pictures/UnterschrieftReal.png" class="Signarture01" border="0" alt="" title="Valle!"/></a></div>
-<div class="Impressum">
-<div class="imptext01">
-<center>
-<h3>Debug: 700 Zeilen c0de!<br>Neuste Version: 12e.1f.22d.36h! 08.02.24</h3>
-<h5>&copy;Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)</h5><br> 
-</center>
+<div>
+	<a href="#" title="Valle!" alt="">
+		<img src="pictures/UnterschrieftReal.png" class="Signarture01" border="0" alt="" title="Valle!"/>
+	</a>
 </div>
+<div class="Impressum">
+	<div class="imptext01">
+		<center>
+			<h3>
+				Debug: 700 Zeilen c0de!<br>Neuste Version: 12e.1f.22d.36h! 08.02.24
+			</h3>
+			<h5>
+				&copy;Controller: 24/25 All rights reserved! This is a privad site no Imprint needet! (Germany)
+			</h5>
+			<br> 
+		</center>
+	</div>
 </div>
 <!--
 Funktioniert nicht richtig!
