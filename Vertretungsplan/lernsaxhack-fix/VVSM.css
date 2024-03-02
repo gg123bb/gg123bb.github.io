@@ -7,6 +7,27 @@ body{
     background-color: rgb(55, 103, 236);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(20, 27, 32); 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5f88c4;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #295a99; 
+  }
+
 .CPPAnmeldungL{
     background-color: rgb(240, 240, 240);
     width: 100%;
