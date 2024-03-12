@@ -1,6 +1,6 @@
 body {
     margin: 1.7%;
-    background-color: #000000;
+    background-color: #202023;
     /*#817059*/
 }
 
@@ -17,7 +17,7 @@ body {
    
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #d67316;
+    background: #27AE60;
     border-radius: 5px;
   }
   
@@ -32,8 +32,8 @@ body {
     width: auto;
     height: auto;
     border-radius: 15px;
-    background-color: #1b1417;
-    box-shadow: 0px 0px 12px 5px rgb(141, 98, 49); 
+    background-color: #212C3B;
+    box-shadow: 0px 0px 12px 5px #495657; 
     transition: all 0.19s ease-in-out;
     /**/
 }
@@ -60,7 +60,7 @@ body {
     padding: 10px;
 }
 .headerlinkcp {
-    color: rgb(226, 226, 226);
+    color: #D5D5D5;
     font-size: 50px;
     font-family: ;
     font-weight: bold;
@@ -124,10 +124,10 @@ body {
     font-size: 45px;
     font-family: ;
     font-weight: bold;
-    color: rgb(214, 255, 227);
+    color: #D5D5D5;
     background-color: rgba(0, 0, 0, 0.322);
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.322);
-    text-shadow: 0px 5px 0px rgba(255, 208, 0, 0.288);
+    text-shadow: 0px 5px 0px #27AE60/*rgba(255, 208, 0, 0.288)*/;
     z-index: 20;
 }
 
@@ -178,11 +178,11 @@ body {
     font-size: 40px;
     font-family: ;
     font-weight: bold;
-    color: white;
+    color: #D5D5D5;
 }
 
 .linktextmenueid713022p {
-    color: white;
+    color: #D5D5D5;
     text-decoration: none;
 }
 
@@ -193,7 +193,7 @@ body {
     height: auto;
     width: 80%;
     justify-content: center;
-    color: white;
+    color: #D5D5D5;
 }
 
 .linkpositioniereid01442345453243 {
@@ -203,17 +203,17 @@ body {
 
 .linkbuttonlinkccppid8822234 {
     text-decoration: none;
-    color: white;
+    color: #D5D5D5;
 }
 
 .linkbuttonid827042201 {
     padding: 12px;
     height: auto;
     width: auto;
-    background-color: rgb(199, 73, 0);
+    background-color: #27AE60;
     border-radius: 15px;
-    color: white;
-    text-decoration: underline white;
+    color: #D5D5D5;
+    text-decoration: underline #D5D5D5;
     font-size: 20px;
     font-family: ;
     font-weight: 700;
@@ -238,8 +238,8 @@ body {
     font-size: 18px;
     font-family: ;
     font-weight: bold;
-    color: rgb(212, 212, 212);
-    background-color: rgb(189, 95, 8);
+    color: #D5D5D5/*rgb(212, 212, 212)*/;
+    background-color: #27AE60/*rgb(189, 95, 8)*/;
     transition: all 0.19s ease-in-out;
 }
 
