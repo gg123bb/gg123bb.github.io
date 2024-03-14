@@ -297,12 +297,12 @@ body {
 }
 
 .SpaceGameReveal {
-    position: absolute;
+    position: relative;
+    margin: auto;
     display: none;
     top: 15%;
-    left: 27%;
     height: auto;
-    width: 365px;
+    width: 30%;
     border-radius: 25px;
     text-align: center;
     padding: 15px;
