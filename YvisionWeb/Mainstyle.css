@@ -1,6 +1,7 @@
+
 body {
     margin: 0/*1.7%*/;
-    background-color: #202023;
+    background-color: var(--BGblack);
     /*#817059*/
 }
 
@@ -218,7 +219,7 @@ body {
     padding: 12px;
     height: auto;
     width: auto;
-    background-color: #10a10b/*#27AE60*/;
+    background-color: var(--HIGTLIGHTGREEN)/*#27AE60*/;
     border-radius: 15px;
     color: #D5D5D5;
     text-decoration: underline #D5D5D5;

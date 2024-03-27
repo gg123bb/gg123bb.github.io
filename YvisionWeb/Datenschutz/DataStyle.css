@@ -1,0 +1,150 @@
+body {
+    /*background-color: white; test*/
+}
+
+.Main-div {
+    background-color: var(--GBlackGray);
+}
+.HeaderNavBar {
+    margin-bottom: 27px;
+}
+
+.BackButton{
+    position: relative;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: ;
+}
+
+.ButtonBack001 {
+    text-align: center;
+    height: auto;
+    width: 50px;
+    padding: 5px;
+    background-color: var(--GBlackGray);
+    color: var(--NormalTextWG);
+    font-size: 35px;
+    text-decoration: none;
+    font-family: ;
+    font-weight: bold;
+}
+.ButtonBack001::before {
+    content: ''; 
+    position: absolute; 
+    top: 0px;
+    left: 0px; 
+    width: 10px; 
+    height: 60px; 
+    background: black; 
+    
+    transform: rotate(8deg);
+}
+.ButtonBack001::after {
+    content: ''; 
+    position: absolute; 
+    top: 0px;
+    left: 60px;
+    width: 10px; 
+    height: 60px; 
+    background: black; 
+    
+    transform: rotate(8deg);
+}
+.BackLinkYHOME {
+    text-decoration: none;
+    color: var(--NormalTextWG);
+}
+.contaktContainerLinkBackYHOME {
+    width: auto;
+    height: auto;
+    background-color:;
+}
+.BackLinkYHOME:hover {
+    font-size: 33px;
+}
+.Header001 {
+    background-color: var(--GBlackGray);
+}
+
+.Mblockid2414 {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 80%;
+    background-color: #000000;
+    overflow: hidden; 
+    
+}
+
+.Mblockid2414:before { 
+    content: ''; 
+    position: absolute; 
+    top: -20px;
+    left: -60px; 
+    width: 80px; 
+    height: 400px; 
+    background: #0a0a0a; 
+    
+    transform: rotate(8deg);
+}
+.Mblockid2414:after { 
+    content: ''; 
+    position: absolute; 
+    top: -20px;
+    right: -55px; 
+    width: 80px; 
+    height: 400px; 
+    background: #0a0a0a; 
+  
+    transform: rotate(8deg);
+}
+
+.Mblocktext7293 {
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+    font-family: ;
+    font-weight: bold;
+    color: #D5D5D5;
+}
+
+
+.TextBoxDataY {
+    position: relative;
+    top: 27px;
+    margin: auto;
+    width: 85%;
+    height: auto;
+    background-color: var(--BGblack);
+    border-top-right-radius: 4px;
+}
+
+.TextBoxDataY::before{
+    content: ''; 
+    position: absolute;
+    top: -34px; 
+    height: 60px;
+    width: 30px;
+    background-color: var(--GBlackGray);
+    transform: rotate(70deg);
+}
+
+
+.TextPositioniererY {
+    position: relative;
+    top: 27px;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    background-color:;
+    text-align: justify;
+    justify-content: center;
+    color: var(--NormalTextWG);
+    font-family: var();
+    font-size: ;
+    font-weight: ;
+}
+
+.RightsAlinksYTable {
+    width: 100%;
+}

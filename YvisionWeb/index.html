@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--letzte änderung: 14.03.2024-->
+    <!--letzte änderung: 27.03.2024-->
 
     <!--
         ©Copieright: Yvision! since: 2024|25!
-        Version: 4d15h15e4f3v
+        Version: 6d20h17e7f4.1v
     -->
 
     <!--Metadata:-->
@@ -41,6 +41,11 @@
     <!--Icon-->
 
     <link rel="icon" type="image/x-icon" href="pictures/YVlogos10llggl.svg">
+
+    <!--Root/Farben-->
+    
+    <link rel="stylesheet" type="text/css" href="root.css" media="all"/>
+
 
     <!--Styles-->
     <link rel="stylesheet" type="text/css" href="Mainstyle.css" media="all"/>
@@ -219,6 +224,18 @@
         <div class="bodyYMAINcontainerPage">
             
             <div class="BIGTEXTcppid556231">
+
+                <!--Temporär!-->
+                <a href="Datenschutz/DatenschutzDE.html" style="color: var(--NormalTextWG);">
+                    <h3>
+                        <center>
+                            Datenschutz
+                        </center>
+                    </h3>
+                </a>
+                <!--Temporär!-->
+
+
                 <label>
                     Yvision und Games
                 </label>
@@ -254,6 +271,10 @@
                     //550
                  var triggerHeight = 730;
                  var userScreenWidth = window.innerWidth;
+                 if (window.innerHeight <= 730 && window.innerHeight >= 500){
+                    triggerHeight = 540;
+                    console.log("under 730 height")
+                }
                 if (window.scrollY >= triggerHeight) {
                     var Spacerevealer = document.querySelectorAll('.SpaceGameReveal');
                     Spacerevealer.forEach(function(Spacerevealer) {
