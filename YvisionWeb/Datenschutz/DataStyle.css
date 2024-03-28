@@ -27,6 +27,7 @@ body {
     text-decoration: none;
     font-family: ;
     font-weight: bold;
+    overflow: hidden;
 }
 .ButtonBack001::before {
     content: ''; 
@@ -117,6 +118,7 @@ body {
     height: auto;
     background-color: var(--BGblack);
     border-top-right-radius: 4px;
+    overflow: hidden;
 }
 
 .TextBoxDataY::before{
@@ -145,6 +147,9 @@ body {
     font-weight: ;
 }
 
-.RightsAlinksYTable {
+.RightsAlinksYTableBIG {
+    width: 100%;
+}
+.RightsAlinksYTablelittle {
     width: 100%;
 }
