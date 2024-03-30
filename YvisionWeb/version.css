@@ -1,0 +1,23 @@
+:root {
+    /*Versionen hier Angeben/Ändern!*/
+    --WEBVERSION: "8d26h23e8f4.3v";
+    --VERSIONINT: "001.3";
+    --UPDATE: "30.03.2024";
+
+    --COPYRIGHT: "24/25";
+
+}
+
+/*VARIABLE UPDATE NUMMERN in HTML anzeigen!*/
+.YWEBversion::before {
+    content: var(--WEBVERSION);
+}
+.versionINT::before {
+    content: var(--VERSIONINT);
+}
+.Update::before {
+    content: var(--UPDATE);
+}
+.copyright::before {
+    content: var(--COPYRIGHT);
+}
