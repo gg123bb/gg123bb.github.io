@@ -1,6 +1,10 @@
 :root {
     --BGblack: #202023;
+    --TransparentBGblack: rgba(48, 48, 51, 0.637);
     --GBlackGray: #0a0a0a;
+
+    --NotLoading: rgb(61, 61, 61);
+    --NotLoadingT:rgba(66, 66, 66, 0.774);
 
 
 /*Text*/
@@ -11,7 +15,7 @@
 
 /*GREEN*/
     --YGREEN: ;
-    --AKTZENTGREEN: ;
+    --AKTZENTGREEN: #3cc41a;
     --DARKGREEN: ;
     --GRAYGREEN: ;
     --HIGTLIGHTGREEN: #10a10b;

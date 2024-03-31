@@ -1,0 +1,292 @@
+body{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+.Main-div{
+    background-color: transparent;
+}
+.YvisionName {
+    position: absolute;
+    padding: 10px;
+}
+.YiconNAVBAR {
+    position: relative;
+    height: 55px;
+    width: ;
+    z-index: 1;
+}
+.visionText {
+    position: relative;
+    font-size: 42px;
+    font-weight: bold;
+    bottom: 5px;
+    left: -10px;
+    text-decoration: overline;
+    z-index: 0;
+}
+
+.SearchBarPosition {
+    position: relative;
+    text-align: center;
+    top: 25px;
+}
+
+.INPUTSEARCHBAR {
+    background-color: var(--TransparentBGblack);
+    border-color: white;
+    border-style: solid;
+    border-radius: 25px;
+    height: 30px;
+    width: 40%;
+    color: var(--NormalTextWG);
+}
+
+.RightContentPosition {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color:;
+    height: 50px;
+    width: 110px;
+}
+
+.MenüP {
+    position: relative;
+    
+    height: 100%;
+    width: 50px;
+    background-color: var(--NotLoading);
+    border-radius: 5px;
+}
+.User {
+    position: relative;
+    height: 100%;
+    width: 50px;
+    background-color: var(--NotLoading);
+    border-radius: 25px;
+}
+.Menü {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0px;
+    left: -13px;
+    top: -3px;
+    
+}
+.Menü:hover {
+    animation-name: Menühover;
+    animation-duration: 0.4s;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--NotLoadingT);
+}
+@keyframes Menühover {
+  from {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: transparent;
+  }
+  to {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--NotLoadingT);
+}
+}
+.Menü:not(:hover) {
+    animation-name: Menühovernot;
+    animation-duration: 0.3s;
+    
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+@keyframes Menühovernot {
+  from {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--NotLoadingT);
+  }
+  to {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+}
+.strichparant {
+    
+    height: 35px;
+    width: 100%;
+    right: 0;
+}
+.Menü:hover .strichparant{ 
+    padding: relative;
+    right: -30px;
+}
+.Menü:not(:hover) .strichparant{ 
+    padding: relative;
+    right: 0px;
+}
+.Menü:hover .strich01{
+    margin-bottom: 8px;
+}
+.strich01 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: var(--NormalTextWG);
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich01{
+    animation-name: strich01menü;
+    animation-duration: 0.3s;
+    transform: rotate(-30deg);
+    top: 12px;
+}
+@keyframes strich01menü {
+  from {
+    height: 8px;
+    width: 54px;
+    transform: rotate(0deg);
+    top: 0px;
+  }
+  to {
+    transform: rotate(-30deg);
+    top: 12px;
+}
+}
+.strich02 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: var(--NormalTextWG);
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich02{
+    animation-name: strich02menü;
+    animation-duration: 0.3s;
+    height: 0px;
+    width: 0px;
+    left: 18px;
+}
+@keyframes strich02menü {
+  from {
+    height: 8px;
+    width: 54px;
+    left: 0px;
+  }
+  to {
+    height: 8px;
+    width: 0px;
+    left: 25px;
+    top: -5px;
+}
+}
+.strich03 {
+    position: relative;
+    height: 8px;
+    width: 54px;
+    background-color: var(--NormalTextWG);
+    border-radius: 4px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.Menü:hover .strich03{
+    animation-name: strich03menü;
+    animation-duration: 0.3s;
+    transform: rotate(30deg);
+    top: -4px;
+}
+@keyframes strich03menü {
+  from {
+    height: 8px;
+    width: 54px;
+    transform: rotate(0deg);
+    top: 0px;
+  }
+  to {
+    transform: rotate(30deg);
+    top: -17px;
+}
+}
+.Menülist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.linkContainer {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.Menü:hover .linkContainer{
+    display: block;
+    .link{color: var(--NormalTextWG);}
+    animation-name: Menülisthover;
+    animation-duration: 0.2s;
+}
+.link{
+    width:100%;
+    text-align: right;
+    color: var(--NormalTextWG);
+    margin: 10px;
+}
+.Menü:hover .link:hover{    
+    color: #3cc41a;
+}
+@keyframes Menülisthover {
+  from {
+    transform: translate(100%,0);
+    visibility: hidden;
+    .link {color: transparent;}
+  }
+  to {
+    transform: translate(0%,0%);
+    visibility: visible;
+    .link {color: black;}
+}
+}
+.Menü:not(:hover) .linkContainer{
+    animation-name: Menülisthovernot;
+    animation-duration: 0.3s;
+    transform: translate(0%,0);
+    .link {color: var(--NormalTextWG);}
+}
+@keyframes Menülisthovernot {
+  from {
+    transform: translate(0%,0);
+    visibility: visible;
+    display: block;
+    .link {color: var(--NormalTextWG);}
+  }
+  to {
+    transform: translate(-100%,0%);
+    visibility: hidden;
+    display: block;
+    .link {color: transparent;}
+    
+}
+}
