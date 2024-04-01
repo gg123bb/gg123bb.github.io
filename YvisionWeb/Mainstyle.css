@@ -69,7 +69,7 @@ body {
 
 .TitleCP {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     padding: 10px;
 }
 .headerlinkcp {
@@ -90,7 +90,8 @@ body {
     width: auto;
     height: auto;
     background-color: rgb(32, 32, 32);
-    background-image: url(pictures/ybackfire1001.svg);
+    background-image: url(pictures/BGYWEBv03.svg);
+    
     padding: 2%;
 }
 

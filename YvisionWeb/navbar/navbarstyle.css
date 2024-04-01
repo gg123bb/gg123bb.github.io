@@ -59,8 +59,9 @@ body{
     
     height: 100%;
     width: 50px;
-    background-color: var(--NotLoadingT);
+    background-color: var();
     border-radius: 5px;
+    z-index: 0;
 }
 .User {
     position: relative;
@@ -68,6 +69,7 @@ body{
     width: 50px;
     background-color: var(--NotLoadingT);
     border-radius: 25px;
+    z-index: 200;
 }
 .Menü {
     position: absolute;
@@ -79,8 +81,8 @@ body{
     margin: 10px;
     border-radius: 5px;
     padding: 0px;
-    left: -13px;
-    top: -3px;
+    left: -11px;
+    top: 0px;
     
 }
 .Menü:hover {

@@ -81,10 +81,14 @@
 
 @media screen and (max-width: 555px) {
     .visionText::before{
-        content: "";
+        content: "vision";
+        font-size: 25px;
     }
     .versionNavBar {
-        display: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        left: 100%;
     }
 }
 @media screen and (min-width: 556px) {
@@ -96,6 +100,9 @@
     }
 }
 @media screen and (max-width: 489px) {
+    .visionText::before{
+        content: "";
+    }
     .SearchBarPosition {
         position: relative;
         text-align: left;
