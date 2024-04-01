@@ -25,7 +25,9 @@ body{
     text-decoration: overline;
     z-index: 0;
 }
-
+.visionText::before{
+    content: "vision";
+}
 .SearchBarPosition {
     position: relative;
     text-align: center;
@@ -57,14 +59,14 @@ body{
     
     height: 100%;
     width: 50px;
-    background-color: var(--NotLoading);
+    background-color: var(--NotLoadingT);
     border-radius: 5px;
 }
 .User {
     position: relative;
     height: 100%;
     width: 50px;
-    background-color: var(--NotLoading);
+    background-color: var(--NotLoadingT);
     border-radius: 25px;
 }
 .Menü {
@@ -255,7 +257,7 @@ body{
     margin: 10px;
 }
 .Menü:hover .link:hover{    
-    color: #3cc41a;
+    color: #80e966;
 }
 @keyframes Menülisthover {
   from {

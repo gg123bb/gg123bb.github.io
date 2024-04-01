@@ -77,6 +77,46 @@
         
     }
 }
+
+
+@media screen and (max-width: 555px) {
+    .visionText::before{
+        content: "";
+    }
+    .versionNavBar {
+        display: none;
+    }
+}
+@media screen and (min-width: 556px) {
+    .visionText::before{
+        content: "vision";
+    }
+    .versionNavBar {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 489px) {
+    .SearchBarPosition {
+        position: relative;
+        text-align: left;
+        left: 50px; 
+    }
+    .INPUTSEARCHBAR {
+        height: 30px;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 490px) {
+    .SearchBarPosition {
+        position: relative;
+        text-align: center;
+    }
+    .INPUTSEARCHBAR {
+        height: 30px;
+        width: 40%;
+    }
+}
+
 /*bitte noch 360px*/
 /*bitte um 768px fixen*/
 
