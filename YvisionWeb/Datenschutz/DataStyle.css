@@ -14,9 +14,11 @@ body {
     padding: 5px;
     margin-left: 10px;
     background-color: ;
+    overflow: hidden;
 }
 
 .ButtonBack001 {
+    
     text-align: center;
     height: auto;
     width: 50px;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .CSSTEST {display: none;}
+    </style>
+</head>
+<body>
+    <label hidden="true">Dein HTML ist nicht Aktuell oder Funktioniert nicht richtig bitte Löse das Problem z.b mit Aktualisierung mit deinen Browser</label>
+    <label class="CSSTEST">CSS Funktioniert nicht richtig Bitte Löse das Problem z.b mit dem Aktualisieren deines Browsers!</label>
+    
+    <div id="console">Bitte aktiviere Javascript!</div>
+
+    <script>
+
+        let console = document.getElementById("console");
+        console.innerHTML = "";
+
+        function newtext (u) {
+            let console = document.getElementById("console");
+            let text = document.createElement("p");
+            text.innerHTML = u;
+            console.appendChild(text);
+        }
+        newtext("Prozess Start...");
+
+
+        function animation (au) {
+            let GetWith = document.GetWith();
+            let GetHight = document.GetHight();
+            let console = document.getElementById("console");
+            let text = document.createElement("p");
+            text.innerHTML = au;
+            console.appendChild(text);
+
+        }
+        animation("hi");
+        newtext("haai");
+    </script>
+</body>
+</html>
