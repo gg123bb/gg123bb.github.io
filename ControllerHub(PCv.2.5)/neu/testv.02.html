@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Album Vorschau</title>
+    <style>
+        .album-preview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .album-cover {
+            width: 300px;
+            height: 300px;
+        }
+        .album-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .album-artist {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spotify Album Vorschau</h1>
+    <div class="album-preview" id="album-preview"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const url = 'https://open.spotify.com/album/3kGCNaXI68tIspcsuWQ1yy';
+            const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(url)}`;
+
+            fetch(oembedUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const previewDiv = document.getElementById('album-preview');
+
+                    const coverImg = document.createElement('img');
+                    coverImg.src = data.thumbnail_url;
+                    coverImg.alt = data.title;
+                    coverImg.className = 'album-cover';
+
+                    const titleDiv = document.createElement('div');
+                    titleDiv.textContent = data.title;
+                    titleDiv.className = 'album-title';
+
+                    const artistDiv = document.createElement('div');
+                    artistDiv.textContent = data.author_name;
+                    artistDiv.className = 'album-artist';
+
+                    previewDiv.appendChild(coverImg);
+                    previewDiv.appendChild(titleDiv);
+                    previewDiv.appendChild(artistDiv);
+                })
+                .catch(error => {
+                    console.error('Fehler beim Laden der oEmbed-Daten:', error);
+                });
+        });
+    </script>
+</body>
+</html>
