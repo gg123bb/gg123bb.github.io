@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Base Open Graph Meta Tags -->
+    <meta property="og:title" content="Song title">
+    <meta property="og:description" content="Artist">
+    <meta property="og:image" content="https://example.com/meow/coverImage.jpg">
+    <meta name='theme-color' content='#6b0c91' />
+    <meta property="og:site_name" content="meow">
+    <meta property="og:type" content="video.other">
+    
+    <!-- Video Embedding -->
+    <meta property="og:video" content="https://example.com/meow/video.mp4">
+    <meta property="og:video:secure_url" content="https://example.com/meow/video.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="300">
+    <meta property="og:video:height" content="100">
+    
+
+    <title>meow</title>
+</head>
+<body>
+    <h1>meow</h1>
+</body>
+</html>
