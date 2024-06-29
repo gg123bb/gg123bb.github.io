@@ -15,18 +15,18 @@
     <meta property="og:title" content="Album Title">
     <meta property="og:description" content="Ein Album von Künstler">
     <meta property="og:url" content="https://open.spotify.com/album/3kGCNaXI68tIspcsuWQ1yy">
-    <meta property="og:image" content="URL ZUM ALBUM COVER">
+    <meta property="og:image" content="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/pictures/ArtRobo01.png">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Album Title">
     <meta name="twitter:description" content="Ein Album von Künstler">
-    <meta name="twitter:image" content="URL ZUM ALBUM COVER">
+    <meta name="twitter:image" content="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/pictures/ArtRobo01.png">
 
     <link rel="canonical" href="https://open.spotify.com/intl-de/album/3kGCNaXI68tIspcsuWQ1yy">
 
     <!-- oEmbed für Discord oder andere Plattformen -->
-    <link rel="alternate" type="application/json+oembed" href="https://open.spotify.com/oembed?url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F3kGCNaXI68tIspcsuWQ1yy">
+    <link rel="alternate" type="application/json+oembed" href="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/oembed.html">
 
 
 	
