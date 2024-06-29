@@ -23,6 +23,8 @@
     <meta name="twitter:description" content="Ein Album von Künstler">
     <meta name="twitter:image" content="https://gg123bb.github.io/ControllerHub(PCv.2.5)/neu/pictures/ArtRobo01.png">
 
+
+	<meta name="twitter:card" content="summary">
     <link rel="canonical" href="https://open.spotify.com/intl-de/album/3kGCNaXI68tIspcsuWQ1yy">
 
     <!-- oEmbed für Discord oder andere Plattformen -->
