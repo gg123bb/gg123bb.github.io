@@ -1,0 +1,62 @@
+/*COPYRIGHT CONTROLLER!*/
+:root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+
+		/*Scrollbar*/
+		::-webkit-scrollbar {
+  			width: 10px;
+			
+		}
+		::-webkit-scrollbar-track {
+ 			background: #919191;
+		}
+		::-webkit-scrollbar-thumb {
+  			background: #dddddd;
+			  border-radius: 25px 0px 0px 25px;
+		}
+		::-webkit-scrollbar-thumb:hover {
+  			background: #ffffff;
+		}
+}
+
+body {
+margin: 0;
+padding: 0;
+color: #f3f3f3;
+background-color: #a3a3a3;
+}
+
+a {
+color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(202, 202, 202, 0.648);
+  color: #14171c;
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  background-color: #f3f3f3;
+}
+
+.CMAIL {
+  
+  border: 0;
+  border-collapse:;
+  border-radius: 0;
+  color: #f3f3f3;        
+          
+        
+          
+  background-color: ;
+
+}
+
