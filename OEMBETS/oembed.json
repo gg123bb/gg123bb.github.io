@@ -2,14 +2,14 @@
   "version": "1.0",
   "type": "video",
   "provider_name": "MeineSuperSeite",
-  "provider_url": "https://meineseite.de",
+  "provider_url": "https://gg123bb.github.io/OEMBETS/",
   "title": "🎬 Stylische Kreis-Animation",
   "author_name": "Max Mustermann",
-  "author_url": "https://meineseite.de/max",
-  "thumbnail_url": "https://meineseite.de/vorschau.jpg",
+  "author_url": "https://gg123bb.github.io/OEMBETS/",
+  "thumbnail_url": "https://gg123bb.github.io/OEMBETS/thump.png",
   "thumbnail_width": 1280,
   "thumbnail_height": 720,
-  "html": "<iframe src='https://meineseite.de/embed/kreise.html' width='640' height='360' frameborder='0' allowfullscreen></iframe>",
+  "html": "<iframe src='https://gg123bb.github.io/OEMBETS/oembed.html' width='640' height='360' frameborder='0' allowfullscreen></iframe>",
   "width": 640,
   "height": 360
 }
