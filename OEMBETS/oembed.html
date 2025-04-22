@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oembed-Test">
+  <title>Oembed-Test</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: rgba(168, 168, 168, 0);
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    #oembed {
+      width: 100%;
+      max-width: 600px;
+      margin: 0;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .content-center {
+      width: 100%;
+    }
+
+    .c-head {
+      text-align: center;
+      padding: 1em;
+      background-color: #7e2f2f;
+      color: white;
+      font-weight: bold;
+    }
+
+    #circles-container {
+      position: relative;
+      width: 100%;
+      height: 300px; /* feste Höhe, damit nichts übersteht */
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.7;
+      transition: background 2s ease;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+<div id="oembed">
+  <div class="content-center">
+    <div class="c-head">Oembed-Test</div>
+    <div id="circles-container"></div>
+  </div>
+</div>
+
+<script>
+  const colors = ['#ff4d4d', '#4dff4d', '#4d4dff', '#ff4df2', '#4dffff', '#ffff4d'];
+  const circles = [];
+  const numCircles = 30;
+
+  const container = document.getElementById("circles-container");
+
+  function createCircles() {
+    const bounds = container.getBoundingClientRect();
+    for (let i = 0; i < numCircles; i++) {
+      const circle = document.createElement('div');
+      circle.classList.add('circle');
+
+      const size = Math.random() * 80 + 50; // 50–130 px
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
+      circle.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+      circle.dataset.vx = (Math.random() - 0.5) * 0.8;
+      circle.dataset.vy = (Math.random() - 0.5) * 0.8;
+
+      circle.style.left = `${Math.random() * (bounds.width - size)}px`;
+      circle.style.top = `${Math.random() * (bounds.height - size)}px`;
+
+      container.appendChild(circle);
+      circles.push(circle);
+    }
+  }
+
+  function animate() {
+    const bounds = container.getBoundingClientRect();
+    for (let c of circles) {
+      let x = parseFloat(c.style.left);
+      let y = parseFloat(c.style.top);
+      let vx = parseFloat(c.dataset.vx);
+      let vy = parseFloat(c.dataset.vy);
+      const w = c.offsetWidth;
+      const h = c.offsetHeight;
+
+      x += vx;
+      y += vy;
+
+      if (x < 0 || x > bounds.width - w) c.dataset.vx = -vx;
+      if (y < 0 || y > bounds.height - h) c.dataset.vy = -vy;
+
+      x = Math.max(0, Math.min(bounds.width - w, x));
+      y = Math.max(0, Math.min(bounds.height - h, y));
+
+      c.style.left = `${x}px`;
+      c.style.top = `${y}px`;
+    }
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', () => {
+    const bounds = container.getBoundingClientRect();
+    for (let c of circles) {
+      const size = c.offsetWidth;
+      c.style.left = `${Math.random() * (bounds.width - size)}px`;
+      c.style.top = `${Math.random() * (bounds.height - size)}px`;
+    }
+  });
+
+  createCircles();
+  animate();
+
+  setInterval(() => {
+    for (let c of circles) {
+      c.style.background = colors[Math.floor(Math.random() * colors.length)];
+    }
+  }, 3000);
+</script>
+</body>
+</html>
